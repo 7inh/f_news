@@ -1,0 +1,4 @@
+div#logo {
+  grid-area: logo;
+  background-color: rgb(181, 199, 22);
+}

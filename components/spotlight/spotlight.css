@@ -1,0 +1,5 @@
+div#spotlight {
+  grid-area: spotlight;
+  background-color: #d46d6d;
+  min-height: 700px;
+}

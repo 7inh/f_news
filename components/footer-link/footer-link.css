@@ -1,0 +1,5 @@
+div#footer-link {
+  background-color: rgb(144, 91, 22);
+  min-height: 100px;
+  flex-grow: 1;
+}

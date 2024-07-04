@@ -1,0 +1,4 @@
+div#list-news-column {
+  background-color: rgb(255, 0, 136);
+  min-height: 150px;
+}

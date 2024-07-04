@@ -1,0 +1,5 @@
+div#word-cloud {
+  grid-area: word-cloud;
+  background-color: #ffc400;
+  min-height: 400px;
+}

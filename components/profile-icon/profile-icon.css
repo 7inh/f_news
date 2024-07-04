@@ -1,0 +1,4 @@
+div#profile-icon {
+  grid-area: profile-icon;
+  background-color: #d46d6d;
+}

@@ -1,0 +1,5 @@
+div#trending {
+  grid-area: trending;
+  background-color: #09f4ae;
+  min-height: 400px;
+}
