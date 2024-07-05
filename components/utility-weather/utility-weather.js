@@ -49,6 +49,9 @@ Highcharts.chart('container-chart', {
   legend: {
     enabled: false,
   },
+  tooltip: {
+    enabled: true,
+  },
   series: [
     {
       name: 'Nhiệt độ',
@@ -61,7 +64,7 @@ Highcharts.chart('container-chart', {
         enabled: true,
         format: '{y}°C',
         style: {
-          color: 'black',
+          color: 'gray',
           fontWeight: 'bold',
           textOutline: 'none',
         },
