@@ -1,4 +1,106 @@
-div#short-video {
-  background-color: #d63b3b;
-  min-height: 600px;
+
+[data-theme="dark"] {
+  --primary-color: white;
+  --background-color: black;
+}
+
+[data-theme="light"] {
+  --primary-color: black;
+  --background-color: white;
+}
+
+
+:root{
+--height--50vh: 50vh;
+--fontsize--40: 40px;
+--fontweight--600: 600;
+--margin--left--20: 20px;
+--margin--0: 0;
+--border--radius: 50%;
+--gap--20: 20px;
+--padding--10: 10px;
+}
+.video-wrap {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.video-item{
+  height: var(--height--50vh);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.video-item p{
+  position: absolute;
+
+  font-size: var(--fontsize--40);
+  font-weight: var(--fontweight--600);
+  color: var(--primary-color);
+}
+
+video{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-chat{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 50vh;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.video-chat h1{
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  margin: var(--margin--0);
+  padding: var(--padding--10) 0px;
+}
+
+.video-chat input{
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: var(--padding--10);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box-comment{
+  flex-grow: 1;
+  overflow: auto;
+  background-color: var(--background-color);
+}
+
+.comment-items {
+  border-top: 1px solid var(--primary-color);
+  height: var(--fontsize--);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  gap: var(--gap--20);
+  text-align: center;
+}
+.comment-items span{
+  margin-left: var(--margin--left--20);
+  font-size: var(--fontsize--40);
+  background-color: var(--background-color);
+  border-radius: var(--border--radius);
+  color: var(--primary-color);
+}
+.comment-items p{
+  margin: var(--margin--0);
+}
+
+.comment-items p:first-of-type{
+  font-weight: var(--fontweight);
 }
