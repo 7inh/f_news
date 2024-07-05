@@ -1,2 +1,32 @@
 <link rel="stylesheet" href="/components/search-bar/search-bar.css" />
-<div id="search-bar">searchbar</div>
+<div id="search-bar">
+  <div id="search-bar-container">
+    <input type="text" />
+    <f-icon src="/assets/magnification-glass.svg" class="search-icon"></f-icon>
+  </div>
+  <div id="search-result">
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 1</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 2</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 3</span>
+    </div>
+  </div>
+
+  <script src="./search-bar.js"></script>
+</div>

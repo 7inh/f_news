@@ -14,10 +14,6 @@ body {
   background-color: var(--background-color);
 }
 
-#wrapper-content {
-  background-color: rgb(255, 255, 255);
-}
-
 #wrapper-content > * {
   max-width: 1200px;
   width: 100%;
@@ -29,8 +25,8 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas:
-    "logo search-bar profile-icon"
-    "sticky sticky sticky";
+    "logo search-bar theme-toggle profile-icon"
+    "sticky sticky sticky sticky";
 }
 
 #sticky-header {

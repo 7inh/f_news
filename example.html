@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      /* Default light theme */
-      :root {
-        --background-color: white;
-        --text-color: black;
-        --theme: light;
-      }
 
-      /* Dark theme */
-      [data-theme="dark"] {
-        --background-color: black;
-        --text-color: white;
-        --theme: dark;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    /* Default light theme */
+    :root {
+      --background-color: white;
+      --text-color: black;
+      --theme: light;
+    }
 
-      body {
-        background-color: var(--background-color);
-        color: var(--text-color);
-      }
+    /* Dark theme */
+    [data-theme="dark"] {
+      --background-color: black;
+      --text-color: white;
+      --theme: dark;
+    }
 
-      /* Example of changing the image source based on theme */
-      img {
-        content: url("https://placehold.co/600x400");
-      }
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
 
-      [data-theme="dark"] img {
-        content: url("https://placehold.co/600x400?text=Hello+World");
-      }
-      .ri--aed-fill {
-        width: 16px;
-        height: 16px;
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23637381' d='M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm10 8l-5 7v-5H8l5-7v5z'/%3E%3C/svg%3E");
-      }
-    </style>
-  </head>
-  <body>
-    <img alt="Themed Image" />
-    <button id="theme-toggle">Toggle Theme</button>
+    /* Example of changing the image source based on theme */
+    img {
+      content: url("https://placehold.co/600x400");
+    }
 
-    <span class="ri--aed-fill"></span>
+    [data-theme="dark"] img {
+      content: url("https://placehold.co/600x400?text=Hello+World");
+    }
 
-    <script>
-      document
-        .getElementById("theme-toggle")
-        .addEventListener("click", function () {
-          const htmlElement = document.documentElement;
-          const currentTheme = htmlElement.getAttribute("data-theme");
-          const newTheme = currentTheme === "light" ? "dark" : "light";
-          htmlElement.setAttribute("data-theme", newTheme);
-        });
-    </script>
-  </body>
+    .ri--aed-fill {
+      display: inline-block;
+      width: 1.2em;
+      height: 1.2em;
+      --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm10 8l-5 7v-5H8l5-7v5z'/%3E%3C/svg%3E");
+      background-color: currentColor;
+      -webkit-mask-image: var(--svg);
+      mask-image: var(--svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <img alt="Themed Image" />
+  <button id="theme-toggle">Toggle Theme</button>
+  <span class="ri--aed-fill"></span>
+  <script>
+    document
+      .getElementById("theme-toggle")
+      .addEventListener("click", function () {
+        const htmlElement = document.documentElement;
+        const currentTheme = htmlElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        htmlElement.setAttribute("data-theme", newTheme);
+      });
+  </script>
+</body>
+
 </html>

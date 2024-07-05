@@ -1,4 +1,74 @@
+:root{
+  --primary-color: #6db9f6;
+  --color:white;
+}
+
+/* CSS FORM */
 div#subscribe-mail {
-  background-color: rgb(187, 255, 0);
+  width: 300px;
   min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#subscribe-mail form{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+}
+
+/* CSS INPUT */
+input[type="email"]{
+  border: 1px solid black;
+  padding: 0px 12px;
+}
+
+/* CSS BUTTON */
+#btn-subs{
+  background-color: var(--primary-color);
+  color: var(--color);
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+button#btn-subs:hover{
+  opacity: .7;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+/* CSS EVENT SHAKE INPUT */
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 2 ;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.buttonClicked{
+  animation: linear;
 }
