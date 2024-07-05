@@ -30,8 +30,8 @@ Highcharts.chart('container-chart', {
           y2: 1,
         },
         stops: [
-          [0, 'rgba(253, 214, 99, 0.4)'], // Màu vàng nhạt phía trên
-          [1, 'rgba(255, 214, 99, 0.5)'], // Màu vàng đậm phía dưới
+          [0, 'rgba(253, 214, 99, 0.4)'],
+          [1, 'rgba(255, 214, 99, 0.5)'],
         ],
       },
       marker: {
@@ -57,6 +57,16 @@ Highcharts.chart('container-chart', {
         valueSuffix: ' độ C',
       },
       color: '#FFCC02',
+      dataLabels: {
+        enabled: true,
+        format: '{y}°C',
+        style: {
+          color: 'black',
+          fontWeight: 'bold',
+          textOutline: 'none',
+        },
+        y: -10,
+      },
     },
   ],
 });
