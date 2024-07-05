@@ -23,9 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 return response.text();
             })
             .then((js) => {
+                if (!js || js === 404) {
+                    return
+                }
                 const script = document.createElement("script");
                 script.text = js;
-                document.body.appendChild(script);
+                document.body?.appendChild(script);
             })
             .catch((error) => {
             });
@@ -33,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     [
+        "theme-toggle",
         "logo",
         "search-bar",
         "profile-icon",
@@ -54,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "subscribe-mail",
         "footer-contact",
         "footer-social-media",
-        "copyright"
+        "copyright",
     ].forEach((component) => {
-        loadComponent(component);
         try {
+            loadComponent(component);
             loadScript(component);
         } catch (e) {
         }
