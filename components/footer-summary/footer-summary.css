@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-color: #f44336;
   --text-color: #000000;
   --secondary-color: #ffffff;
@@ -6,19 +6,19 @@
   --font-family-brand: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   --font-size-logo: 30px;
   --font-size-caption: 14px;
-  --maximum-width:300px;
+  --maximum-width: 300px;
   --minimum-height: 100px;
   --spacing-flex: 20px;
 }
 
 [data-theme="light"] {
-  --text-color: #000000;
-  --secondary-color: #ffffff
+  --text-color: #ffffff;
+  --secondary-color: #000000;
 }
 
-[data-theme="dark"]  {
-  --text-color: #ffffff;
-  --secondary-color: #000000
+[data-theme="dark"] {
+  --text-color: #000000;
+  --secondary-color: #ffffff;
 }
 
 div#footer-summary {
