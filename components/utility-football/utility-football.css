@@ -1,4 +1,125 @@
+:root{
+  --primary-color:#868686;
+  --second-color:white
+  --primary-background-color: white;
+  --primary-line: #1e8cc6;
+  --second-line: #e8e8e8
+
+  --background-color:black;
+}
+
+[data-theme="light"] div#utility-football {
+  --primary-color:#868686;
+  --second-color:black
+  --background-color:white;
+  --primary-background-color: white;
+
+  --primary-line: #1e8cc6;
+  --second-line: #e8e8e8
+}
+
+/* ====> */
+
+[data-theme="dark"] {
+  --primary-color:white;
+  --second-color: white;
+  --background-color:black;
+  --primary-background-color: white;
+
+
+  --primary-line: #1e8cc6;
+  --second-line: #e8e8e8
+}
+
 div#utility-football {
-  background-color: rgb(95, 160, 111);
+  background-color: var(--background-color);
   min-height: 100px;
+  padding: 10px;
+}
+.text_Color_Grey_Bold{
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.text_Color_Grey_Lighter{
+  font-weight: lighter;
+  color: var(--primary-color);
+}
+.text_normal{
+  color: var(--second-color);
+}
+#utility-football .utility-football-table{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--second-line);
+  background-color: var(--background-color);
+}
+.utility-football-header{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+.utility-football-header .utility-football-title:hover{
+  opacity: .6;
+}
+.utility-football-header .utility-football-title{
+  border-bottom: 3px solid var(--second-line);
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color);
+  flex-basis: 33.33333333%;
+  cursor: pointer;
+}
+.utility-football-header .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 15px;
+  background-color: var(--primary-line);
+  transition: all 0.2s ease;
+}
+
+.utility-football-table .utility-football-list{
+  padding: 10px;
+}
+.utility-football-list .utility-football-item{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--second-line);
+}
+.utility-football-item .football-item-info{
+  text-align: center;
+  flex-basis: 33%;
+  flex-grow: 1;
+}
+.football-item-info .logo{
+  width: 24px;
+  height: 24px;
+}
+.football-item-score{
+  font-size: 25px;
+  font-weight: 700;
+}
+.utility-football-footer {
+  margin-top: 10px;
+  padding: 0 10px 10px;
+
+}
+.utility-football-footer .utility-football-btnSeeAll {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 5px;
+  border: 1px solid var(--second-line);
 }
