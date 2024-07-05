@@ -1,6 +1,4 @@
 :root {
-  --backgroud-hotnews-item: #ffffff;
-  --backgroud-hotnews-list: white;
   --font-size-hotnews-heading: 30px;
   --font-size-hotnews-tilte: 20px;
   --font-size-hotnews-desc: 16px;
@@ -12,11 +10,17 @@
   --hotnews-radius: 8px;
 }
 
-/* Dark theme */
-[data-theme="dark"] {
+[data-theme="light"] {
   --background-hotnews-list: black;
   --backgroud-hotnews-item: #f0f0f0;
   --text-color-hotnews-heading: white;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --text-color-hotnews-heading: rgb(30, 30, 30);
+  --backgroud-hotnews-item: #ffffff;
+  --backgroud-hotnews-list: white;
 }
 
 /* reset css */
