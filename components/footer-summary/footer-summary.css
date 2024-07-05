@@ -1,4 +1,34 @@
 div#footer-summary {
-  background-color: rgb(187, 255, 0);
+  background: #1e272e;
   min-height: 100px;
+  max-width: 300px;
+  padding: 20px;
+  color: white;
+}
+
+div#footer-summary figure {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+
+div#footer-summary figure img {
+  width: 30%;
+  height: auto;
+  transition: all 0.3s linear;
+}
+
+div#footer-summary figure img:hover {
+  transform: scale(1.2);
+}
+
+div#footer-summary figure figcaption {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div#footer-summary p {
+  font-size: 14px;
 }
