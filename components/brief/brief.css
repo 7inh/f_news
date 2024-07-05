@@ -1,4 +1,110 @@
+:root {
+  --backgroud-hotnews-item: #ffffff;
+  --backgroud-hotnews-list: white;
+  --font-size-hotnews-heading: 30px;
+  --font-size-hotnews-tilte: 20px;
+  --font-size-hotnews-desc: 16px;
+  --font-size-hotnews-linkTo: 12px;
+  --text-color-hotnews-heading: rgb(30, 30, 30);
+  --text-color-hotnews-title: rgb(40, 40, 40);
+  --hotnews-padding: 10px;
+  --hotnews-margin: 10px;
+  --hotnews-radius: 8px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-hotnews-list: black;
+  --backgroud-hotnews-item: #f0f0f0;
+  --text-color-hotnews-heading: white;
+}
+
+/* reset css */
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Brief */
 div#brief {
   grid-area: brief;
-  background-color: brown;
+  background-color: var(--background-hotnews-list);
+  border-radius: var(--hotnews-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brief-heading {
+  margin-top: var(--hotnews-margin);
+  text-align: center;
+  color: var(--text-color-hotnews-heading);
+  font-size: var(--font-size-hotnews-heading);
+  font-weight: 600;
+}
+
+.brief-list {
+  padding: var(--hotnews-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hotnews-padding);
+  max-height: 66.5vh;
+  overflow: auto;
+}
+
+.brief-item {
+  padding: var(--hotnews-padding);
+  border-radius: var(--hotnews-radius);
+  background-color: var(--backgroud-hotnews-item);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.brief-item-title {
+  cursor: pointer;
+  font-size: var(--font-size-hotnews-tilte);
+  margin: var(--hotnews-margin) 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.brief-item-link {
+  color: var(--text-color-hotnews-title);
+}
+
+.brief-item-desc {
+  margin: 0 var(--hotnews-margin);
+  font-size: var(--font-size-hotnews-desc);
+  font-style: italic;
+  line-height: 20px;
+  color: var(--text-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.brief-item-linkTo {
+  padding-top: var(--hotnews-padding);
+  margin-left: 75%;
+  display: block;
+  font-size: var(--font-size-hotnews-linkTo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: rgb(50, 50, 255);
 }
