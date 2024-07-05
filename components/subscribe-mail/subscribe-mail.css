@@ -21,7 +21,8 @@ div#subscribe-mail form{
 
 /* CSS INPUT */
 input[type="email"]{
-  border: none;
+  border: 1px solid black;
+  padding: 0px 10px;
 }
 
 /* CSS BUTTON */
