@@ -1,31 +1,31 @@
-
 :root {
   --background-color: white;
   --background-social-media-color: white;
   --text-color: black;
   --text-social-media-color: black;
-  --theme: light; 
-  --padding-size-md:12px;
-  --icon-height-md:16px;
-  --icon-width-md:16px;
-  --text-size-md:15px
+  --theme: light;
+  --padding-size-md: 12px;
+  --icon-height-md: 16px;
+  --icon-width-md: 16px;
+  --text-size-md: 15px;
 }
 
 [data-theme="dark"] {
   --background-color: black;
-  --background-social-media-color:black;
+  --background-social-media-color: black;
   --text-color: white;
   --text-social-media-color: white;
   --theme: dark;
-  --padding-size-md:12px;
-  --icon-height-md:16px;
-  --icon-width-md:16px;
-  --text-size-md:15px
+  --padding-size-md: 12px;
+  --icon-height-md: 16px;
+  --icon-width-md: 16px;
+  --text-size-md: 15px;
 }
+
 div#footer-social-media {
   background-color: var(--background-social-media-color);
   color: var(--text-social-media-color);
-  padding-right: var( --padding-size-md) ;
+  padding-right: var(--padding-size-md);
 }
 
 div#footer-social-media {
@@ -53,7 +53,7 @@ div#footer-social-media {
   width: var(--icon-width-md);
   height: var(--icon-height-md);
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
-  background-color:var(--text-social-media-color);
+  background-color: var(--text-social-media-color);
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
@@ -116,9 +116,9 @@ div#footer-social-media {
   opacity: 1;
 }
 
-.text_tag_a{
+.text_tag_a {
   text-decoration: none;
   margin-left: 3px;
   color: var(--text-social-media-color);
-  font-size: var(--text-size-md)
+  font-size: var(--text-size-md);
 }
