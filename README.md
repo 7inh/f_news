@@ -154,5 +154,5 @@ Color palette:
 - The social media icons should be displayed in a column format
 
 22. **Copy right**
-
+- Anh Linh da lam
 - Create a copy right section that displays the copy right information and other legal information
