@@ -5,6 +5,7 @@ div#expand-nav-icon {
   --white-color: white;
   --text-color: black;
   --font-size: 16px;
+  --blue-color: #6d6dd4;
 }
 
 /* ====> */
@@ -23,10 +24,13 @@ div#expand-nav-icon {
   margin: 5px;
 }
 .expand-nav {
+  background-color: var(--white-color);
   position: fixed;
   top: 0;
-  right: 100px;
-  left: 100px;
+  width: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .list-item {
   /* visibility: hidden;   */
@@ -45,8 +49,7 @@ div#expand-nav-icon {
 }
 
 .link-item a:hover {
-  color: #6d6dd4;
-  margin-bottom: 20px;
+  color: var(--blue-color);
 }
 
 .item a {
