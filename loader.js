@@ -14,53 +14,54 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   }
 
-    function loadScript(component) {
-        fetch(`components/${component}/${component}.js`)
-            .then((response) => {
-                if (!response.ok) {
-                    return 404
-                }
-                return response.text();
-            })
-            .then((js) => {
-                if (!js || js === 404) {
-                    return
-                }
-                const script = document.createElement("script");
-                script.text = js;
-                document.body?.appendChild(script);
-            })
-            .catch((error) => {
-            });
-    }
+  function loadScript(component) {
+    fetch(`components/${component}/${component}.js`)
+      .then((response) => {
+        if (!response.ok) {
+          return 404
+        }
+        return response.text();
+      })
+      .then((js) => {
+        if (!js || js === 404) {
+          return
+        }
+        const script = document.createElement("script");
+        script.text = js;
+        document.body?.appendChild(script);
+      })
+      .catch((error) => {
+      });
+  }
 
-    [
-      'logo',
-      'search-bar',
-      'profile-icon',
-      'nav',
-      'expand-nav-icon',
-      'spotlight',
-      'brief',
-      'trending',
-      'word-run',
-      'word-cloud',
-      'list-news-column',
-      'list-news-block',
-      'utility-lottery',
-      'utility-weather',
-      'utility-football',
-      'short-video',
-      'footer-summary',
-      'footer-link',
-      'subscribe-mail',
-      'footer-contact',
-      'footer-social-media',
-      'copyright',
-    ].forEach((component) => {
-      loadComponent(component);
-      try {
-        loadScript(component);
-      } catch (e) {}
-    });
+  [
+    'logo',
+    'search-bar',
+    'profile-icon',
+    'nav',
+    'expand-nav-icon',
+    'spotlight',
+    'brief',
+    'trending',
+    'word-run',
+    'word-cloud',
+    'list-news-column',
+    'list-news-block',
+    'utility-lottery',
+    'utility-weather',
+    'utility-football',
+    'short-video',
+    'footer-summary',
+    'footer-link',
+    'subscribe-mail',
+    'footer-contact',
+    'footer-social-media',
+    'copyright',
+    "theme-toggle",
+  ].forEach((component) => {
+    loadComponent(component);
+    try {
+      loadScript(component);
+    } catch (e) { }
+  });
 });
