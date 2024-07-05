@@ -15,14 +15,14 @@ div#subscribe-mail {
 div#subscribe-mail form{
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 4px;
   width: 100%;
 }
 
 /* CSS INPUT */
 input[type="email"]{
   border: 1px solid black;
-  padding: 0px 10px;
+  padding: 0px 12px;
 }
 
 /* CSS BUTTON */
@@ -30,7 +30,7 @@ input[type="email"]{
   background-color: var(--primary-color);
   color: var(--color);
   border: none;
-  padding: 15px 32px;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
 }
