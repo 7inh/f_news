@@ -1,20 +1,22 @@
+
 [data-theme="dark"] {
   --primary-color: white;
-  /* --background-color: rgb(0, 255, 64); */
+  --background-color: black;
 }
 
 [data-theme="light"] {
-  --primary-color: rgb(0, 255, 64);
-  /* --background-color: white; */
+  --primary-color: black;
+  --background-color: white;
 }
 
 
 .video-wrap {
-  display: flex;
-  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .video-item{
+  height: 50vh;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -28,8 +30,66 @@
   color: var(--primary-color);
 }
 
-video {
+video{
   display: block;
   height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+
+.video-chat{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 50vh;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.video-chat h1{
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.video-chat input{
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box-comment{
+  flex-grow: 1;
+  overflow: auto;
+  background-color: var(--background-color);
+}
+
+.comment-items {
+  border-top: 1px solid var(--primary-color);
+  height: 40px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+.comment-items span{
+  margin-left: 20px;
+  font-size: 38px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+.comment-items p{
+  margin: 0;
+}
+
+.comment-items p:first-of-type{
+  font-weight: 600;
 }
