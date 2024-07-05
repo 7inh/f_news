@@ -2,12 +2,15 @@
   --primary-color: #f44336;
   --text-color: #000000;
   --secondary-color: #ffffff;
+  --medium-padding: 20px;
+  --font-size-logo: 30px;
 }
 div#footer-summary {
   min-height: 100px;
   max-width: 300px;
-  padding: 20px;
-  color: var(--secondary-color);
+  padding: var(--medium-padding);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
 div#footer-summary figure {
@@ -19,7 +22,7 @@ div#footer-summary figure {
 
 div#footer-summary figure img {
   width: 30%;
-height: auto;
+  height: auto;
   transition: all 0.3s linear;
 }
 
@@ -29,7 +32,7 @@ div#footer-summary figure img:hover {
 
 div#footer-summary figure figcaption {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
+  font-size: var(--font-size-logo);
   font-weight: bold;
 }
 
@@ -43,10 +46,12 @@ div#footer-summary p {
   font-size: 14px;
 }
 
-[data-theme="light"] div#footer-summary {
-  color: var(--text-color);
+[data-theme="light"] {
+  --text-color: #000000;
+  --secondary-color: #ffffff
 }
 
-[data-theme="dark"] div#footer-summary {
-  background-color: var(--text-color);
+[data-theme="dark"]  {
+  --text-color: #ffffff;
+  --secondary-color: #000000
 }
