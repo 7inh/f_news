@@ -1,4 +1,124 @@
+
+:root {
+  --background-color: white;
+  --background-social-media-color: white;
+  --text-color: black;
+  --text-social-media-color: black;
+  --theme: light; 
+  --padding-size-md:12px;
+  --icon-height-md:16px;
+  --icon-width-md:16px;
+  --text-size-md:15px
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --background-social-media-color:black;
+  --text-color: white;
+  --text-social-media-color: white;
+  --theme: dark;
+  --padding-size-md:12px;
+  --icon-height-md:16px;
+  --icon-width-md:16px;
+  --text-size-md:15px
+}
 div#footer-social-media {
-  background-color: rgb(22, 144, 116);
+  background-color: var(--background-social-media-color);
+  color: var(--text-social-media-color);
+  padding-right: var( --padding-size-md) ;
+}
+
+div#footer-social-media {
   min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ic--baseline-facebook {
+  display: inline-block;
+  width: var(--icon-width-md);
+  height: var(--icon-height-md);
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95'/%3E%3C/svg%3E");
+  background-color: var(--text-social-media-color);
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.mdi--instagram {
+  display: inline-block;
+  width: var(--icon-width-md);
+  height: var(--icon-height-md);
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
+  background-color:var(--text-social-media-color);
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.uil--linkedin {
+  display: inline-block;
+  width: var(--icon-width-md);
+  height: var(--icon-height-md);
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z'/%3E%3C/svg%3E");
+  background-color: var(--text-social-media-color);
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.div_gr_icon {
+  display: flex;
+  align-items: center;
+  margin: 0 5px 5px 5px;
+  position: relative;
+}
+
+.div_gr_icon .tooltiptext {
+  visibility: hidden;
+  background-color: #bab4b4;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 20%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 10px;
+}
+
+.div_gr_icon .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ded3d3 transparent transparent transparent;
+}
+
+.div_gr_icon:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text_tag_a{
+  text-decoration: none;
+  margin-left: 3px;
+  color: var(--text-social-media-color);
+  font-size: var(--text-size-md)
 }
