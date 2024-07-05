@@ -19,7 +19,6 @@
   justify-content: center;
   width: 100%;
   position: relative;
-  /* margin: 20px 10px 20px 10px ; */
 }
 
 .video-item p{
@@ -27,10 +26,6 @@
   font-size: 40px;
   font-weight: 500;
   color: var(--primary-color);
-  /* top: 0; */
-  /* right: 0; */
-  /* left: 50%; */
-  /* bottom: 0; */
 }
 
 video {
