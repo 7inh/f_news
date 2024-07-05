@@ -3,11 +3,7 @@
   --login-btn-hover-color: grey;
   --text-color: #fff;
   --font-size: 14px;
-}
-
-[data-theme="dark"] {
-  --white-color: #fff;
-  --background-color: black;
+  --primary-padding: 0 10px;
 }
 
 div#profile-icon {
@@ -16,17 +12,17 @@ div#profile-icon {
 }
 
 .profile-container {
+  padding: var(--primary-padding);
   display: flex;
   align-items: center;
   gap: 10px;
   display: none;
-  color: var(--white-color);
+  color: var(--text-color);
 }
 
 .profile-container img {
   width: 24px;
   height: 24px;
-  background-color: var(--white-color);
 }
 
 #login-btn {
@@ -37,7 +33,7 @@ div#profile-icon {
   border: none;
   color: var(--text-color);
   font-size: var(--font-size);
-  padding: 0 20px;
+  padding: var(--primary-padding);
 }
 
 #login-btn:focus :is(img, p){
