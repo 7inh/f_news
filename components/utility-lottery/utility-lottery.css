@@ -1,4 +1,75 @@
+:root {
+  --primary-color: #000;
+  --backgroud-color: #fff;
+  --border-color: lightgray;
+  --font-color: red;
+}
+
 div#utility-lottery {
-  background-color: rgb(129, 160, 95);
+  /* background-color: rgb(129, 160, 95); */
+  background-color: var(--backgroud-color);
   min-height: 100px;
+}
+
+.title {
+  background-color: #fff3be;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.title p {
+  margin: 0;
+  padding: 20px 0;
+  color: var(--font-color);
+}
+
+.title strong {
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.tbl-header {
+  color: var(--font-color);
+}
+
+.tbl-header span {
+  color: var(--primary-color);
+}
+
+.tbl-body {
+  text-align: center;
+  font-size: 18px;
+}
+
+.tbl-body td:not(.row-title) {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.tbl-body :is(tr:nth-of-type(1), tr:nth-last-of-type(1)) > td:not(.row-title) {
+  color: var(--font-color);
+}
+
+.tbl-body td:nth-of-type(1) {
+  width: 70px;
+}
+
+.tbl-body tr:nth-child(even):not(.not-color) {
+  background-color: #f3f3f3;
+}
+
+.tbl-body tr.rowspanned {
+  background-color: #f3f3f3;
 }
