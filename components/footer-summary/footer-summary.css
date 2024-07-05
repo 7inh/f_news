@@ -1,9 +1,12 @@
+:root{
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
 div#footer-summary {
-  background: #1e272e;
   min-height: 100px;
   max-width: 300px;
   padding: 20px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 div#footer-summary figure {
@@ -14,8 +17,8 @@ div#footer-summary figure {
 }
 
 div#footer-summary figure img {
-  width: 30%;
-  height: auto;
+  width: 24px;
+  height: 24px;
   transition: all 0.3s linear;
 }
 
@@ -31,4 +34,12 @@ div#footer-summary figure figcaption {
 
 div#footer-summary p {
   font-size: 14px;
+}
+
+[data-theme="light"] div#footer-summary {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] div#footer-summary {
+  background-color: var(--primary-color);
 }
