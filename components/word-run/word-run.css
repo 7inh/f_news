@@ -1,22 +1,23 @@
 :root{
-  --font-family:Arial, sans-serif;
-  --background-color: rgb(129, 160, 95);
-  --color:#fff;
+
+  --font-family-quy:Arial, sans-serif;
+  --background-color-quy: rgb(129, 160, 95);
+  --color-quy:#fff;
 }
 
 [data-theme="dark"] {
-  --background-color: black;
-  --color: rgb(106, 185, 130);
+  --background-color-quy: black;
+  --color-quy: rgb(106, 185, 130);
   --theme: dark;
 }
 
 div#word-run {
   grid-area: word-run;
-  background-color: var(--background-color);
+  background-color: var(--background-color-quy);
   min-height: 100px;
 }
 #word-run {
-  font-family: var(--font-family);
+  font-family: var(--font-family-quy);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -26,7 +27,7 @@ div#word-run {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  color: var(--color);
+  color: var(--color-quy);
   width: 100%;
   display: flex;
   align-items: center;
