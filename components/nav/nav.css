@@ -1,8 +1,20 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+  --theme: light;
+}
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+  --theme: dark;
+}
+
 #nav{
   max-width: 100vw;
 }
 nav {
-  background-color: #333;
+  background-color: var(--background-color);
+  /* background-color: #333; */
   height: 80px;
   width: 100%;
   display: flex;
@@ -22,10 +34,7 @@ nav {
 
 }
 
-.logo {
-  color: #fff;
-  font-size: 30px;
-}
+
 
 .nav-links {
   display: flex;
@@ -37,7 +46,8 @@ nav {
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--text-color);
+  /* color: #fff; */
   text-decoration: none;
   font-size: 13px;
   padding: 10px;
@@ -92,9 +102,8 @@ nav {
   /* Customize the scrollbar for Firefox */
   nav {
     scrollbar-width: thin;
-    scrollbar-color: #323030 #ddcccc;
+    scrollbar-color: var(--text-color) var(--background-color);
     scroll-behavior:smooth;
-    -webkit-scrollbar-track: #bd1818;
   }
 }
  
