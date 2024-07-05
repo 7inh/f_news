@@ -11,14 +11,13 @@ div#logo {
 }
 
 [data-theme="dark"] #logo {
-  grid-area: logo;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 5px 5px 10px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  --background-color: white;
+  --text-color: rgb(53, 53, 53)
+}
+
+[data-theme="light"] #logo {
+  --background-color: rgb(53, 53, 53);
+  --text-color: white
 }
 
 #logo-img {
@@ -45,6 +44,7 @@ div#logo {
   border: none;
   cursor: pointer;
   transition: all 150ms ease;
+  border-radius: 5px;
 }
 
 .box-weather select option {
