@@ -1,6 +1,18 @@
+:root {
+  --login-btn-color: rgb(63, 90, 182); 
+  --login-btn-hover-color: grey;
+  --text-color: #fff;
+  --font-size: 14px;
+}
+
+[data-theme="dark"] {
+  --white-color: #fff;
+  --background-color: black;
+}
+
 div#profile-icon {
   grid-area: profile-icon;
-  background-color: #d46d6d;
+  background-color: var(--background-color);
 }
 
 .profile-container {
@@ -8,21 +20,23 @@ div#profile-icon {
   align-items: center;
   gap: 10px;
   display: none;
+  color: var(--white-color);
 }
 
 .profile-container img {
   width: 24px;
   height: 24px;
+  background-color: var(--white-color);
 }
 
 #login-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: rgb(63, 90, 182);
+  background-color: var(--login-btn-color);
   border: none;
-  color: #fff;
-  font-size: 14px;
+  color: var(--text-color);
+  font-size: var(--font-size);
   padding: 0 20px;
 }
 
@@ -36,7 +50,7 @@ div#profile-icon {
 
 #login-btn:hover {
   cursor: pointer;
-  background-color: grey;
+  background-color: var(--login-btn-hover-color);
 }
 
 #login-btn img {
