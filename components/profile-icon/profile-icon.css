@@ -1,4 +1,55 @@
+:root {
+  --login-btn-color: rgb(63, 90, 182); 
+  --login-btn-hover-color: grey;
+  --text-color: #fff;
+  --font-size: 14px;
+  --primary-padding: 0 10px;
+}
+
 div#profile-icon {
   grid-area: profile-icon;
-  background-color: #d46d6d;
+  background-color: var(--background-color);
+}
+
+.profile-container {
+  padding: var(--primary-padding);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: none;
+  color: var(--text-color);
+}
+
+.profile-container img {
+  width: 24px;
+  height: 24px;
+}
+
+#login-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--login-btn-color);
+  border: none;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  padding: var(--primary-padding);
+}
+
+#login-btn:focus :is(f-icon, p){
+  display: none;
+}
+
+#login-btn:focus + .profile-container {
+  display: flex;
+}
+
+#login-btn:hover {
+  cursor: pointer;
+  background-color: var(--login-btn-hover-color);
+}
+
+#login-btn img {
+  width: 24px;
+  height: 24px;
 }
