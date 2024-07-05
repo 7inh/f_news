@@ -1,35 +1,35 @@
 :root{
-  --whitegrey: #f1f1f1;
   --blackmedium: #b4b4b4;
-  --blackmax: #828282;
-  --text-color-itemnews: rgb(36, 36, 36);
-  --background-color-itemnew:#e8e8e8;
-  --item-background-color:#ffffff;
-  --height: 150px;
+  --height-item-news: 150px;
   --item-news-h: 60px;
   --item-margin: 4px;
   --item-margin-bottom: 8px;
-}
-
-/* Dark theme */
-[data-theme="dark"] {
   --item-background-color:#292828;
   --blackmax: #dad8d8;
   --background-color-itemnew: rgb(27, 27, 27);
   --text-color-itemnews: rgb(231, 231, 231);
   --whitegrey:var(--blackmax)
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --item-background-color:#ffffff;
+  --blackmax: #828282;
+  --background-color-itemnew:#e8e8e8;
+  --text-color-itemnews: rgb(36, 36, 36);
+  --whitegrey: #f1f1f1;
   --theme: dark;
 }
 
 div#list-news-column {
-  min-height: var(--height);
+  min-height: var(--height-item-news);
 }
 
 #list-news-column {
   background-color: var(--background-color-itemnew);
   color: var(--text-color-itemnews);
   overflow-y: auto;
-  height: var(--height);
+  height: var(--height-item-news);
 }
 #list-news-column::-webkit-scrollbar{
   background: var(--whitegrey);
