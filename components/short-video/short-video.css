@@ -1,4 +1,9 @@
-div#short-video {
-  background-color: #d63b3b;
-  min-height: 600px;
+.video-wrap {
+  display: flex;
+}
+
+video {
+  display: block;
+  height: 100%;
+  width: 33.3%;
 }
