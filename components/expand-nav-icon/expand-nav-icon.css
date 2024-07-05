@@ -1,3 +1,59 @@
 div#expand-nav-icon {
   background-color: #6d6dd4;
 }
+:root {
+  --white-color: white;
+  --text-color: black;
+  --font-size: 16px;
+  --blue-color: #6d6dd4;
+}
+
+/* ====> */
+[data-theme="dark"] {
+  --text-color: white;
+}
+
+.hamburger {
+  /* display: none; */
+  cursor: pointer;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: var(--white-color);
+  margin: 5px;
+}
+.expand-nav {
+  background-color: var(--white-color);
+  position: fixed;
+  top: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.list-item {
+  /* visibility: hidden;   */
+  height: 100vh;
+  display: grid;
+  background-color: var(--background-color);
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+}
+.link-item {
+  padding: 10px;
+}
+.link-item a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.link-item a:hover {
+  color: var(--blue-color);
+}
+
+.item a {
+  font-size: var(--font-size);
+  line-height: 1.5;
+  text-transform: capitalize;
+}
