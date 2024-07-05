@@ -31,6 +31,10 @@ div#expand-nav-icon {
   left: 0;
   right: 0;
   z-index: 1;
+  display: none;
+}
+#expand-nav-icon:has(input:checked) .expand-nav {
+  display: block;
 }
 .list-item {
   /* visibility: hidden;   */
@@ -56,4 +60,25 @@ div#expand-nav-icon {
   font-size: var(--font-size);
   line-height: 1.5;
   text-transform: capitalize;
+}
+
+#expand-nav-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+#expand-nav-toggle .hamburger {
+  position: relative;
+  z-index: 0;
+}
+
+#expand-nav-toggle-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
 }
