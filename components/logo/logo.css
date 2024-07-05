@@ -1,4 +1,86 @@
+/* Logo styles */
 div#logo {
   grid-area: logo;
-  background-color: rgb(181, 199, 22);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0 5px 10px;
+}
+
+#logo-img {
+  padding: 25px;
+  background-image: url(/assets/logo/news.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Weather box styles */
+.box-weather {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 12px;
+}
+
+.temperature_section > * {
+  margin: auto 0;
+}
+
+.box-weather select {
+  font-size: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.box-weather select option {
+  padding: 5px 10px;
+  border: none;
+  color: #223254;
+}
+
+.temperature_section {
+  display: flex;
+  justify-content: center;
+}
+
+.box-weather select:required:invalid {
+  color: #5A667F;
+}
+
+.box-weather select svg {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 3px);
+  width: 10px;
+  height: 6px;
+  stroke-width: 2px;
+  stroke: #9098A9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  #logo-img {
+    padding: 20px;
+    background-image: url(/assets/logo/news_256.png);
+  }
+}
+
+@media (max-width: 750px) {
+  #logo-img {
+    padding: 15px;
+    background-image: url(/assets/logo/news_128.png);
+  }
+}
+
+@media (max-width: 550px) {
+  .box-weather #provinceSelected {
+    display: none;
+  }
 }
