@@ -2,3 +2,44 @@ div#profile-icon {
   grid-area: profile-icon;
   background-color: #d46d6d;
 }
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: none;
+}
+
+.profile-container img {
+  width: 24px;
+  height: 24px;
+}
+
+#login-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(63, 90, 182);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+#login-btn:focus :is(img, p){
+  display: none;
+}
+
+#login-btn:focus + .profile-container {
+  display: flex;
+}
+
+#login-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+#login-btn img {
+  width: 24px;
+  height: 24px;
+}
