@@ -5,7 +5,7 @@ div#logo {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 0 5px 10px;
+  padding: 5px 5px 5px 10px;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -16,7 +16,7 @@ div#logo {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 0 5px 10px;
+  padding: 5px 5px 5px 10px;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -32,7 +32,7 @@ div#logo {
 .box-weather {
   display: flex;
   flex-direction: column-reverse;
-  font-size: 12px;
+  font-size: calc(var(--font-size-caption) - 2px);
 }
 
 .temperature_section>* {
@@ -40,7 +40,7 @@ div#logo {
 }
 
 .box-weather select {
-  font-size: 12px;
+  font-size: calc(var(--font-size-caption) - 2px);
   outline: none;
   border: none;
   cursor: pointer;
