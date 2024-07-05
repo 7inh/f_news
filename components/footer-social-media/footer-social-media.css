@@ -8,6 +8,13 @@
   --icon-height-md: 16px;
   --icon-width-md: 16px;
   --text-size-md: 15px;
+  --text-size-sm: 10px;
+  --min-height-screen: 100px;
+  --padding-small: 8px;
+  --margin-md: 8px;
+  --margin-sm: 4px;
+  --border-radius-sm: 5px;
+  --margin-l: 60px;
 }
 
 [data-theme="dark"] {
@@ -20,6 +27,13 @@
   --icon-height-md: 16px;
   --icon-width-md: 16px;
   --text-size-md: 15px;
+  --text-size-sm: 10px;
+  --min-height-screen: 100px;
+  --padding-small: 8px;
+  --margin-md: 8px;
+  --margin-sm: 4px;
+  --border-radius-sm: 5px;
+  --margin-l: 60px;
 }
 
 div#footer-social-media {
@@ -29,7 +43,7 @@ div#footer-social-media {
 }
 
 div#footer-social-media {
-  min-height: 100px;
+  min-height: var(--min-height-screen);
   display: flex;
   flex-direction: column;
 }
@@ -37,25 +51,24 @@ div#footer-social-media {
 .div_gr_icon {
   display: flex;
   align-items: center;
-  margin: 0 5px 5px 5px;
+  margin: 0 var(--padding-size-md) var(--padding-size-md) var(--padding-size-md);
   position: relative;
 }
 
 .div_gr_icon .tooltiptext {
   visibility: hidden;
+  position: absolute;
   background-color: #bab4b4;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-size-md) 0;
   z-index: 1;
   bottom: 110%;
-  left: 20%;
-  margin-left: -60px;
+  right: 25%;
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 10px;
+  font-size: var(--text-size-sm);
 }
 
 .div_gr_icon .tooltiptext::after {
@@ -63,8 +76,7 @@ div#footer-social-media {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  border-width: var(--border-radius-sm);
   border-style: solid;
   border-color: #ded3d3 transparent transparent transparent;
 }
@@ -76,7 +88,7 @@ div#footer-social-media {
 
 .text_tag_a {
   text-decoration: none;
-  margin-left: 3px;
+  margin-left: var(--margin-sm);
   color: var(--text-social-media-color);
   font-size: var(--text-size-md);
 }
