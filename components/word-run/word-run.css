@@ -1,10 +1,22 @@
+:root{
+  --font-family:Arial, sans-serif;
+  --background-color: rgb(129, 160, 95);
+  --color:#fff;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --color: rgb(106, 185, 130);
+  --theme: dark;
+}
+
 div#word-run {
   grid-area: word-run;
-  background-color: rgb(129, 160, 95);
+  background-color: var(--background-color);
   min-height: 100px;
 }
 #word-run {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -14,7 +26,7 @@ div#word-run {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  color: #fff;
+  color: var(--color);
   width: 100%;
   display: flex;
   align-items: center;
