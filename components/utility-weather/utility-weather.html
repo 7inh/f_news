@@ -1,2 +1,64 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  rel="stylesheet"
+/>
 <link rel="stylesheet" href="/components/utility-weather/utility-weather.css" />
-<div id="utility-weather">utility-weather</div>
+<div id="utility-weather">
+  <div class="utility__weather-content">
+    <section class="weather__content-information">
+      <div class="content__information-parameters">
+        <div class="content__information-parameters--icon">
+          <img src="/assets/utility-weather-image/PartlyCloudy.svg" alt="" />
+        </div>
+
+        <div class="content__information-parameters--temperature">
+          <div class="value">28</div>
+
+          <ul class="type__list">
+            <li class="type__list-item active">
+              <span class="icon material-symbols--circle-outline"></span>
+              <span class="type__value"> C </span>
+            </li>
+
+            <li class="type__list-item">
+              <span class="material-symbols--circle-outline"></span>
+              <span class="type__value"> F </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content__information-parameters--details">
+          <div>Khả năng có mưa: <span class="value">17%</span></div>
+          <div>Độ ẩm: <span class="value">83%</span></div>
+          <div>Gió: <span>16</span><span class="unit">km/h</span></div>
+        </div>
+      </div>
+
+      <div class="content__information-describe">
+        <div class="information__describe-title">Thời tiết</div>
+
+        <div class="information__describe-datetime">
+          <span class="time"> 11:00 </span>
+
+          <span class="day">Thứ sáu</span>
+        </div>
+
+        <div class="information__describe-status">Nhiều mây</div>
+      </div>
+    </section>
+
+    <section class="weather__content-chart">
+      <div class="content__chart-tab">
+        <div class="tab__item active">Nhiệt độ</div>
+        <div class="tab__item">Lượng mưa</div>
+        <div class="tab__item">Gió</div>
+      </div>
+
+      <div class="content__chart-view">
+
+      </div>
+    </section>
+  </div>
+</div>
