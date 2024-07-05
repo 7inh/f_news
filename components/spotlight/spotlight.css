@@ -1,8 +1,13 @@
+[dark-theme="dark"]{
+  --color: white;
+}
+
 div#spotlight {
   grid-area: spotlight;
-  background-color: #d46d6d;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
   min-height: 700px;
-  background-color: white;
 }
 
 #container{
@@ -11,6 +16,7 @@ div#spotlight {
 }
 
 .image > img{
+  box-shadow: rgb(249, 250, 251) 0px 20px 30px -10px;
   cursor: pointer;
   width: 80vh;
   height: 60vh;
@@ -18,7 +24,7 @@ div#spotlight {
 }
 .content{
  flex-grow: 3;
- background-color: aliceblue;
+ background-color: var(--dark-theme);
 }
 
 .content>p{
@@ -53,6 +59,7 @@ div#spotlight {
   grid-template-rows: auto auto auto;
 }
 .image-2>img{
+  box-shadow: rgb(231, 232, 233) 0px 20px 30px -10px;
   grid-row: 1;
   margin-left: 10px;
   border-radius: 10px;
@@ -60,7 +67,8 @@ div#spotlight {
   width: 80%;
 }
 .text{
-display: -webkit-box;
+
+  display: -webkit-box;
   -webkit-line-clamp: 3; /* Number of lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
