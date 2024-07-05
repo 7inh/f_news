@@ -13,21 +13,22 @@
 }
 
 div#search-bar {
+   margin: 0;
+   padding: 0;
    grid-area: search-bar;
    border: 1px solid var(--search-primary-color);
    overflow: hidden;
-   border-radius: 20px;
    box-sizing: border-box;
    height: 40px;
-   background-color: var(--bg-color-dropdown);
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.search-form {
+form.search-form {
    height: 100%;
    width: 100%;
 }
 
-.search-form input {
+form.search-form input#search-input {
    width: calc(100% - 70px);
    height: 100%;
    outline: 0;
@@ -38,32 +39,28 @@ div#search-bar {
    padding-left: 20px;
    background-color: var(--search-bg-color);
 }
-.search-form input:focus ~ .drop-down {
+form.search-form input:focus ~ .drop-down {
    display: flex;
 }
-.search-form input ~ .drop-down {
+form.search-form input ~ .drop-down {
    display: none;
 }
-.search-form input::placeholder {
+form.search-form input::placeholder {
    color: var(--search-primary-color);
 }
-.search-form input:focus {
+form.search-form input:focus {
    outline: none;
 }
-.search-form label {
+form.search-form label {
    text-align: center;
    width: 100%;
 }
 
-.search-form label svg {
+form.search-form label svg {
    align-self: center;
    height: 100%;
    height: 20px;
    width: 30px;
-}
-
-.show {
-   display: block;
 }
 
 .drop-down {
@@ -71,11 +68,12 @@ div#search-bar {
    display: flex;
    flex-direction: column;
    background-color: var(--bg-color-dropdown);
-   width: calc(100% - 105px);
+   width: 100%;
    display: none;
-   border-radius: 0 0 20px 20px;
+   opacity: 80%;
 }
 .drop-down a {
+   border-bottom: 1px solid black;
    padding: 20px;
    text-decoration: none;
    color: var(--text-color);
@@ -87,9 +85,4 @@ div#search-bar {
    background: var(--bg-color-hover);
    color: var(--text-color);
    height: 100%;
-   border-radius: 0 0 20px 20px;
-}
-
-.drop-down a:hover:last-child {
-   border-radius: 20px 20px 20px 20px;
 }
