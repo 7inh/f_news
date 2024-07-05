@@ -1,9 +1,18 @@
+:root {
+  --text-size-s: 12px;
+  --text-size-l: 14px;
+  --text-size-x: 16px;
+  --text-size-xl: 22px;
+  --text-size-xxl: 48px;
+}
+
 [data-theme='light'] {
   --gray-color: #babab6;
   --black-color: #1a2130;
   --gray-text-color: #7a7b7d;
   --yellow-border-color: #fdd663;
   --gray-background-color: #fbf7f7;
+  --test-color: #ffd500;
 }
 /* Icon */
 
@@ -83,7 +92,8 @@ div#utility-weather {
 }
 
 .content__information-parameters--temperature .value {
-  font-size: 48px;
+  /* TODO: create font-size variable and modified into css */
+  font-size: var(--text-size-xxl);
   font-weight: 500 !important;
 }
 
@@ -126,13 +136,14 @@ div#utility-weather {
 }
 
 .type__list-item .type__value {
-  font-size: 16px;
+  /* TODO: modified into font-size variable */
+  font-size: var(--text-size-x);
   font-weight: 600;
   color: var(--gray-color);
 }
 
 .content__information-parameters--details {
-  font-size: 12px;
+  font-size: var(--text-size-s);
   color: var(--gray-text-color);
 }
 
@@ -147,7 +158,7 @@ div#utility-weather {
 
 .content__information-describe .information__describe-datetime,
 .content__information-describe .information__describe-status {
-  font-size: 14px;
+  font-size: var(--text-size-l);
   font-weight: normal;
   color: var(--gray-text-color);
   text-align: right;
@@ -249,7 +260,7 @@ div#utility-weather {
 }
 
 .days__item-weekday {
-  font-size: 16px;
+  font-size: var(--text-size-x);
   font-weight: 600;
 }
 
@@ -273,7 +284,7 @@ div#utility-weather {
   justify-content: center;
   align-items: start;
   gap: 2px;
-  font-size: 12px;
+  font-size: var(--text-size-s);
 }
 
 .compere__temperature-max {
@@ -282,4 +293,17 @@ div#utility-weather {
 
 .compere__temperature-min {
   color: var(--gray-text-color);
+}
+
+/* Overwrite highChart */
+.highcharts-title {
+  display: none;
+}
+
+.highcharts-axis.highcharts-yaxis {
+  display: none;
+}
+
+.highcharts-credits {
+  display: none;
 }
