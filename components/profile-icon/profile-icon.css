@@ -36,7 +36,7 @@ div#profile-icon {
   padding: var(--primary-padding);
 }
 
-#login-btn:focus :is(img, p){
+#login-btn:focus :is(f-icon, p){
   display: none;
 }
 
