@@ -5,6 +5,10 @@ div#spotlight {
   background-color: white;
 }
 
+#container{
+  display: flex;
+  margin: 10px;
+}
 
 .image > img{
   cursor: pointer;
@@ -56,7 +60,7 @@ div#spotlight {
   width: 80%;
 }
 .text{
-  display: -webkit-box;
+display: -webkit-box;
   -webkit-line-clamp: 3; /* Number of lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -78,11 +82,3 @@ div#spotlight {
   margin-left: 5px;
 }
 
-
-@media (min-width: 800px) and (max-width: 1500px) {
-  #container{
-    display: flex;
-    margin: 10px;
-  }
-  
-}
