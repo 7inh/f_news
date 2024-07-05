@@ -1,4 +1,48 @@
+[data-theme=dark]{
+  --text-color: white;
+  --background-color: black;
+}
+
+[data-theme=light]{
+  --text-color: black;
+  --background-color: white;
+}
+
 div#footer-contact {
-  background-color: rgb(99, 144, 22);
   min-height: 100px;
+  background-color: var(--background-color);
+}
+
+.contact{
+  margin: 0;
+  color: var(--text-color);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contact-list{
+  padding: 0;
+  margin: 10px;
+}
+
+.contact-item{
+  display: flex;
+  margin: 5px 0;
+  list-style: none;
+  align-items: center;
+}
+
+.contact-name{
+  margin: 0 5px;
+  color: var(--text-color);
+}
+
+.contact-item a{
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: text;
+}
+
+.black{
+  color: var(--text-color);
 }
