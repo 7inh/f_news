@@ -12,7 +12,7 @@ Highcharts.chart('container-chart', {
     categories: ['17:00', '20:00', '23:00', '02:00', '05:00', '09:00'],
     crosshair: true,
     title: {
-      text: 'Time',
+      text: 'Thời gian',
     },
   },
   yAxis: {
