@@ -1,6 +1,7 @@
 :root {
   --theme: light;
   --primary-color: #000;
+  --font-color: #000;
   --border-color-lightgray: lightgray;
   --font-color-red: red;
   
@@ -67,7 +68,7 @@ td {
 }
 
 .tbl-header span {
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 .tbl-body {
