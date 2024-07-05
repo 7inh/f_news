@@ -1,8 +1,8 @@
 :root {
-  --background-color: white;
-  --background-social-media-color: white;
-  --text-color: black;
-  --text-social-media-color: black;
+  --background-color: black;
+  --background-social-media-color: black;
+  --text-color: white;
+  --text-social-media-color: white;
   --theme: light;
   --padding-size-md: 12px;
   --icon-height-md: 16px;
@@ -18,10 +18,10 @@
 }
 
 [data-theme="dark"] {
-  --background-color: black;
-  --background-social-media-color: black;
-  --text-color: white;
-  --text-social-media-color: white;
+  --background-color: white;
+  --background-social-media-color: white;
+  --text-color: black;
+  --text-social-media-color: black;
   --theme: dark;
   --padding-size-md: 12px;
   --icon-height-md: 16px;
@@ -65,7 +65,7 @@ div#footer-social-media {
   padding: var(--padding-size-md) 0;
   z-index: 1;
   bottom: 110%;
-  right: 25%;
+  right: 27%;
   opacity: 0;
   transition: opacity 0.3s;
   font-size: var(--text-size-sm);
