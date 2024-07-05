@@ -1,4 +1,64 @@
+:root{
+  --primary-color: #f44336;
+  --text-color: #000000;
+  --secondary-color: #ffffff;
+  --medium-padding: 20px;
+  --font-family-brand: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --font-size-logo: 30px;
+  --font-size-caption: 14px;
+  --maximum-width:300px;
+  --minimum-height: 100px;
+  --spacing-flex: 20px;
+}
+
+[data-theme="light"] {
+  --text-color: #000000;
+  --secondary-color: #ffffff
+}
+
+[data-theme="dark"]  {
+  --text-color: #ffffff;
+  --secondary-color: #000000
+}
+
 div#footer-summary {
-  background-color: rgb(187, 255, 0);
-  min-height: 100px;
+  min-height: var(--minimum-height);
+  max-width: var(--maximum-width);
+  padding: var(--medium-padding);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+div#footer-summary figure {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: var(--spacing-flex);
+}
+
+div#footer-summary figure img {
+  width: 30%;
+  height: auto;
+  transition: all 0.3s linear;
+}
+
+div#footer-summary figure img:hover {
+  transform: scale(1.2);
+}
+
+div#footer-summary figure figcaption {
+  font-family: var(--font-family-brand);
+  font-size: var(--font-size-logo);
+  font-weight: bold;
+}
+
+div#footer-summary figure figcaption:hover {
+  color: var(--primary-color);
+  transition: color 2s;
+  cursor: pointer;
+}
+
+div#footer-summary p {
+  font-size: var(--font-size-caption);
+  text-align: justify;
 }

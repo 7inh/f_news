@@ -140,7 +140,7 @@ Color palette:
 19. **Footer-contact**
 
 - Create a footer-contact section that displays a contact form
-- It should have a name, email, and message field
+- It should have a name, email field
 - It should have icon for each field
 
 20. **Subscribe mail**
