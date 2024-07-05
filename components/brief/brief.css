@@ -7,11 +7,12 @@
 
 /* Dark theme */
 [data-theme="dark"] {
-  --background-hotnews-list: rgba(30, 30, 30, 0.8);
+  --background-hotnews-list: black;
   --backgroud-hotnews-item: #f0f0f0;
   --text-color-hotnews-heading: white;
 }
 
+/* reset css */
 a {
   text-decoration: none;
 }
@@ -32,6 +33,7 @@ ul li {
   list-style-type: none;
 }
 
+/* Brief */
 div#brief {
   grid-area: brief;
   background-color: var(--background-hotnews-list);
@@ -94,7 +96,7 @@ div#brief {
   padding: 10px 0 0;
   margin-left: 75%;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
   color: rgb(50, 50, 255);
