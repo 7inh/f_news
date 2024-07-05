@@ -1,32 +1,32 @@
 <link rel="stylesheet" href="/components/search-bar/search-bar.css" />
 <div id="search-bar">
-   <form action="#product" class="search-form">
-      <input
-         id="search-input"
-         type="text"
-         onkeyup="filterFunction()"
-         placeholder="Search for news ..." />
-      <div class="drop-down">
-         <a href="#hero">Hero</a>
-         <a href="#content">Content</a>
-      </div>
-      <label for="search-input">
-         <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 14 14">
-            <rect width="14" height="14" fill="none" />
-            input
-            <path
-               fill="none"
-               stroke="currentColor"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               d="M6 11.5a5.5 5.5 0 1 0 0-11a5.5 5.5 0 0 0 0 11m7.5 2L10 10" />
-         </svg>
-      </label>
-   </form>
-</div>
+  <div id="search-bar-container">
+    <input type="text" />
+    <f-icon src="/assets/magnification-glass.svg" class="search-icon"></f-icon>
+  </div>
+  <div id="search-result">
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 1</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 2</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="/assets/magnification-glass.svg"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 3</span>
+    </div>
+  </div>
 
-<script src="./search-bar.js"></script>
+  <script src="./search-bar.js"></script>
+</div>
