@@ -16,19 +16,19 @@ document.getElementById("btn-subs").addEventListener("click", function(){
 
 const modeToggleBtn = document.getElementById('theme-toggle');
 const button = document.getElementById('btn-subs');
-let mode = 'light';
+let mode = 'dark';
 
 modeToggleBtn.addEventListener('click', () => {
   switch (mode) {
     case 'light':
       // Switch to dark mode
-      button.style.background = 'black';
+      button.style.background = 'var(--primary-color';
       button.style.color = 'white';
       mode = 'dark';
       break;
     case 'dark':
       // Switch to light mode
-      button.style.background = 'var(--primary-color)';
+      button.style.background = 'var(--secondary-color)';
       button.style.color = 'var(--color)';
       mode = 'light';
       break;
