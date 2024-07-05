@@ -1,2 +1,14 @@
+:root {
+  --text-color: #fff;
+  --background-color: #000;
+}
+
+[data-theme="dark"] {
+  --text-color: #000;
+  --background-color: #fff;
+}
+
 div#copy-right {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
