@@ -2,4 +2,87 @@ div#spotlight {
   grid-area: spotlight;
   background-color: #d46d6d;
   min-height: 700px;
+  background-color: white;
+}
+
+
+.image > img{
+  cursor: pointer;
+  width: 80vh;
+  height: 60vh;
+  /* margin-bottom: 30px; */
+}
+.content{
+ flex-grow: 3;
+ background-color: aliceblue;
+}
+
+.content>p{
+  margin: 50px 10px 20px 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content>h1{
+  cursor: pointer;
+  margin: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content>h1:hover{
+  text-decoration: underline;
+}
+
+#content-2{
+  grid-area: content-2;
+}
+
+#container-2{
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.image-2>img{
+  grid-row: 1;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%;
+}
+.text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin: 20px 20px 5px 10px;
+  grid-row: 2;
+}
+
+.text:hover{
+  text-decoration: underline;
+}
+.sub{
+  margin-left: 10px;
+  grid-row: 3;
+}
+
+.sub>span{
+  margin-left: 5px;
+}
+
+
+@media (min-width: 800px) and (max-width: 1500px) {
+  #container{
+    display: flex;
+    margin: 10px;
+  }
+  
 }
