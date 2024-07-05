@@ -1,4 +1,95 @@
+:root {
+   --search-primary-color: rgb(116, 168, 161);
+   --search-bg-color: white;
+   --text-color: black;
+   --bg-color-dropdown: white;
+   --bg-color-hover: rgb(130, 169, 163);
+}
+[data-theme="dark"] {
+   --search-primary-color: white;
+   --search-bg-color: black;
+   --bg-color-dropdown: black;
+   --text-color: white;
+}
+
 div#search-bar {
-  grid-area: search-bar;
-  background-color: #f1f1f1;
+   grid-area: search-bar;
+   border: 1px solid var(--search-primary-color);
+   overflow: hidden;
+   border-radius: 20px;
+   box-sizing: border-box;
+   height: 40px;
+   background-color: var(--bg-color-dropdown);
+}
+
+.search-form {
+   height: 100%;
+   width: 100%;
+}
+
+.search-form input {
+   width: calc(100% - 70px);
+   height: 100%;
+   outline: 0;
+   color: var(--search-primary-color);
+   font-size: 1.1em;
+   outline: none;
+   border: none;
+   padding-left: 20px;
+   background-color: var(--search-bg-color);
+}
+.search-form input:focus ~ .drop-down {
+   display: flex;
+}
+.search-form input ~ .drop-down {
+   display: none;
+}
+.search-form input::placeholder {
+   color: var(--search-primary-color);
+}
+.search-form input:focus {
+   outline: none;
+}
+.search-form label {
+   text-align: center;
+   width: 100%;
+}
+
+.search-form label svg {
+   align-self: center;
+   height: 100%;
+   height: 20px;
+   width: 30px;
+}
+
+.show {
+   display: block;
+}
+
+.drop-down {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--bg-color-dropdown);
+   width: calc(100% - 105px);
+   display: none;
+   border-radius: 0 0 20px 20px;
+}
+.drop-down a {
+   padding: 20px;
+   text-decoration: none;
+   color: var(--text-color);
+   overflow: hidden;
+}
+
+.drop-down a:hover {
+   overflow: hidden;
+   background: var(--bg-color-hover);
+   color: var(--text-color);
+   height: 100%;
+   border-radius: 0 0 20px 20px;
+}
+
+.drop-down a:hover:last-child {
+   border-radius: 20px 20px 20px 20px;
 }
