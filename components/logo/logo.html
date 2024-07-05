@@ -1,2 +1,50 @@
 <link rel="stylesheet" href="/components/logo/logo.css" />
-<div id="logo">logo</div>
+<div id="logo">
+    <div id="logo-img"></div>
+    <div class="box-weather">
+        <select id="provinceSelected" onchange="checkWeather(this.value)">
+            <option value="Ho Chi Minh" selected>Ho Chi Minh</option>
+            <option value="An Giang">An Giang</option>
+            <option value="Binh Duong">Binh Duong</option>
+            <option value="Quang Ngai">Quang Ngai</option>
+            <option value="Ha Noi">Ha Noi</option>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Da Nang">Da Nang</option>
+            <option value="Hai Phong">Hai Phong</option>
+            <option value="Can Tho">Can Tho</option>
+            <option value="Hue">Hue</option>
+            <option value="Thanh Hoa">Thanh Hoa</option>
+            <option value="Nghe An">Nghe An</option>
+            <option value="Binh Dinh">Binh Dinh</option>
+            <option value="Khanh Hoa">Khanh Hoa</option>
+            <option value="Binh Thuan">Binh Thuan</option>
+            <option value="Lam Dong">Lam Dong</option>
+            <option value="Quang Ninh">Quang Ninh</option>
+            <option value="Nam Dinh">Nam Dinh</option>
+            <option value="Thai Binh">Thai Binh</option>
+            <option value="Ninh Binh">Ninh Binh</option>
+            <option value="Hai Duong">Hai Duong</option>
+            <option value="Hung Yen">Hung Yen</option>
+            <option value="Thai Nguyen">Thai Nguyen</option>
+            <option value="Phu Tho">Phu Tho</option>
+            <option value="Bac Ninh">Bac Ninh</option>
+            <option value="Ha Nam">Ha Nam</option>
+            <option value="Hoa Binh">Hoa Binh</option>
+            <option value="Son La">Son La</option>
+            <option value="Lai Chau">Lai Chau</option>
+            <option value="Dien Bien">Dien Bien</option>
+            <option value="Lao Cai">Lao Cai</option>
+            <option value="Yen Bai">Yen Bai</option>
+            <option value="Tuyen Quang">Tuyen Quang</option>
+            <option value="Lang Son">Lang Son</option>
+            <option value="Cao Bang">Cao Bang</option>
+            <option value="Bac Giang">Bac Giang</option>
+            <option value="Bac Kan">Bac Kan</option>
+        </select>
+        <div class="temperature_section">
+            <div id="weatherTemperature">loading...</div>
+            <span class="icon" id="divWeatherImage"><img id="weather-icon" width="27px" height="22px"
+                    src="https://c.tadst.com/gfx/w/svg/wt-1.svg"></span>
+        </div>
+    </div>
+</div>
