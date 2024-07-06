@@ -1,88 +1,89 @@
 :root {
   --theme: light;
-  --primary-color: #000;
-  --font-color: #000;
-  --border-color-lightgray: lightgray;
-  --font-color-red: red;
+  --primary-color-phuong: #000;
+  --font-color-phuong: #000;
+  --border-color-lightgray-phuong: lightgray;
+  --font-color-red-phuong: red;
   
-  --background-color: #fff;
-  --background-color-f3f3f3: #f3f3f3;
-  --background-color-fff3be: #fff3be;
+  --background-color-phuong: #fff;
+  --background-color-f3f3f3-phuong: #f3f3f3;
+  --background-color-fff3be-phuong: #fff3be;
 
-  --font-size-20: 20px;
-  --font-size-16: 16px;
-  --font-size-24: 24px;
+  --font-size-20-phuong: 20px;
+  --font-size-16-phuong: 16px;
+  --font-size-24-phuong: 24px;
 
-  --padding-20: 20px;
-  --padding-10: 10px;
+  --padding-20-phuong: 20px;
+  --padding-10-phuong: 10px;
 }
 
 [data-theme="dark"] {
-  --background-color: #000;
-  --font-color: #fff;
+  --background-color-phuong: #000;
+  --background-color-f3f3f3-phuong: #000;
+  --font-color-phuong: #fff;
   --theme: dark;
 }
 
 div#utility-lottery {
   /* background-color: rgb(129, 160, 95); */
-  background-color: var(--background-color);
+  background-color: var(--background-color-phuong);
   min-height: 100px;
 }
 
 .title {
-  background-color: var(--background-color-fff3be);
+  background-color: var(--background-color-fff3be-phuong);
   text-align: center;
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-20-phuong);
   font-weight: 500;
 }
 
 .title p {
   margin: 0;
-  padding: var(--padding-20) 0;
-  color: var(--font-color-red);
+  padding: var(--padding-20-phuong);
+  color: var(--font-color-red-phuong);
 }
 
 .title strong {
-  color: var(--primary-color);
+  color: var(--primary-color-phuong);
 }
 
 table {
   width: 100%;
-  border: 1px solid var(--border-color-lightgray);
+  border: 1px solid var(--border-color-lightgray-phuong);
   border-collapse: collapse;
   margin-top: 10px;
 }
 
 td,
 th {
-  padding: var(--padding-10);
-  border: 1px solid var(--border-color-lightgray);
+  padding: var(--padding-10-phuong);
+  border: 1px solid var(--border-color-lightgray-phuong);
 }
 
 td {
-  color: var(--font-color);
+  color: var(--font-color-phuong);
 }
 
 .tbl-header {
-  color: var(--font-color-red);
+  color: var(--font-color-red-phuong);
 }
 
 .tbl-header span {
-  color: var(--font-color);
+  color: var(--font-color-phuong);
 }
 
 .tbl-body {
   text-align: center;
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-16-phuong);
 }
 
 .tbl-body td:not(.row-title) {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-24-phuong);
   font-weight: 900;
 }
 
 .tbl-body :is(tr:nth-of-type(1), tr:nth-last-of-type(1)) > td:not(.row-title) {
-  color: var(--font-color-red);
+  color: var(--font-color-red-phuong);
 }
 
 .tbl-body td:nth-of-type(1) {
@@ -90,9 +91,9 @@ td {
 }
 
 .tbl-body tr:nth-child(even):not(.not-color) {
-  background-color: var(--backgroud-color-f3f3f3);
+  background-color: var(--background-color-f3f3f3-phuong);
 }
 
 .tbl-body tr.rowspanned {
-  background-color: var(--backgroud-color-f3f3f3);
+  background-color: var(--background-color-f3f3f3-phuong);
 }
