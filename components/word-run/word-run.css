@@ -1,5 +1,4 @@
 div#word-run {
   grid-area: word-run;
   background-color: rgb(129, 160, 95);
-  min-height: 100px;
 }
