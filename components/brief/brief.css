@@ -8,19 +8,23 @@
   --hotnews-padding: 10px;
   --hotnews-margin: 10px;
   --hotnews-radius: 8px;
+  --hotnews-text-color: black;
 }
 
 [data-theme="light"] {
-  --background-hotnews-list: black;
-  --backgroud-hotnews-item: #f0f0f0;
-  --text-color-hotnews-heading: white;
+  --background-hotnews-list: rgb(255, 255, 255);
+  --backgroud-hotnews-item: #fbfbfb;
+
 }
 
 /* Dark theme */
 [data-theme="dark"] {
   --text-color-hotnews-heading: rgb(30, 30, 30);
-  --backgroud-hotnews-item: #ffffff;
-  --backgroud-hotnews-list: white;
+  --backgroud-hotnews-item: rgb(112, 112, 112);
+  --backgroud-hotnews-list: rgb(112, 112, 112);
+  --text-color-hotnews-heading: white;
+  --text-color-hotnews-title: white;
+  --hotnews-text-color: white;
 }
 
 /* reset css */
@@ -46,6 +50,7 @@ ul li {
 
 /* Brief */
 div#brief {
+  padding: var(--hotnews-padding);
   grid-area: brief;
   background-color: var(--background-hotnews-list);
   border-radius: var(--hotnews-radius);
@@ -65,7 +70,7 @@ div#brief {
   display: flex;
   flex-direction: column;
   gap: var(--hotnews-padding);
-  max-height: 66.5vh;
+
   overflow: auto;
 }
 
@@ -84,7 +89,7 @@ div#brief {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  color: var(--text-color);
+  color: var(--hotnews-text-color);
 }
 
 .brief-item-link {
@@ -96,7 +101,7 @@ div#brief {
   font-size: var(--font-size-hotnews-desc);
   font-style: italic;
   line-height: 20px;
-  color: var(--text-color);
+  color: var(--hotnews-text-color);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
