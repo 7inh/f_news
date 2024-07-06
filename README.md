@@ -48,8 +48,6 @@ Color palette:
 - When typing, show display a list of result
 - In the end of the search bar, there should be a search button with a magnifying glass icon
 
-![search](./assets/search1.jpg)
-
 3. **Profile icon**
 
 - Find a svg icon for the profile icon. Place it in the `assets` folder and link it in the profile icon component.
@@ -71,9 +69,6 @@ Color palette:
 - Create a spotlight section that displays the most important news article
 - The spotlight section should have a title, a description, and a link to the full article
 
-![spotlight](./assets/spotlight1.jpg)
-![spotlight](./assets/spotlight2.jpg)
-
 7. **Brief**
 
 - Create a brief section that displays a list of news articles
@@ -92,37 +87,25 @@ Color palette:
 
 - Create a trending section that displays a list of trending news articles
 
-![trending](./assets/trending1.jpg)
-
 11. **List-news-column**
 
 - Create a list-news-column section that displays a list of news articles in a column format
-
-![list-news-column](./assets/list-news-column1.jpg)
 
 12. **List-news-block**
 
 - Create a list-news-block section that displays a list of news articles in a block format
 
-![list-news-block](./assets/list-news-block1.jpg)
-
 13. **Utility-lottery**
 
 - Create a utility-lottery section that displays a list of lottery news articles
-
-![utility-lottery](./assets/utility-lottery1.jpg)
 
 14. **Utility-football**
 
 - Create a utility-football section that displays a list of football news articles
 
-![utility-football](./assets/utility-football1.jpg)
-
 15. **Utility-weather**
 
 - Create a utility-weather section that displays the current weather
-
-![utility-weather](./assets/utility-weather1.jpg)
 
 16. **Short-video**
 
@@ -140,7 +123,7 @@ Color palette:
 19. **Footer-contact**
 
 - Create a footer-contact section that displays a contact form
-- It should have a name, email, and message field
+- It should have a name, email field
 - It should have icon for each field
 
 20. **Subscribe mail**
@@ -156,3 +139,81 @@ Color palette:
 22. **Copy right**
 
 - Create a copy right section that displays the copy right information and other legal information
+
+## Before you start
+
+### 1. **Pull the latest code from the `rework` branch and create your branch**
+
+```bash
+git pull origin rework
+```
+
+Create a new branch. Syntax: `git checkout -b f<task-index>/<component-name>` all letters should be lowercase
+
+```bash
+git checkout -b f1/logo
+```
+
+### 2. **Start working on your component**
+
+#### Define CSS Variable for your component
+
+- Open the `.css` file
+- Remove the existing styles as background-color, min-height.
+- Add a variable for the component. **Note**: Do not create a variable existing index.css file.
+- Check `index.css` file to see if there is a variable that can be reused.
+- Properties that can be defined as variables are: font-size, font-family, font-weight, color, background-color, border-radius, padding, margin, gap, z-index.
+
+#### Convention
+
+- All class names should be lowercase and separated by a hyphen. Eg. `logo`, `search-bar`, `profile-icon`, `nav`, `expand-nav`, `spotlight`, `brief`, `word-run`, `world-cloud`, `trending`, `list-news-column`, `list-news-block`, `utility-lottery`, `utility-football`, `utility-weather`, `short-video`, `footer-summary`, `footer-link`, `footer-contact`, `subscribe-mail`, `social-media`, `copy-right`.
+- All variables should be lowercase and separated by a hyphen. The property name should have meaning. Eg. `--font-size`, `--font-family`, `--background-color-primary`, `--border-radius`, `--padding-small`, `--margin-large`, `--gap-medium`, `--z-index-medium`.
+- File names you download should have meaning. All file names should be lowercase and separated by a hyphen. Eg. `logo.svg`, `profile-icon.svg`. Do not using 'icon.svg' or 'image.svg' as file name, it has to be more specific.
+- All image, svgs files should be placed in the `assets` folder.
+- Using icon by svg file, in this project we will use f-icon tag. You can use it by `<f-icon src="assets/profile-icon.svg"></f-icon>` and add style for it in your css file.
+
+### Important
+
+- Do not add new font, color, or any other style that is not in the design.
+- Do not use any library or framework. In case you need to use a library or framework, please ask for permission.
+- Do not use change any outside of your component. In case you need to change, please ask for permission.
+- If you can not do it by css, you can use javascript to do it. But try to use css as much as possible.
+- Check the console for any errors. Make sure the code is clean and there are no errors.
+
+### 3. **When you are done, push the code to the branch**
+
+```bash
+git add .
+git commit -m "feat: logo"
+git push origin f1/logo
+```
+
+### 4. **Create a pull request**
+
+You should review your code before creating a pull request. Make sure the code is clean, formatted, and follows the conventions.
+
+- Go to the repository on Github
+- Click on the `Pull requests` tab
+- Click on the `New pull request` button
+- Select the `rework` branch as the base branch
+- Select your branch as the compare branch
+- Click on the `Create pull request` button
+- Add a title and a description to the pull request. Eg. `feat: logo`
+- In the description, add a video of the component you created. In the video, show the component in different window sizes and themes
+- Click on the `Create pull request` button
+
+### 5. **Review the pull request**
+
+- Open the slack channel "random" and ask for a review. Eg. `@reviewer please review my pull request. Here is the link: <link>`
+- Wait for the reviewer to review the pull request
+- If the reviewer has any comments, make the changes and push the code to the branch
+- If the reviewer approves the pull request, merge the pull request by clicking on the `Merge pull request` button
+
+### 6. **Delete the branch**
+
+- After the pull request has been merged, delete the branch
+
+```bash
+git checkout rework
+git branch -d f1/logo
+```
