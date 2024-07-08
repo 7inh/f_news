@@ -5,6 +5,7 @@ const appId = `&appid=${apiKey}`;
 const weatherIcon = document.getElementById("weather-icon");
 const today = document.getElementById("today");
 const weather = document.getElementById("provinceSelected");
+const weatherTemper = document.getElementById("weatherTemperature");
 const date = new Date(); // Lấy ngày hiện tại
 const options = {
     weekday: 'long',
@@ -34,7 +35,7 @@ async function checkWeather(city) {
             weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-30.svg";
         }
 
-        document.getElementById("weatherTemperature").innerHTML = Math.round(data.main.temp) + "°C"
+        weatherTemper.innerHTML = Math.round(data.main.temp) + "°C"
     }
 }
 
@@ -50,7 +51,7 @@ const getDateInterval = setInterval(() => {
 }, 100);
 
 const getWeatherInterval = setInterval(() => {
-    if (document.getElementById("weatherTemperature").innerText) {
+    if (weatherTemper.innerText || weatherIcon.src) {
         return clearInterval(getWeatherInterval);
     }
     checkWeather(weather.value);
