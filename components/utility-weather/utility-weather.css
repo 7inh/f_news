@@ -1,4 +1,14 @@
-div#utility-weather {
-  background-color: rgb(121, 95, 160);
-  min-height: 100px;
+/* Based define styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
