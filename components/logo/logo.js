@@ -18,7 +18,7 @@ async function checkWeather(city) {
     const response = await fetch(apiUrl + city + appId);
 
     if (response.status == "404") {
-        return;
+       return this.checkWeather(city);
     } else {
         var data = await response?.json();
         if (data.weather[0].main == "Clear") {
