@@ -1,4 +1,55 @@
+:root {
+  --neutral-black-color:#202022;
+  --white-color: #fff;
+  --blue-color: #2f80ed;
+  --profile-padding: 5px 10px;
+  --text-font-size: 16px;
+}
+
 div#profile-icon {
   grid-area: profile-icon;
-  background-color: #d46d6d;
 }
+
+.profile-icon f-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--text-font-size);
+  padding: var(--profile-padding);
+  color: var(--neutral-black-color);
+  border: none;
+}
+
+.login-container:hover {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.login-container:focus {
+  padding: unset;
+  margin: unset;
+}
+
+.login-container:focus :is(f-icon, .login-text) {
+  display: none;
+}
+
+.login-container:focus + .profile-container {
+  display: flex;
+}
+
+.profile-container {
+  display: none;
+  gap: 5px;
+  align-items: center;
+  font-size: var(--text-font-size);
+  padding: var(--profile-padding);
+  color: var(--neutral-black-color);
+}
+
