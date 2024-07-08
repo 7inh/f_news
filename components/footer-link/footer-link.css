@@ -15,7 +15,6 @@ div#footer-link {
   box-sizing: border-box;
   margin: 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
