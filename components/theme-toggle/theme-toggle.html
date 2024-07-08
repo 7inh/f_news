@@ -1,2 +1,18 @@
 <link rel="stylesheet" href="/components/theme-toggle/theme-toggle.css" />
-<button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<script src="./theme-toggle.js"></script>
+<div id="theme-toggle">
+  <section class="btn-toggle-group">
+    <input
+      type="checkbox"
+      class="checkbox"
+      id="checkbox"
+      onclick="toggleTheme()"
+    />
+    <label for="checkbox" class="checkbox-label">
+      <img src="../../assets/images/Sun.svg" alt="light" />
+      <img src="../../assets/images/Moon.svg" alt="dark" />
+      <span class="ball"></span>
+    </label>
+  </section>
+</div>
+<!-- <button onclick="toggleTheme()">Toggle Theme</button> -->
