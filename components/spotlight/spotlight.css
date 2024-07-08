@@ -145,8 +145,6 @@ align-self: stretch;
 opacity: var(--sds-size-stroke-border);
 }
 
-.spotlight-article:hover{}
-
 .article-text-2{
   display: flex;
 flex-direction: column;
@@ -168,4 +166,9 @@ font-style: normal;
 font-weight: 600;
 line-height: 140%; /* 22.4px */
 opacity: var(--sds-size-stroke-border);
+}
+
+.text:hover{
+  color: gray;
+  cursor: pointer;
 }
