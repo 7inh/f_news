@@ -9,6 +9,8 @@ div#expand-nav-icon {
   --text-color: black;
   --font-size: 16px;
   --blue-color: #6d6dd4;
+  --gray-color:#cfd0d2;
+
 }
 
 /* ====> */
@@ -125,7 +127,7 @@ p:hover {
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: #cfd0d2;
+  background: var(--gray-color);
 }
 .contact-text {
   font-size: 14px;
