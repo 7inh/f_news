@@ -1,2 +1,41 @@
 <link rel="stylesheet" href="/components/logo/logo.css" />
-<div id="logo">logo</div>
+<link rel="stylesheet" href="/components/logo/logo.variables.css" />
+<div id="logo">
+  <div class="logo-time-weather">
+    <div class="logo">
+      <div class="text-wrapper">FNEWS</div>
+    </div>
+    <div id="today">Chủ nhật, 6/7/2024</div>
+    <div class="weather">
+      <div class="location">
+        <div class="text-wrapper-2">
+          <select id="provinceSelected" onchange="checkWeather(this.value)">
+            <option value="Ho Chi Minh" selected>TP. HCM</option>
+            <option value="An Giang">An Giang</option>
+            <option value="Binh Duong">Binh Duong</option>
+            <option value="Quang Ngai">Quang Ngai</option>
+            <option value="Ha Noi">Ha Noi</option>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Da Nang">Da Nang</option>
+            <option value="Hai Phong">Hai Phong</option>
+            <option value="Can Tho">Can Tho</option>
+            <option value="Hue">Hue</option>
+            <option value="Thanh Hoa">Thanh Hoa</option>
+            <option value="Nghe An">Nghe An</option>
+            <option value="Binh Dinh">Binh Dinh</option>
+            <option value="Khanh Hoa">Khanh Hoa</option>
+            <option value="Lam Dong">Lam Dong</option>
+            <option value="Nam Dinh">Nam Dinh</option>
+            <option value="Thai Binh">Thai Binh</option>
+            <option value="Ninh Binh">Ninh Binh</option>
+            <option value="Hai Duong">Hai Duong</option>
+            <option value="Hung Yen">Hung Yen</option>
+            <option value="Thai Nguyen">Thai Nguyen</option>
+          </select>
+        </div>
+      </div>
+      <img class="cloud-drizzle" id="weather-icon" src="img/cloud-drizzle.png" />
+      <div id="weatherTemperature">loading...</div>
+    </div>
+  </div>
+</div>
