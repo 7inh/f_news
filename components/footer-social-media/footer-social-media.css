@@ -12,8 +12,22 @@
   --height-icon-md: 32px;
 }
 
+[data-theme='dark'] {
+  --background-color: black;
+  --text-color: white;
+  --theme: dark;
+  --min-height: 100px;
+  --margin-s: 4px;
+  --font-weight-text: 400;
+  --font-size-md: 18px;
+  --color-text-custom: white;
+  --margin-l: 16px;
+  --width-icon-md: 32px;
+  --height-icon-md: 32px;
+}
+
 div#footer-social-media {
-  background-color: white;
+  background-color: var(--background-color);
   min-height: var(--min-height);
   display: flex;
   align-items: center;
