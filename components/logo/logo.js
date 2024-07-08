@@ -4,6 +4,7 @@ const apiUrl =
 const appId = `&appid=${apiKey}`;
 const weatherIcon = document.getElementById("weather-icon");
 const today = document.getElementById("today");
+const weather = document.getElementById("provinceSelected");
 const date = new Date(); // Lấy ngày hiện tại
 const options = {
     weekday: 'long',
@@ -16,7 +17,7 @@ async function checkWeather(city) {
     const response = await fetch(apiUrl + city + appId);
 
     if (response.status == "404") {
-       return this.checkWeather(city);
+        return this.checkWeather(city);
     } else {
         var data = await response?.json();
         if (data.weather[0].main == "Clear") {
@@ -41,6 +42,16 @@ function getNowDate() {
     today.innerHTML = date.toLocaleDateString('vi-VN', options);
 }
 
-checkWeather(document.getElementById("provinceSelected").value);
-getNowDate();
+const getDateInterval = setInterval(() => {
+    if (today.innerText) {
+        return clearInterval(getDateInterval);
+    }
+    getNowDate();
+}, 100);
 
+const getWeatherInterval = setInterval(() => {
+    if (document.getElementById("weatherTemperature").innerText) {
+        return clearInterval(getWeatherInterval);
+    }
+    checkWeather(weather.value);
+}, 100);
