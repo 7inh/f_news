@@ -1,4 +1,42 @@
-div#footer-social-media {
-  background-color: rgb(22, 144, 116);
-  min-height: 100px;
+:root {
+  --background-color: white;
+  --text-color: black;
+  --theme: light;
+  --min-height:100px;
+  --margin-s:4px;
+  --font-weight-text:400;
+  --font-size-md: 18px;
+  --color-text-custom: #202022;
+  --margin-l: 16px;
+  --width-icon-md: 32px;
+  --height-icon-md: 32px;
 }
+div#footer-social-media {
+background-color: white;
+  min-height: var(--min-height);
+  display: flex;
+  align-items: center;
+  margin: var(--margin-s);
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-weight-text);
+  font-style: normal;
+}
+.p_article {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-text);
+  color: var(--color-text-custom);
+  font-family: Roboto;
+  margin-right: var(--margin-l);
+}
+.div_group_icon{
+  width: var(--width-icon-md); 
+  height: var(--height-icon-md);
+  margin-right: 4px;
+  position: relative;
+}
+.div_group_icon a{
+  color: var(--text-color);
+}
+
