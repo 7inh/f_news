@@ -24,16 +24,17 @@ div#spotlight {
 
 .article-pic{
   width: 580px;
-  height: 400px;
+  height: 348px;
   flex-shrink: 0;
-  border-radius: 4px;
+  border-radius: 10px;
   opacity: var(--sds-size-stroke-border);
   background: var(--Neutral-100, #E6E6E7);
 }
 
 img{
+  border-radius: 10px;
   width: 580px;
-  height: 400px;
+  height: 348px;
   cursor: pointer;
 }
 
@@ -41,20 +42,24 @@ img{
   cursor: pointer;
   color: var(--Neutral-950, #202022);
   align-self: stretch;
-  /* h.article title emphasis */
   font-family: "Roboto Slab";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 33.6px */
   opacity: var(--sds-size-stroke-border);
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* Number of lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncated::after {
+  content: '...';
+}
+
+.hidden-text {
+  display: none;
 }
 .header-text:hover{
   color: gray;
