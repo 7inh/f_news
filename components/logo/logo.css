@@ -23,7 +23,7 @@
 .logo-time-weather .text-wrapper {
   position: relative;
   width: fit-content;
-  font-family: "Roboto Slab-SemiBold", Helvetica;
+  font-family: var(--font-family-secondary);
   font-weight: 600;
   color: var(--text-color);
   font-size: 24px;
@@ -34,7 +34,7 @@
 .logo-time-weather div {
   position: relative;
   width: fit-content;
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: var(--font-family-primary);
   font-weight: 400;
   color: var(--colors-neutral-400);
   font-size: var(--font-size-logo);
@@ -64,7 +64,7 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: var(--font-family-primary);
   font-weight: 400;
   color: var(--colors-neutral-400);
   font-size: var(--font-size-logo);
@@ -78,7 +78,7 @@
   border: none;
   cursor: pointer;
   background: none;
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: var(--font-family-primary);
   font-weight: 400;
   color: var(--colors-neutral-400);
   font-size: var(--font-size-logo);
