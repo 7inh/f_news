@@ -1,6 +1,39 @@
+:root {
+  --background-color: white;
+  --text-color: #84858c;
+  --theme: light;
+  --bg-hover: black;
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --background-color: #202022;
+  --text-color: white;
+  --theme: dark;
+}
 div#footer-link {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 8px 32px;
   grid-area: footer-link;
-  background-color: rgb(144, 91, 22);
+  background-color: var(--background-color);
   min-height: 100px;
+  padding-top: 60px;
+  max-width: 780px;
   flex-grow: 1;
+}
+
+div#footer-link a {
+  display: flex;
+  flex-shrink: 0;
+  color: var(--text-color);
+  text-decoration: none;
+  width: 100px;
+  font-size: 18px;
+  line-height: 165%; /* 29.7px */
 }
