@@ -1,8 +1,37 @@
-<div class="item-news">
-  <img src="https://picsum.photos/300/200" loading="lazy" alt="lorempic">
 
-  <div class="des">
-    <h5>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur..</h5>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam similique Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+<style>
+  :root{
+  --blackmedium: #b4b4b4;
+  --height-item-news: 198px;
+  --item-news-h: 60px;
+  --item-margin: 4px;
+  --item-news-boder: 4px;
+  --item-margin-bottom: 8px;
+  --text-color-itemnews: #202022;
+  --whitegrey: #f1f1f1;
+  --width-lstnewscol:680px;
+  --gap-item-news-col: 20px;
+}
+
+[data-theme='light'] {
+  --text-color: #202022;
+  --text-title-news-item: #4d4d51;
+  --background-color-body: #f5f5f6;
+  --theme: light;
+}
+
+[data-theme='dark'] {
+  --text-color: #f5f5f6;
+  --text-title-news-item: #e6e6e7;
+  --background-color-body: #202022;
+  --theme: dark;
+}
+</style>
+<div class="text-[#4d4d51] bg-[#f5f5f6] flex overflow-hidden items-start gap-[20px] items-start self-stretch">
+  <img class="rounded-s" src="https://picsum.photos/300/200" loading="lazy" alt="lorempic">
+
+  <div class="des text-ellipsis flex flex-col gap-[10px]">
+    <h5 class="line-clamp-3 text-lg font-normal font-semibold leading-relaxed m-0 p-0 self-stretch">Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur..</h5>
+    <p class="line-clamp-3 self-stretch font-normal leading-3/2 m-0 p-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam similique Lorem ipsum dolor sit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
   </div>
 </div>
