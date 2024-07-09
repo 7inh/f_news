@@ -1,2 +1,49 @@
 <link rel="stylesheet" href="/components/search-bar/search-bar.css" />
-<div id="search-bar">searchbar</div>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<div id="search-bar">
+  <div id="search-bar-container">
+    <input
+      type="text"
+      placeholder="Tìm kiếm"
+      id="search-input"
+      onkeyup="filterFunction()"
+    />
+    <img
+      src="../../components/assets/icon/search-icon.png"
+      class="search-icon"
+    />
+  </div>
+
+  <!-- Search result -->
+  <div id="search-result">
+    <div class="result-item">
+      <f-icon
+        src="../../components/assets/icon/search-icon.png"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 1</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="../../components/assets/icon/search-icon.png"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 2</span>
+    </div>
+    <div class="result-item">
+      <f-icon
+        src="../../components/assets/icon/search-icon.png"
+        class="search-icon"
+      ></f-icon>
+      <span>Result 3</span>
+    </div>
+  </div>
+
+  <script src="./search-bar.js"></script>
+</div>
