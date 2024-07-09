@@ -13,7 +13,3 @@ document.getElementById("btn-subs").addEventListener("click", function(){
         alert("Thanks for subscribing!"); 
     }
 });
-
-
-
-
