@@ -26,7 +26,7 @@
   --height-icon-md: 32px;
 }
 
-div#footer-social-media {
+/*div#footer-social-media {
   background-color: var(--background-color);
   min-height: var(--min-height);
   display: flex;
@@ -57,4 +57,16 @@ div#footer-social-media {
 
 .div_group_icon a {
   color: var(--text-color);
+}*/
+@media only screen and (max-width: 600px) {
+  .footer-social-media {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .div_gr_icon {
+    display: flex;
+  }
 }
