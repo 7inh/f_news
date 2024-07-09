@@ -1,12 +1,13 @@
 
 div#word-cloud {
   grid-area: word-cloud;
-  background-color: #ffffff;
+  color: var(--text-color);
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color-body);
   
 }
 :root{
@@ -16,8 +17,8 @@ div#word-cloud {
  --font-size-32: 32px;
 }
 *{
-  color:  var(--Neutral-400, #84858C);
-  font-family: Roboto;
+  color:  var(--colors-default-400);
+  font-family: var(--font-family-primary);
   gap: 10px;
   font-size: var(--font-size-primary);
 }
@@ -27,7 +28,7 @@ div#word-cloud {
   align-items: center;
 }
 
-#kinhdoanh, #congnghe, #nghethuat, #quandiem {
+#kinhdoanh, #congnghe, #nghethuat, #quandiem, #giaitri {
   font-size: var(--font-size-20);
 }
 
