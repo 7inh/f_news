@@ -1,6 +1,5 @@
 :root {
   --white-color: #fff;
-  --blue-color: #2f80ed;
   --profile-padding: 5px 10px;
   --text-font-size: 16px;
 }
@@ -28,7 +27,7 @@ div#profile-icon {
 .login-container:hover {
   cursor: pointer;
   color: var(--white-color);
-  background-color: var(--blue-color);
+  background-color: var(--colors-info);
 }
 
 .login-container:focus {
