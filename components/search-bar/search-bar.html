@@ -6,10 +6,11 @@
   rel="stylesheet"
 />
 
-<div id="search-bar">
+<div id="search-bar" class="rounded">
   <div id="search-bar-container">
     <input
       type="text"
+      class="tracking-wide leading-3"
       placeholder="Tìm kiếm"
       id="search-input"
       onkeyup="filterFunction()"
@@ -21,29 +22,30 @@
   </div>
 
   <!-- Search result -->
-  <div id="search-result">
+  <div id="search-result" class="hidden">
     <div class="result-item">
       <f-icon
         src="../../components/assets/icon/search-icon.png"
         class="search-icon"
       ></f-icon>
-      <span>Result 1</span>
+      <span>result 1</span>
     </div>
     <div class="result-item">
       <f-icon
         src="../../components/assets/icon/search-icon.png"
         class="search-icon"
       ></f-icon>
-      <span>Result 2</span>
+      <span>result 2</span>
     </div>
     <div class="result-item">
       <f-icon
         src="../../components/assets/icon/search-icon.png"
         class="search-icon"
       ></f-icon>
-      <span>Result 3</span>
+      <span>result 3</span>
     </div>
   </div>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <script src="./search-bar.js"></script>
 </div>
