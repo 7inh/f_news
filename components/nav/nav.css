@@ -1,14 +1,5 @@
-:root {
-  --background-color: white;
-  --text-color: black;
-  --theme: light;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-[data-theme="dark"] {
-  --background-color: black;
-  --text-color: white;
-  --theme: dark;
-}
 
 #nav {
   max-width: 100%;
@@ -16,7 +7,7 @@
 }
 
 nav {
-  background-color: var(--background-color);
+  background-color: white;
   height: 80px;
   width: 100%;
   display: flex;
@@ -58,14 +49,13 @@ nav {
 
 @media (max-width: 1184.98px) {
   #nav {
-    overflow: hidden;
-    margin-bottom: 10px;
+    overflow-x: scroll;
   }
   
-  nav {
-    overflow-x: scroll;
+  nav {    
     scrollbar-width: thin;
     scrollbar-color: #84858C rgb(236, 231, 231);
     scroll-behavior: smooth;
   }
+ 
 }
