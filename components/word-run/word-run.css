@@ -2,11 +2,12 @@
   --font-family: 'Roboto Slab', 'slab-serif';
 }
 
-[data-theme='dark'] {
-  --colors-default-950: #f5f5f6;
-  --colors-default-50: #202022;
+[data-theme='dark'] #word-run {
+  --text-color: #f5f5f6;
+  --background-color: #202022;
   --theme: dark;
 }
+
 
 div#word-run {
   grid-area: word-run;
@@ -14,14 +15,22 @@ div#word-run {
   padding: 0;
   overflow-x: hidden; */
 }
+.text-color{
+  color:var(--text-color)  !important;
+}
+.bg-color{
+  background-color: var(--background-color) !important;
+}
 .marquee-content {
   /* display: flex; */
-  width: 1440px;
+  
+
   /* padding: 16px 0; */
   /* justify-content: center; */
   /* align-items: center; */
   /* gap: 12px; */
   /* white-space: nowrap; */
+  color: var(--text-color);
   background-color: var(--colors-default-50);
   animation: marquee 25s linear infinite;
 }
