@@ -1,4 +1,80 @@
-div#brief {
-  grid-area: brief;
-  background-color: brown;
+:root {
+  --Neutral-100: #e6e6e7;
+  --sds-size-stroke-border: 1px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-200: 8px;
+  --Neutral-950: #202022;
+  --Neutral-700: #4d4d51;
+  --margin-top-brief: 24px;
+  --margin-bottom-brief: 32px;
+  --width-brief: 280px;
+  --max-height-brief-list: 384px;
+  --gap-brief-list: 24px;
+  --gap-brief-item: 4px;
+  --gap-brief-info: 8px;
+  --font-family-heading: "Roboto Slab";
+  --font-size-heading: 16px;
+  --font-weight-heading: 600;
+  --line-height-heading: 22.4px;
+  --font-family-info: "Roboto";
+  --font-size-info: 14px;
+  --font-weight-info: 400;
+  --line-height-info: 21px;
+  --webkit-line-clamp: 3;
 }
+
+.brief {
+  margin-top: var(--margin-top-brief);
+  margin-bottom: var(--margin-bottom-brief);
+  width: var(--width-brief);
+  flex-shrink: 0;
+  align-self: stretch;
+  border-left: var(--sds-size-stroke-border) solid var(--Neutral-100);
+}
+.brief__list {
+  padding-left: var(--sds-size-space-400);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-brief-list);
+  max-height: var(--max-height-brief-list);
+  overflow: auto;
+}
+.brief__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-brief-item);
+  align-self: stretch;
+}
+.brief__item-content-heading {
+  color: var(--Neutral-950);
+  align-self: stretch;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading);
+  font-style: normal;
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  opacity: var(--sds-size-stroke-border);
+  display: -webkit-box;
+  -webkit-line-clamp: var(--webkit-line-clamp);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.brief__item-info {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-brief-info);
+}
+.brief__item-info-hour, .brief__item-info-branch {
+  color: var(--Neutral-700);
+  font-family: var(--font-family-info);
+  font-size: var(--font-size-info);
+  font-style: normal;
+  font-weight: var(--font-weight-info);
+  line-height: var(--line-height-info);
+  opacity: var(--sds-size-stroke-border);
+}
+
+/*# sourceMappingURL=brief.css.map */
