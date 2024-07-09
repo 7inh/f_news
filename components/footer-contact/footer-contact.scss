@@ -1,0 +1,32 @@
+#footer-contact {
+    min-height: 100px;
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background-color: var(--background-color);
+    justify-content: center;
+  
+    .contact-item{
+      gap: 6px;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      align-self: stretch;
+      
+      .contact-icon{
+        width: 20px;
+        height: 20px;
+        .black{
+          color: var(--text-color);
+        }
+      }
+      
+      .article{
+        font-style: normal;
+        margin: 0;
+        color: var(--text-color);
+      }
+    }
+  }
