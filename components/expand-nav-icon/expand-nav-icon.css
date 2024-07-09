@@ -36,7 +36,6 @@ div#expand-nav-icon {
   display: block;
 }
 .list-item {
-  /* visibility: hidden;   */
   height: 100%;
   width: 100vw;
   display: grid;
