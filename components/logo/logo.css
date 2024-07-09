@@ -23,23 +23,16 @@
 .logo-time-weather .text-wrapper {
   position: relative;
   width: fit-content;
-  font-family: var(--font-family-secondary);
-  font-weight: 600;
   color: var(--text-color);
-  font-size: 24px;
   letter-spacing: 0;
-  line-height: normal;
 }
 
-.logo-time-weather div {
+.logo-time-weather > div {
   position: relative;
   width: fit-content;
-  font-family: var(--font-family-primary);
-  font-weight: 400;
-  color: var(--colors-neutral-400);
   font-size: var(--font-size-logo);
+  color: var(--colors-neutral-400);
   letter-spacing: 0;
-  line-height: normal;
   white-space: nowrap;
 }
 
@@ -64,12 +57,8 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: var(--font-family-primary);
-  font-weight: 400;
   color: var(--colors-neutral-400);
-  font-size: var(--font-size-logo);
   letter-spacing: 0;
-  line-height: normal;
   white-space: nowrap;
 }
 
@@ -78,10 +67,8 @@
   border: none;
   cursor: pointer;
   background: none;
-  font-family: var(--font-family-primary);
-  font-weight: 400;
-  color: var(--colors-neutral-400);
   font-size: var(--font-size-logo);
+  color: var(--colors-neutral-400);
 }
 
 .logo-time-weather .text-wrapper-2 select::-webkit-scrollbar {
