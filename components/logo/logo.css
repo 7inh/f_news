@@ -1,93 +1,28 @@
 .logo-time-weather {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  position: relative;
   background-color: var(--background-color);
 }
 
 .logo-time-weather .logo {
-  display: inline-flex;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 0px 16px;
-  position: relative;
-  flex: 0 0 auto;
   background-color: var(--colors-neutral-100);
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .logo-time-weather .text-wrapper {
-  position: relative;
-  width: fit-content;
   color: var(--text-color);
-  letter-spacing: 0;
 }
 
 .logo-time-weather > div {
-  position: relative;
-  width: fit-content;
-  font-size: var(--font-size-logo);
   color: var(--colors-neutral-400);
-  letter-spacing: 0;
-  white-space: nowrap;
-}
-
-
-.logo-time-weather .weather {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.logo-time-weather .location {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  position: relative;
-  flex: 0 0 auto;
 }
 
 .logo-time-weather .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
   margin-top: -1px;
   color: var(--colors-neutral-400);
-  letter-spacing: 0;
-  white-space: nowrap;
 }
 
 .logo-time-weather .text-wrapper-2 select{
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background: none;
-  font-size: var(--font-size-logo);
   color: var(--colors-neutral-400);
 }
 
 .logo-time-weather .text-wrapper-2 select::-webkit-scrollbar {
   width: 2px;
-}
-
-.logo-time-weather .chevron-down {
-  position: relative;
-  width: 16px;
-  height: 16px;
-}
-
-.logo-time-weather .cloud-drizzle {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.logo-time-weather .cloud-drizzle img {
-  width: 100%;
-  height: auto;
 }

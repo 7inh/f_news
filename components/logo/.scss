@@ -1,0 +1,33 @@
+$color_1: var(--text-color);
+$color_2: var(--colors-neutral-400);
+$background-color_1: var(--background-color);
+$background-color_2: var(--colors-neutral-100);
+
+.logo-time-weather {
+    background-color: $background-color_1;
+
+    .logo {
+        background-color: $background-color_2;
+    }
+
+    .text-wrapper {
+        color: $color_1;
+    }
+
+    >div {
+        color: $color_2;
+    }
+
+    .text-wrapper-2 {
+        margin-top: -1px;
+        color: $color_2;
+
+        select {
+            color: $color_2;
+
+            &::-webkit-scrollbar {
+                width: 2px;
+            }
+        }
+    }
+}
