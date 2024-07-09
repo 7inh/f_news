@@ -5,7 +5,7 @@ div#spotlight {
   min-height: 400px;
 }
 
-#spotlight{
+#spotlight {
   display: flex;
   width: 1200px;
   align-items: flex-start;
@@ -13,7 +13,7 @@ div#spotlight {
   opacity: var(--sds-size-stroke-border);
 }
 
-.article{
+.article {
   display: flex;
   width: 880px;
   align-items: flex-start;
@@ -22,7 +22,7 @@ div#spotlight {
   opacity: var(--sds-size-stroke-border);
 }
 
-.article-pic{
+.article-pic {
   width: 580px;
   height: 348px;
   flex-shrink: 0;
@@ -31,14 +31,14 @@ div#spotlight {
   background: var(--Neutral-100, #E6E6E7);
 }
 
-img{
+img {
   border-radius: 10px;
   width: 580px;
   height: 348px;
   cursor: pointer;
 }
 
-.header-text{
+.header-text {
   cursor: pointer;
   color: var(--Neutral-950, #202022);
   align-self: stretch;
@@ -46,7 +46,8 @@ img{
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 33.6px */
+  line-height: 140%;
+  /* 33.6px */
   opacity: var(--sds-size-stroke-border);
   background-color: var(--background-color);
   color: var(--text-color);
@@ -55,44 +56,48 @@ img{
 }
 
 .truncated::after {
-  content: '...';
+  content: "...";
 }
 
 .hidden-text {
   display: none;
 }
-.header-text:hover{
+
+.header-text:hover {
   color: gray;
 }
-.description{
+
+.description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--sds-size-space-200);
   align-self: stretch;
   opacity: var(--sds-size-stroke-border);
-  
 }
-.description-text{
+
+.description-text {
   color: var(--Neutral-700, #4D4D51);
   align-self: stretch;
-/* p.article description */
+  /* p.article description */
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
   opacity: var(--sds-size-stroke-border);
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Number of lines */
+  -webkit-line-clamp: 3;
+  /* Number of lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: var(--background-color);
   color: var(--text-color);
-
 }
-.info{
+
+.info {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -102,34 +107,36 @@ img{
   background-color: var(--background-color);
   color: var(--text-color);
 }
-.hour{
+
+.hour {
   color: var(--Neutral-700, #4D4D51);
   background-color: var(--background-color);
   color: var(--text-color);
-
-/* p.article description */
+  /* p.article description */
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
   opacity: var(--sds-size-stroke-border);
 }
 
-.tag{
+.tag {
   background-color: var(--background-color);
   color: var(--text-color);
   margin-left: 10px;
   opacity: var(--sds-size-stroke-border);
-/* p.article description */
+  /* p.article description */
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
 }
 
-.article-group{
+.article-group {
   display: flex;
   width: 280px;
   padding-left: var(--sds-size-space-400);
@@ -143,7 +150,7 @@ img{
   opacity: var(--sds-size-stroke-border);
 }
 
-.spotlight-article{
+.spotlight-article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -152,7 +159,7 @@ img{
   opacity: var(--sds-size-stroke-border);
 }
 
-.article-text-2{
+.article-text-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -160,21 +167,22 @@ img{
   opacity: var(--sds-size-stroke-border);
 }
 
-.text{
+.text {
   background-color: var(--background-color);
   color: var(--text-color);
   align-self: stretch;
-
   /* h.article title */
   font-family: "Roboto Slab";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
   opacity: var(--sds-size-stroke-border);
 }
-
-.text:hover{
+.text:hover {
   color: gray;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=spotlight.css.map */
