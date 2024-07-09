@@ -1,3 +1,6 @@
+:root{
+  --sds-size-space-200: 16px;
+}
 
 .container{
   font-family: "Roboto Slab";
@@ -7,15 +10,15 @@
   padding: 24px 0px 32px 0px;
   flex-direction: column;
   gap: var(--sds-size-space-200);
-  background-color: #F5F5F6;
+  background-color: var(--colors-default-50);
   width: 100%;
 }
 
 .title{
   display: flex;
   align-items: center;
-  gap: var(--sds-size-space-200);
   justify-content: flex-start;
+  gap: var(--sds-size-space-200);
 }
 
 .title p{
@@ -24,11 +27,15 @@
   line-height: 150%; /* 36px */
 }
 
+.title f-icon{
+  font-size: 24px;
+  width: 24px;
+}
+
 .video-group{
   display: flex;
   align-items: center;
   gap: 20px;
-  /* align-self: stretch; */
 }
 
 .card{
@@ -49,13 +56,25 @@
   bottom: 15px;
   left: 20px;
   display: flex;
-  padding: 4px var(--sds-size-space-200) 4px 4px;
   align-items: center;
   gap: 6px;
   border-radius: 999px;
-  opacity: var(--sds-size-stroke-border);
-  background: var(--Neutral-50, #F5F5F6);
-  padding: 4px;
+  padding: 5px;
+  background-color: var(--colors-default-50);
+  }
+
+  .play-media .container-play-icon{
+    width: 32px;
+    height: 32px;
+    background-color: var(--colors-default-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  } 
+
+  .container-play-icon .red{
+    color: #F5F5F6; 
   }
 
 .card p{
