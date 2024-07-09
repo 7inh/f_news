@@ -5,20 +5,8 @@ div#expand-nav-icon {
   background-color: #6d6dd4;
 }
 :root {
-  --white-color: white;
-  --text-color: black;
   --font-size: 16px;
   --blue-color: #6d6dd4;
-  --gray-color:#cfd0d2;
-
-}
-
-/* ====> */
-[data-theme='dark'] {
-  --text-color: black;
-}
-[data-theme='light'] {
-  --text-color: black;
 }
 
 .hamburger {
@@ -28,17 +16,16 @@ div#expand-nav-icon {
 .line {
   width: 30px;
   height: 3px;
-  background-color: var(--white-color);
+  background-color: var(--colors-default-50);
   margin: 5px;
 }
 .expand-nav {
-  background-color: var(--white-color);
+  background-color: var(--colors-default-50);
   position: absolute;
   top: 70px;
   left: 148px;
   right: 148px;
   z-index: 1;
-
   display: none;
 }
 .expand-nav-main {
@@ -65,14 +52,12 @@ div#expand-nav-icon {
 }
 .article-title a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--colors-default-950);
   text-transform: capitalize;
 }
-
 .article-title a:hover {
   color: var(--blue-color);
 }
-
 p {
   font-size: var(--font-size);
   font-weight: 400;
@@ -83,7 +68,6 @@ p {
 p:hover {
   color: var(--blue-color);
 }
-
 .list-contact {
   display: flex;
   flex-direction: column;
@@ -92,7 +76,6 @@ p:hover {
   row-gap: 10px;
   margin-left: 10px;
 }
-
 .contact-item {
   display: flex;
   padding-bottom: 10px;
@@ -102,11 +85,9 @@ p:hover {
   align-self: stretch;
   border-bottom: 1px solid #111;
 }
-
-.contact-item:nth-of-type(4){
+.contact-item:nth-of-type(4) {
   border: none;
 }
-
 .contact-desc {
   gap: 6px;
   display: flex;
@@ -127,23 +108,16 @@ p:hover {
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: var(--gray-color);
-}
-.contact-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 165%; /* 23.1px */
+  background: var(--colors-default-200);
 }
 #expand-nav-toggle {
   position: relative;
   cursor: pointer;
 }
-
 #expand-nav-toggle .hamburger {
   position: relative;
   z-index: 0;
 }
-
 #expand-nav-toggle-checkbox {
   position: absolute;
   top: 0;
