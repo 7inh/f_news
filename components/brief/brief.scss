@@ -1,0 +1,94 @@
+:root {
+  --sds-size-stroke-border: 1px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-200: 8px;
+  --margin-top-brief: 24px;
+  --margin-bottom-brief: 32px;
+  --width-brief: 280px;
+  --max-height-brief-list: 384px;
+  --gap-brief-list: 24px;
+  --gap-brief-item: 4px;
+  --gap-brief-info: 8px;
+  --font-family-heading: 'Roboto Slab';
+  --font-size-heading: 16px;
+  --font-weight-heading: 600;
+  --line-height-heading: 22.4px;
+  --font-family-info: 'Roboto';
+  --font-size-info: 14px;
+  --font-weight-info: 400;
+  --line-height-info: 21px;
+  --webkit-line-clamp: 3;
+}
+[data-theme='light'] {
+  --text-color: var(--colors-default-950);
+  --text-info-color: var(--colors-default-700);
+  --background-color-body: var(--colors-default-50);
+  --theme: light;
+}
+
+[data-theme='dark'] {
+  --text-color: var(--colors-default-50);
+  --background-color-body: var(--colors-default-950);
+  --text-info-color: var(--colors-default-300);
+  --theme: dark;
+}
+.brief {
+  margin-top: var(--margin-top-brief);
+  margin-bottom: var(--margin-bottom-brief);
+  width: var(--width-brief);
+  flex-shrink: 0;
+  align-self: stretch;
+  border-left: var(--sds-size-stroke-border) solid var(--Neutral-100);
+  background-color: var(--background-color-body);
+
+  &__list {
+    padding-left: var(--sds-size-space-400);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-brief-list);
+    max-height: var(--max-height-brief-list);
+    overflow: auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-brief-item);
+    align-self: stretch;
+
+    &-content-heading {
+      color: var(--text-color);
+      align-self: stretch;
+      font-family: var(--font-family-heading);
+      font-size: var(--font-size-heading);
+      font-style: normal;
+      font-weight: var(--font-weight-heading);
+      line-height: var(--line-height-heading);
+      opacity: var(--sds-size-stroke-border);
+      display: -webkit-box;
+      -webkit-line-clamp: var(--webkit-line-clamp);
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-brief-info);
+
+      &-hour,
+      &-branch {
+        color: var(--text-info-color);
+        font-family: var(--font-family-info);
+        font-size: var(--font-size-info);
+        font-style: normal;
+        font-weight: var(--font-weight-info);
+        line-height: var(--line-height-info);
+        opacity: var(--sds-size-stroke-border);
+      }
+    }
+  }
+}
