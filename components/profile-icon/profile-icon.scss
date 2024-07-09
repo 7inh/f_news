@@ -9,6 +9,8 @@ $background-color_2: var(--colors-info);
 
 #profile-icon {
     grid-area: profile-icon;
+    width    : 120px;
+    display  : -webkit-box;
 
     f-icon {
         width : 16px;
@@ -45,5 +47,12 @@ $background-color_2: var(--colors-info);
     .profile-container {
         color           : $color_1;
         background-color: $background-color_1;
+
+        .profile-name {
+            text-overflow: ellipsis;
+            white-space  : nowrap;
+            overflow     : hidden;
+            width        : 90px;
+        }
     }
 }

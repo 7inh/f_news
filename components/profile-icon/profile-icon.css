@@ -4,6 +4,8 @@
 
 #profile-icon {
   grid-area: profile-icon;
+  width: 120px;
+  display: -webkit-box;
 }
 #profile-icon f-icon {
   width: 16px;
@@ -34,3 +36,9 @@
   background-color: var(--background-color-body);
 }
 
+#profile-icon .profile-container .profile-name {
+  text-overflow: ellipsis; 
+  white-space  : nowrap;
+  overflow     : hidden;
+  width: 90px;
+}
