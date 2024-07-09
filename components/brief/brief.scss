@@ -1,10 +1,7 @@
 :root {
-  --Neutral-100: #e6e6e7;
   --sds-size-stroke-border: 1px;
   --sds-size-space-400: 16px;
   --sds-size-space-200: 8px;
-  --Neutral-950: #202022;
-  --Neutral-700: #4d4d51;
   --margin-top-brief: 24px;
   --margin-bottom-brief: 32px;
   --width-brief: 280px;
@@ -22,7 +19,19 @@
   --line-height-info: 21px;
   --webkit-line-clamp: 3;
 }
+[data-theme='light'] {
+  --text-color: var(--colors-default-950);
+  --text-info-color: var(--colors-default-700);
+  --background-color-body: var(--colors-default-50);
+  --theme: light;
+}
 
+[data-theme='dark'] {
+  --text-color: var(--colors-default-50);
+  --background-color-body: var(--colors-default-950);
+  --text-info-color: var(--colors-default-300);
+  --theme: dark;
+}
 .brief {
   margin-top: var(--margin-top-brief);
   margin-bottom: var(--margin-bottom-brief);
@@ -30,6 +39,7 @@
   flex-shrink: 0;
   align-self: stretch;
   border-left: var(--sds-size-stroke-border) solid var(--Neutral-100);
+  background-color: var(--background-color-body);
 
   &__list {
     padding-left: var(--sds-size-space-400);
@@ -49,7 +59,7 @@
     align-self: stretch;
 
     &-content-heading {
-      color: var(--Neutral-950);
+      color: var(--text-color);
       align-self: stretch;
       font-family: var(--font-family-heading);
       font-size: var(--font-size-heading);
@@ -71,7 +81,7 @@
 
       &-hour,
       &-branch {
-        color: var(--Neutral-700);
+        color: var(--text-info-color);
         font-family: var(--font-family-info);
         font-size: var(--font-size-info);
         font-style: normal;
