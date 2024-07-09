@@ -2,7 +2,10 @@
   --border-radius-8:8px;
   --border-1:1px;
   --border-2:2px;
+
+
   --padding-4:4px;
+  --padding-6:6px;
   --padding-8:8px;
   --padding-12:12px;
   --padding-16:16px;
@@ -69,7 +72,7 @@ div#utility-football {
   font-family: var(--font-family-secondary);
 }
 
-div.utility-football-item:not(:last-child)::before{
+.utility-football-list div.utility-football-item:not(:last-child)::before{
   position: absolute;
   content: " ";
   left: 0;
@@ -90,8 +93,14 @@ div.utility-football-item:not(:last-child)::before{
   color: var(--text-color);
   font-family: var(--font-family-secondary);
 }
-.utility-football-footer .utility-football-btnSeeAll{
+.utility-football-footer{
   color: var(--colors-default-950);
   background-color:  var(--colors-default-100);
   border: var(--border-2) solid var(--colors-default-500);
+  border-radius: var(--border-radius-8);
+  padding: var(--padding-6) 0 ;
+}
+
+.utility-football-footer:active{
+  opacity: 0.4;
 }
