@@ -1,5 +1,4 @@
 :root {
-  --neutral-black-color:#202022;
   --white-color: #fff;
   --blue-color: #2f80ed;
   --profile-padding: 5px 10px;
@@ -21,8 +20,9 @@ div#profile-icon {
   gap: 5px;
   font-size: var(--text-font-size);
   padding: var(--profile-padding);
-  color: var(--neutral-black-color);
   border: none;
+  color: var(--text-color);
+  background-color: var(--background-color-body);
 }
 
 .login-container:hover {
@@ -50,6 +50,7 @@ div#profile-icon {
   align-items: center;
   font-size: var(--text-font-size);
   padding: var(--profile-padding);
-  color: var(--neutral-black-color);
+  color: var(--text-color);
+  background-color: var(--background-color-body);
 }
 
