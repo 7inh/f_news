@@ -1,0 +1,49 @@
+$color_1           : var(--text-color);
+$color_2           : var(--white-color);
+$background-color_1: var(--background-color-body);
+$background-color_2: var(--colors-info);
+
+:root {
+    --white-color: #fff;
+}
+
+#profile-icon {
+    grid-area: profile-icon;
+
+    f-icon {
+        width : 16px;
+        height: 16px;
+    }
+
+    .login-container {
+        border          : none;
+        color           : $color_1;
+        background-color: $background-color_1;
+
+        &:hover {
+            cursor          : pointer;
+            color           : $color_2;
+            background-color: $background-color_2;
+        }
+
+        &:focus {
+            padding: unset;
+            margin : unset;
+
+            :is(f-icon, .login-text) {
+                display: none;
+            }
+
+            + {
+                .profile-container {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .profile-container {
+        color           : $color_1;
+        background-color: $background-color_1;
+    }
+}

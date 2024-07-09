@@ -1,54 +1,35 @@
 :root {
   --white-color: #fff;
-  --profile-padding: 5px 10px;
-  --text-font-size: 16px;
 }
 
-div#profile-icon {
+#profile-icon {
   grid-area: profile-icon;
 }
-
-.profile-icon f-icon {
+#profile-icon f-icon {
   width: 16px;
   height: 16px;
 }
-
-.login-container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: var(--text-font-size);
-  padding: var(--profile-padding);
+#profile-icon .login-container {
   border: none;
   color: var(--text-color);
   background-color: var(--background-color-body);
 }
-
-.login-container:hover {
+#profile-icon .login-container:hover {
   cursor: pointer;
   color: var(--white-color);
   background-color: var(--colors-info);
 }
-
-.login-container:focus {
+#profile-icon .login-container:focus {
   padding: unset;
   margin: unset;
 }
-
-.login-container:focus :is(f-icon, .login-text) {
+#profile-icon .login-container:focus :is(f-icon, .login-text) {
   display: none;
 }
-
-.login-container:focus + .profile-container {
+#profile-icon .login-container:focus + .profile-container {
   display: flex;
 }
-
-.profile-container {
-  display: none;
-  gap: 5px;
-  align-items: center;
-  font-size: var(--text-font-size);
-  padding: var(--profile-padding);
+#profile-icon .profile-container {
   color: var(--text-color);
   background-color: var(--background-color-body);
 }
