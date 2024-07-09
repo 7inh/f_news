@@ -20,6 +20,7 @@ div#trending {
   opacity: var(--stroke-border);
   background-color: $background-color_2;
   color: $color_1;
+  margin-top: 40px;
 }
 section.section-trending {
   display: flex;
@@ -35,6 +36,7 @@ section.section-trending {
     }
     > h3 {
       margin: 0;
+      font-size: 24px;
     }
   }
   > div.article-group {

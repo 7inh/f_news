@@ -13,6 +13,7 @@ div#trending {
   opacity: var(--stroke-border);
   background-color: var(--background-color-body);
   color: var(--text-color);
+  margin-top: 40px;
 }
 
 section.section-trending {
@@ -31,6 +32,7 @@ section.section-trending > div.title > f-icon.icon-trending {
 }
 section.section-trending > div.title > h3 {
   margin: 0;
+  font-size: 24px;
 }
 section.section-trending > div.article-group {
   display: flex;
