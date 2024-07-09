@@ -20,22 +20,18 @@ section.section-trending {
   flex-direction: column;
   gap: var(--space-400);
 }
-
 section.section-trending > div.title {
   display: flex;
   align-items: center;
   gap: var(--space-200);
 }
-
 section.section-trending > div.title > f-icon.icon-trending {
   width: 24px;
   height: 24px;
 }
-
 section.section-trending > div.title > h3 {
   margin: 0;
 }
-
 section.section-trending > div.article-group {
   display: flex;
   padding-bottom: var(--space-400);
@@ -43,11 +39,9 @@ section.section-trending > div.article-group {
   gap: 20px;
   align-self: stretch;
 }
-
 section.section-trending > div.article-group:nth-of-type(2) {
   border-bottom: var(--stroke-border) solid var(--colors-default-100);
 }
-
 section.section-trending article.brief {
   display: flex;
   flex-direction: column;
@@ -55,16 +49,13 @@ section.section-trending article.brief {
   gap: var(--space-300);
   flex: 1 0 0;
 }
-
 section.section-trending article.brief > img.article-pic {
   height: 168px;
   align-self: stretch;
-
   border-radius: var(--border-radius);
   opacity: var(--stroke-border);
   background: var(--colors-default-100);
 }
-
 section.section-trending article.brief > div.article-text {
   display: flex;
   flex-direction: column;
@@ -72,20 +63,17 @@ section.section-trending article.brief > div.article-text {
   gap: 4px;
   align-self: stretch;
 }
-
 section.section-trending div.article-text > h4 {
   font-size: 16px;
   font-family: var(--font-family-secondary);
   line-height: 140%;
   margin: 0;
 }
-
 section.section-trending div.article-text div.description {
   display: flex;
   align-items: center;
   gap: var(--space-200);
 }
-
 section.section-trending div.article-text div.description > p {
   font-size: 14px;
   font-family: var(--font-family-primary);
@@ -93,3 +81,5 @@ section.section-trending div.article-text div.description > p {
   color: var(--colors-default-700);
   margin: 0;
 }
+
+/*# sourceMappingURL=trending.css.map */
