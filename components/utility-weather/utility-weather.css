@@ -6,10 +6,6 @@
   --gap-xl: 16px;
   --padding-s: 4px;
   --padding-l: 8px;
-  --neutral-950-color: #202022;
-  --neutral-700-color: #4d4d51;
-  --neutral-400-color: #84858c;
-  --neutral-50-color: #e9e9eb;
   --yellow: #f2c94c;
   --blue-blue-color: #2f81ed41;
   --duration-time: 0.3s;
@@ -20,11 +16,6 @@
   --font-size-xl: 20px;
   --font-size-xxl: 24px;
   --font-size-xxxl: 32px;
-}
-
-html {
-  font-family: 'Roboto', sans-serif !important;
-  font-style: normal;
 }
 
 * {
@@ -68,20 +59,17 @@ div#utility-weather {
   padding-bottom: var(--padding-s);
 }
 
-/* .content__header-datetime {
-} */
-
 .content__header-datetime .header__datetime-title {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   margin-bottom: 4px;
-  color: var(--neutral-950-color);
+  color: var(--colors-default-950);
 }
 
 .header__datetime-content {
   font-size: var(--font-size-m);
-  color: var(--neutral-700-color);
+  color: var(--colors-default-700);
   font-weight: 400;
 }
 
@@ -104,7 +92,7 @@ div#utility-weather {
 }
 
 .header__information-content {
-  color: var(--neutral-400-color);
+  color: var(--colors-default-400);
   font-size: var(--font-size-m);
   font-weight: 400;
 }
@@ -118,7 +106,7 @@ div#utility-weather {
 
 .header__temperature-value {
   font-size: 48px;
-  color: var(--neutral-950-color);
+  color: var(--colors-default-950);
   font-weight: 400;
 }
 
@@ -131,15 +119,15 @@ div#utility-weather {
 .header__temperature-units .units {
   font-size: var(--font-size-m);
   font-weight: 500;
-  color: var(--neutral-400-color);
+  color: var(--colors-default-400);
 }
 
 .header__temperature-units .units.active {
-  color: var(--neutral-950-color);
+  color: var(--colors-default-950);
 }
 
 .header__temperature-units .line-center {
-  color: var(--neutral-400-color);
+  color: var(--colors-default-400);
 }
 
 /* Chart section styling */
@@ -162,7 +150,7 @@ div#utility-weather {
   border-bottom: 2px solid transparent;
   font-size: var(--font-size-m);
   font-weight: 400;
-  color: var(--neutral-400-color);
+  color: var(--colors-default-400);
   transition: color var(--duration-time) ease-in,
     border-color var(--duration-time) ease-in;
   cursor: pointer;
@@ -182,7 +170,7 @@ div#utility-weather {
 
 .content__chart-tabs .chart__tabs-item:hover,
 .content__chart-tabs .chart__tabs-item.active {
-  color: var(--neutral-950-color);
+  color: var(--colors-default-950);
   border-color: var(--yellow);
 }
 
@@ -203,7 +191,7 @@ div#utility-weather {
   flex-direction: column;
   align-items: center;
   gap: var(--gap-l);
-  background-color: var(--neutral-50-color);
+  background-color: var(--colors-default-50);
   transition: background-color var(--duration-time) ease-in;
   cursor: pointer;
 }
@@ -240,12 +228,12 @@ div#utility-weather {
 
 .temperature-comparison .temperature {
   font-size: var(--font-size-m);
-  color: var(--neutral-400-color);
+  color: var(--colors-default-400);
   font-weight: 400;
 }
 .temperature-comparison .temperature.temperature--max {
   font-weight: 500;
-  color: var(--neutral-700-color);
+  color: var(--colors-default-700);
 }
 
 .units {
@@ -253,5 +241,5 @@ div#utility-weather {
 }
 
 .units:hover {
-  color: var(--neutral-950-color);
+  color: var(--colors-default-950);
 }
