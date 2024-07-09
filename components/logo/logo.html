@@ -1,16 +1,17 @@
 <link rel="stylesheet" href="/components/logo/logo.css" />
 <link rel="stylesheet" href="/components/logo/logo.variables.css" />
 <script src="logo.js"></script>
-<div id="logo">
-  <div class="logo-time-weather">
-    <div class="logo">
-      <div class="text-wrapper article-title-emphasis">FNEWS</div>
+<div id="logo" class="p-4">
+  <div class="flex items-center gap-4 bg-red p-4 rounded-md logo-time-weather">
+    <div class="flex items-center justify-center gap-2 p-4 bg-danger rounded-lg logo tracking-normal">
+      <div class="text-lg font-semibold text-wrapper article-title-emphasis">FNEWS</div>
     </div>
-    <div id="today"></div>
-    <div class="weather">
-      <div class="location">
-        <div class="text-wrapper-2">
-          <select id="provinceSelected" onchange="checkWeather(this.value)">
+    <div id="today" class="text-gray-500 text-sm tracking-normal"></div>
+    <div class="flex items-center gap-3 weather tracking-normal">
+      <div class="flex items-center gap-1 location">
+        <div class="relative text-wrapper-2 tracking-normal">
+          <select id="provinceSelected" onchange="checkWeather(this.value)"
+            class="bg-transparent outline-none cursor-pointer text-gray-500 text-sm">
             <option value="Ho Chi Minh" selected>TP. HCM</option>
             <option value="An Giang">An Giang</option>
             <option value="Binh Duong">Binh Duong</option>
@@ -35,8 +36,8 @@
           </select>
         </div>
       </div>
-      <img class="cloud-drizzle" id="weather-icon" />
-      <div id="weatherTemperature"></div>
+      <img class="w-6 h-6 cloud-drizzle" id="weather-icon" />
+      <div id="weatherTemperature" class="text-gray-500 text-sm"></div>
     </div>
   </div>
 </div>
