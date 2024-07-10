@@ -1,11 +1,11 @@
 [data-theme=light] {
-  --text-color: #84858c;
+  --text-color-nav: #84858c;
   --background-color-body: #f5f5f6;
   --theme: light;
 }
 
 [data-theme=dark] {
-  --text-color: white;
+  --text-color-nav: white;
   --background-color-body: #202022;
   --theme: dark;
 }
@@ -14,7 +14,7 @@
   background-color: var(--background-color-body);
 }
 #nav nav .nav-container .nav-links .nav-link {
-  color: var(--text-color);
+  color: var(--text-color-nav);
   text-decoration: none;
 }
 
