@@ -6,7 +6,6 @@
   --margin-s: 4px;
   --font-weight-text: 400;
   --font-size-md: 18px;
-  --color-text-custom: #202022;
   --margin-l: 16px;
   --width-icon-md: 32px;
   --height-icon-md: 32px;
@@ -16,14 +15,6 @@
   --background-color: black;
   --text-color: white;
   --theme: dark;
-  --min-height: 100px;
-  --margin-s: 4px;
-  --font-weight-text: 400;
-  --font-size-md: 18px;
-  --color-text-custom: white;
-  --margin-l: 16px;
-  --width-icon-md: 32px;
-  --height-icon-md: 32px;
 }
 
 div#footer-social-media {
@@ -43,7 +34,7 @@ div#footer-social-media {
 .p_article {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-text);
-  color: var(--color-text-custom);
+  color: var(--text-color);
   font-family: Roboto;
   margin-right: var(--margin-l);
 }
@@ -51,10 +42,13 @@ div#footer-social-media {
 .div_group_icon {
   width: var(--width-icon-md);
   height: var(--height-icon-md);
-  margin-right: 4px;
   position: relative;
 }
 
 .div_group_icon a {
+  color: var(--background-color);
+}
+
+.f_icon{
   color: var(--text-color);
 }
