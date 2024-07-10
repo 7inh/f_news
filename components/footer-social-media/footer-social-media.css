@@ -31,13 +31,7 @@ div#footer-social-media {
   font-style: normal;
 }
 
-.p_article {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-text);
-  color: var(--text-color_social_media);
-  font-family: Roboto;
-  margin-right: var(--margin-l);
-}
+
 
 .div_group_icon {
   width: var(--width-icon-md);
