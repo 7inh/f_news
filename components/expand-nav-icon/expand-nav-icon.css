@@ -1,16 +1,13 @@
 div#expand-nav-icon {
-  background-color: #6d6dd4;
+  background-color: var(--blue-color);
 }
-div#expand-nav-icon {
-  background-color: #6d6dd4;
-}
+
 :root {
   --font-size: 16px;
   --blue-color: #6d6dd4;
 }
 
 .hamburger {
-  /* display: none; */
   cursor: pointer;
 }
 .line {
