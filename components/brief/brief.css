@@ -9,38 +9,38 @@
   --gap-brief-list: 24px;
   --gap-brief-item: 4px;
   --gap-brief-info: 8px;
-  --font-family-heading: "Roboto Slab";
+  --font-family-heading: 'Roboto Slab';
   --font-size-heading: 16px;
   --font-weight-heading: 600;
   --line-height-heading: 22.4px;
-  --font-family-info: "Roboto";
+  --font-family-info: 'Roboto';
   --font-size-info: 14px;
   --font-weight-info: 400;
   --line-height-info: 21px;
   --webkit-line-clamp: 3;
 }
 
-[data-theme=light] {
+[data-theme='light'] {
   --text-color: var(--colors-default-950);
   --text-info-color: var(--colors-default-700);
   --background-color-body: var(--colors-default-50);
   --theme: light;
 }
 
-[data-theme=dark] {
+[data-theme='dark'] {
   --text-color: var(--colors-default-50);
   --background-color-body: var(--colors-default-950);
   --text-info-color: var(--colors-default-300);
   --theme: dark;
 }
 
-.brief {
+#brief {
   margin-top: var(--margin-top-brief);
   margin-bottom: var(--margin-bottom-brief);
   width: var(--width-brief);
   flex-shrink: 0;
   align-self: stretch;
-  border-left: var(--sds-size-stroke-border) solid var(--Neutral-100);
+  border-left: var(--sds-size-stroke-border) solid var(--colors-default-100);
   background-color: var(--background-color-body);
 }
 .brief__list {
@@ -69,6 +69,7 @@
   line-height: var(--line-height-heading);
   opacity: var(--sds-size-stroke-border);
   display: -webkit-box;
+  line-clamp: var(--webkit-line-clamp);
   -webkit-line-clamp: var(--webkit-line-clamp);
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -79,7 +80,8 @@
   align-items: center;
   gap: var(--gap-brief-info);
 }
-.brief__item-info-hour, .brief__item-info-branch {
+.brief__item-info-hour,
+.brief__item-info-branch {
   color: var(--text-info-color);
   font-family: var(--font-family-info);
   font-size: var(--font-size-info);
