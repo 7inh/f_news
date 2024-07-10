@@ -1,5 +1,4 @@
-#footer-contact {
-  min-height: 100px;
+/* #footer-contact {
   display: flex;
   width: 380px;
   flex-direction: column;
@@ -7,25 +6,25 @@
   gap: 4px;
   background-color: var(--background-color);
   justify-content: center;
-}
-#footer-contact .contact-item {
+} */
+/* #footer-contact .contact-item {
   gap: 6px;
   display: flex;
   list-style: none;
   align-items: center;
   align-self: stretch;
-}
-#footer-contact .contact-item .contact-icon {
+} */
+/* #footer-contact .contact-item .contact-icon {
   width: 20px;
   height: 20px;
-}
-#footer-contact .contact-item .contact-icon .black {
+} */
+/* #footer-contact .contact-item .contact-icon .black {
   color: var(--text-color);
-}
-#footer-contact .contact-item .article {
+} */
+/* #footer-contact .contact-item .article {
   font-style: normal;
   margin: 0;
   color: var(--text-color);
-}
+} */
 
 /*# sourceMappingURL=footer-contact.css.map */
