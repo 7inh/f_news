@@ -17,16 +17,6 @@
     animation: marquee 25s linear infinite;
   }
   
-  .article-title {
-    &.div {
-      color: var(--colors-default-950);
-      font-family: var(--font-family);
-    }
-    color: var(--colors-default-950);
-    text-align: center;
-    font-family: var(--font-family);
-  }
-  
   @keyframes marquee {
     0% {
       transform: translateX(100%);
