@@ -1,0 +1,18 @@
+[data-theme="light"] {
+    --text-color: #84858c;
+    --background-color-body: #f5f5f6;
+    --theme: light;
+}
+
+[data-theme="dark"] {
+    --text-color: white;
+    --background-color-body: #202022;
+    --theme: dark;
+}
+#nav {
+    background-color: var(--background-color-body);
+    nav .nav-container .nav-links .nav-link {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}

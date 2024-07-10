@@ -155,6 +155,7 @@ section#content > * {
 
 .footer-content-section {
   display: grid;
+  grid-template-columns: 1fr auto;
   grid-template-areas:
     'footer-summary theme-toggle'
     'footer-summary footer-link';
