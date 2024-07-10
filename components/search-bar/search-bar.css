@@ -138,11 +138,11 @@
   font-family: 'Roboto';
   letter-spacing: 0.1px;
 }
-#search-bar:focus-within {
-  width: calc(100% + 20%);
-  transition: width 2s linear 1s;
+#search-input:focus-within {
+  width: 400px;
 }
-.search-icon {
+
+#search-bar-container:has(#search-bar:focus-within) .search-icon {
   display: inline-block;
   width: 24px;
   height: 24px;
