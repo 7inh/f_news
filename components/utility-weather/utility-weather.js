@@ -18,6 +18,17 @@ tabs.forEach((tab) => {
   });
 });
 
+// Handle change days
+const days = document.querySelectorAll('.weather__content-days--item');
+days.forEach((day) => {
+  day.addEventListener('click', () => {
+    document
+      .querySelector('.weather__content-days--item.active')
+      .classList.remove('active');
+    day.classList.add('active');
+  });
+});
+
 //------ Chart precipitation
 
 // define
