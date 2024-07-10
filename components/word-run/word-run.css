@@ -1,4 +1,26 @@
+
 div#word-run {
   grid-area: word-run;
-  background-color: rgb(129, 160, 95);
+}
+.text-color{
+  color:var(--text-color)  !important;
+}
+.marquee-content {
+    animation: marquee 18s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
