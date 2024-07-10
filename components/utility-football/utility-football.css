@@ -3,7 +3,6 @@
   --border-1:1px;
   --border-2:2px;
 
-
   --padding-4:4px;
   --padding-6:6px;
   --padding-8:8px;
@@ -18,19 +17,9 @@
   --gap-12:12px;
   --gap-16:16px;
 
-  --font-size-20:20px;
-  --font-size-12:12px;
-  --font-size-16:16px;
-  --font-size-18:18px;  
-
-  --font-weight-400:400;
-  --font-weight-500:500;
-  --font-weight-600:600;
-
   --width-72:72px;
   --min-height-100:100px;
   --height-2:2px;
-
 
 }
 
@@ -42,16 +31,7 @@ div#utility-football {
 .utility-football-container{
   grid-template-columns: 1fr 2fr;
 }
-.utility-football-infor{
-}
-.football-infor-heading{
-  color: var(--text-color);
-  font-family: var(--font-family-primary);
-}
-.football-infor-list .football-infor-item{
-  color: var(--text-color);
-  font-family: var(--font-family-primary);
-}
+
 .football-infor-item:not(:last-child)::before{
   position: absolute;
   content: " ";
@@ -89,12 +69,8 @@ div#utility-football {
   color: var(--text-color);
   font-family: var(--font-family-secondary);
 }
-.football-item-score{
-  color: var(--text-color);
-  font-family: var(--font-family-secondary);
-}
+
 .utility-football-footer{
-  color: var(--colors-default-950);
   background-color:  var(--colors-default-100);
   border: var(--border-2) solid var(--colors-default-500);
   border-radius: var(--border-radius-8);
