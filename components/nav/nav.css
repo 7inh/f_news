@@ -1,3 +1,9 @@
-div#nav {
-  background-color: #6dd4b5;
+#nav {
+  background-color: white;
 }
+#nav nav .nav-container .nav-links .nav-link {
+  color: #84858C;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=nav.css.map */
