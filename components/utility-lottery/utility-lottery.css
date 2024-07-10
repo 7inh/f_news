@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 :root {
   --padding-12: 12px;
   --padding-8: 8px;
@@ -26,47 +24,22 @@
 }
 
 div#utility-lottery {
-  /* width: 100%; */
-  /* font-family: Roboto; */
+  font-family: Roboto, sans-serif;
   background-color: var(--background-color-fff);
   color: var(--colors-default-950);
 }  
  
-/* table {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid var(--colors-default-100);
-  opacity: var(--sds-size-stroke-border);
-  border-collapse: collapse;
-}
-
-td,
-th {
-  text-align: center;
-  border: 1px solid var(--colors-default-100);
-  padding: var(--padding-12);
-} */
 
 td {
-  /* overflow: hidden; */
   color: var(--colors-default-950);
-  /* text-overflow: ellipsis; */
-  /* font-size: 16px; */
-  /* font-style: normal; */
-  /* font-weight: 800; */
-  /* line-height: normal; */
 }
 
 .tbl-header {
-  /* text-align: center; */
   color: var(--colors-default-950);
 }
 
 .tbl-title {
   background-color: var(--background-color-f2c94c33);
-  /* text-align: center;
-  font-size: 16px;
-  font-weight: 500; */
 }
 
 .tbl-title strong {
@@ -77,20 +50,10 @@ td {
   color: var(--colors-emphasis);
 }
 
-/* .tbl-body {
-  text-align: center;
-  font-size: 16px;
-} */
 
 .tbl-body :is(tr:nth-of-type(1), tr:nth-last-of-type(1)) > td:not(.row-title) {
   color: var(--colors-emphasis);
 }
-
-/* .tbl-body .row-title {
-  width: 56px;
-  font-size: 14px;
-  font-weight: 400;
-} */
 
 .tbl-body tr:nth-child(even):not(.not-color) {
   background-color: var(--colors-default-50);
