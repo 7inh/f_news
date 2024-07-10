@@ -11,8 +11,6 @@
 }
 
 #nav {
-  position: sticky;
-  top: 0;
   background-color: var(--background-color-body);
 }
 #nav nav .nav-container .nav-links .nav-link {
