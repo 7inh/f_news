@@ -1,4 +1,65 @@
+:root {
+  --padding-12: 12px;
+  --padding-8: 8px;
+
+  --text-color-202022: #202022;
+  --text-color-000: #000;
+
+  --background-color-fff: #fff;
+  --background-color-f2c94c33: rgba(242, 201, 76, 0.2);
+  --sds-size-stroke-border: 1;
+}
+
+[data-theme='light'] #utility-lottery {
+  --background-color-fff: #fff;
+  --background-color-f2c94c33: rgba(242, 201, 76, 0.2);
+  --text-color-202022: #202022;
+  --text-color-000: #f5f5f6;
+}
+
+[data-theme='dark'] #utility-lottery {
+  --background-color-fff: #000;
+  --background-color-f2c94c33: #000;
+  --text-color-202022: #f5f5f6;
+  --text-color-000: #000;
+}
+
 div#utility-lottery {
-  background-color: rgb(129, 160, 95);
-  min-height: 100px;
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color-fff);
+  color: var(--text-color-202022);
+}  
+ 
+
+td {
+  color: var(--text-color-202022);
+}
+
+.tbl-header {
+  color: var(--text-color-202022);
+}
+
+.tbl-title {
+  background-color: var(--background-color-f2c94c33);
+}
+
+.tbl-title strong {
+  color: var(--colors-emphasis);
+}
+
+.tbl-title-row-2 {
+  color: var(--colors-emphasis);
+}
+
+
+.tbl-body :is(tr:nth-of-type(1), tr:nth-last-of-type(1)) > td:not(.row-title) {
+  color: var(--colors-emphasis);
+}
+
+.tbl-body tr:nth-child(even):not(.not-color) {
+  background-color: var(--text-color-000);
+}
+
+.tbl-body tr.rowspanned {
+  background-color: var(--text-color-000);
 }
