@@ -1,19 +1,11 @@
-<!-- <link rel="stylesheet" href="/components/utility-weather/utility-weather.css" /> -->
-<div id="utility-weather w-full h-fit overflow-hidden ">
-  <div class="utility__weather-content w-full h-full flex flex-col gap-[12px]">
-    <div
-      class="weather__content-header w-full flex justify-between align-center pb-[4px]"
-    >
+<link rel="stylesheet" href="/components/utility-weather/utility-weather.css" />
+<div id="utility-weather">
+  <div class="utility__weather-content">
+    <div class="weather__content-header">
       <div class="content__header-datetime">
-        <div
-          class="header__datetime-title text-[20px] font-[600] leading-[30px] mb-[4px] text-[#202022]"
-        >
-          Thời tiết
-        </div>
+        <div class="header__datetime-title">Thời tiết</div>
 
-        <div
-          class="header__datetime-content text-[14px] text-[#4d4d51] font-[400]"
-        >
+        <div class="header__datetime-content">
           <div class="">
             <span class="time-value">18:00</span>
             <span class="day-value">Chủ nhật</span>
@@ -21,12 +13,8 @@
           <div class="status-value">Nhiều mây</div>
         </div>
       </div>
-      <div
-        class="content__header-information flex justify-between items-start gap-[8px]"
-      >
-        <div
-          class="header__information-content text-[#84858c] text-[14px] font-[400]"
-        >
+      <div class="content__header-information">
+        <div class="header__information-content">
           <div class="chance__of-rain">
             Khả năng mưa: <span class="rain-value">18%</span>
           </div>
@@ -37,9 +25,7 @@
           <div class="wind">Gió: <span class="wind-value"> 10 km/h </span></div>
         </div>
 
-        <div
-          class="header__information-image p-[8px] bg-[#2f81ed41] rounded-[4px] w-fit h-fit"
-        >
+        <div class="header__information-image">
           <img
             src="/assets/images/weather_image.svg"
             alt=""
@@ -47,144 +33,40 @@
           />
         </div>
       </div>
-      <div
-        class="content__header-temperature flex justify-between items-start gap-[4px]"
-      >
-        <div
-          class="header__temperature-value text-[48px] text-[##202022] font-[400]"
-        >
-          29
-        </div>
+      <div class="content__header-temperature">
+        <div class="header__temperature-value">29</div>
 
-        <div class="header__temperature-units flex items-center gap-[4px]">
-          <div
-            class="temperature__units-celsius units cursor-pointer active text-[14px] font-[500]"
-          >
-            °C
-          </div>
-          <div class="line-center text-[#84858c]">|</div>
-          <div
-            class="temperature__units-fahrenheit cursor-pointer units text-[#84858c] text-[14px]"
-          >
-            °F
-          </div>
+        <div class="header__temperature-units">
+          <div class="temperature__units-celsius">°C</div>
+          <div class="line-center">|</div>
+          <div class="temperature__units-fahrenheit">°F</div>
         </div>
       </div>
     </div>
 
-    <div class="weather__content-chart flex flex-col gap-[12px]">
-      <div
-        class="content__chart-tabs flex justify-start items-center gap-[16px]"
-      >
-        <div
-          class="chart__tabs-item py-[8px] px-0 border-b-[2px] border-b-[#f2c94c] text-[14px] font-[400] text-[#202022] cursor-pointer active"
-        >
-          Nhiệt độ
-        </div>
-        <div
-          class="chart__tabs-item py-[8px] px-0 border-b-[2px] border-b-[transparent] text-[14px] font-[400] text-[#84858c] cursor-pointer"
-        >
-          Lượng mưa
-        </div>
-        <div
-          class="chart__tabs-item py-[8px] px-0 border-b-[2px] border-b-[transparent] text-[14px] font-[400] text-[#84858c] cursor-pointer"
-        >
-          Gió
-        </div>
+    <div class="weather__content-chart">
+      <div class="content__chart-tabs">
+        <div class="chart__tabs-item">Nhiệt độ</div>
+        <div class="chart__tabs-item">Lượng mưa</div>
+        <div class="chart__tabs-item">Gió</div>
       </div>
 
-      <div class="content__chart-view w-full h-full">
-        <img
-          src="/assets/images/chart-view.svg"
-          alt=""
-          class="w-full h-full object-cover"
-        />
+      <div class="content__chart-view">
+        <img src="/assets/images/chart-view.svg" alt="" />
       </div>
     </div>
 
-    <div class="weather__content-days grid grid-cols-6 gap-[8px] w-full h-full">
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#2f81ed41] cursor-pointer active"
-      >
+    <div class="weather__content-days">
+      <div class="weather__content-days--item">
         <div class="day-value">Hôm nay</div>
 
         <div class="image-value">
           <img src="/assets/images/weather_image.svg" alt="" />
         </div>
 
-        <div class="temperature-comparison flex gap-[4px]">
+        <div class="temperature-comparison">
           <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
-        </div>
-      </div>
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#e6e6e7] cursor-pointer active"
-      >
-        <div class="day-value">Hôm nay</div>
-
-        <div class="image-value">
-          <img src="/assets/images/weather_image.svg" alt="" />
-        </div>
-
-        <div class="temperature-comparison flex gap-[4px]">
-          <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
-        </div>
-      </div>
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#e6e6e7] cursor-pointer active"
-      >
-        <div class="day-value">Hôm nay</div>
-
-        <div class="image-value">
-          <img src="/assets/images/weather_image.svg" alt="" />
-        </div>
-
-        <div class="temperature-comparison flex gap-[4px]">
-          <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
-        </div>
-      </div>
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#e6e6e7] cursor-pointer active"
-      >
-        <div class="day-value">Hôm nay</div>
-
-        <div class="image-value">
-          <img src="/assets/images/weather_image.svg" alt="" />
-        </div>
-
-        <div class="temperature-comparison flex gap-[4px]">
-          <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
-        </div>
-      </div>
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#e6e6e7] cursor-pointer active"
-      >
-        <div class="day-value">Hôm nay</div>
-
-        <div class="image-value">
-          <img src="/assets/images/weather_image.svg" alt="" />
-        </div>
-
-        <div class="temperature-comparison flex gap-[4px]">
-          <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
-        </div>
-      </div>
-      <div
-        class="weather__content-days--item p-[4px] rounded-[4px] flex flex-col items-center gap-[8px] bg-[#e6e6e7] cursor-pointer active"
-      >
-        <div class="day-value">Hôm nay</div>
-
-        <div class="image-value">
-          <img src="/assets/images/weather_image.svg" alt="" />
-        </div>
-
-        <div class="temperature-comparison flex gap-[4px]">
-          <div class="temperature temperature--max">35°</div>
-          <div class="temperature temperature--min text-[#84858c]">55°</div>
+          <div class="temperature temperature--min">55°</div>
         </div>
       </div>
     </div>
