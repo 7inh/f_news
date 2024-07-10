@@ -11,6 +11,7 @@
 }
 
 #media{
+  background-color: var(--colors-default-100);
   height: 498px;
   cursor: pointer;
   
