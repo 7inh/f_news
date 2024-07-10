@@ -1,4 +1,44 @@
-div#profile-icon {
+:root {
+  --white-color: #fff;
+}
+
+#profile-icon {
   grid-area: profile-icon;
-  background-color: #d46d6d;
+  width: 120px;
+  display: -webkit-box;
+}
+#profile-icon f-icon {
+  width: 16px;
+  height: 16px;
+}
+#profile-icon .login-container {
+  border: none;
+  color: var(--text-color);
+  background-color: var(--background-color-body);
+}
+#profile-icon .login-container:hover {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--colors-info);
+}
+#profile-icon .login-container:focus {
+  padding: unset;
+  margin: unset;
+}
+#profile-icon .login-container:focus :is(f-icon, .login-text) {
+  display: none;
+}
+#profile-icon .login-container:focus + .profile-container {
+  display: flex;
+}
+#profile-icon .profile-container {
+  color: var(--text-color);
+  background-color: var(--background-color-body);
+}
+
+#profile-icon .profile-container .profile-name {
+  text-overflow: ellipsis; 
+  white-space  : nowrap;
+  overflow     : hidden;
+  width: 90px;
 }
