@@ -1,6 +1,6 @@
 :root {
-  --background-color: white;
-  --text-color: black;
+  --background-color_social_media: white;
+  --text-color_social_media: black;
   --theme: light;
   --min-height: 100px;
   --margin-s: 4px;
@@ -12,13 +12,13 @@
 }
 
 [data-theme='dark'] {
-  --background-color: black;
-  --text-color: white;
+  --background-color_social_media: black;
+  --text-color_social_media: white;
   --theme: dark;
 }
 
 div#footer-social-media {
-  background-color: var(--background-color);
+  background-color: var(--background-color_social_media);
   min-height: var(--min-height);
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ div#footer-social-media {
 .p_article {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-text);
-  color: var(--text-color);
+  color: var(--text-color_social_media);
   font-family: Roboto;
   margin-right: var(--margin-l);
 }
@@ -46,9 +46,9 @@ div#footer-social-media {
 }
 
 .div_group_icon a {
-  color: var(--background-color);
+  color: var(--background-color_social_media);
 }
 
 .f_icon{
-  color: var(--text-color);
+  color: var(--text-color_social_media);
 }
