@@ -18,6 +18,20 @@
   --font-size-xxxl: 32px;
 }
 
+html[data-theme='light'] {
+  --colors-default-50-v2: #f5f5f6;
+  --colors-default-100-v2: #e6e6e7;
+  --colors-default-200-v2: #cfd0d2;
+  --colors-default-300-v2: #adaeb3;
+  --colors-default-400-v2: #84858c;
+  --colors-default-500-v2: #696a71;
+  --colors-default-600-v2: #5a5b60;
+  --colors-default-700-v2: #4d4d51;
+  --colors-default-800-v2: #434347;
+  --colors-default-900-v2: #3b3b3e;
+  --colors-default-950-v2: #202022;
+}
+
 html[data-theme='dark'] {
   --colors-default-50-v2: #e4e4e42a;
   --colors-default-100-v2: #2f81ed;
