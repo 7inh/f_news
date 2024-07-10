@@ -273,3 +273,23 @@ div#utility-weather {
 .units:hover {
   color: var(--colors-default-950-v2);
 }
+
+.chart__view-item {
+  display: none;
+}
+
+.chart__view-item.active {
+  display: inline-block;
+  width: fit-content;
+  height: auto;
+  max-width: 484px;
+}
+
+/* Override highChart */
+.highcharts-background {
+  fill: transparent;
+}
+
+.highcharts-credits {
+  display: none;
+}

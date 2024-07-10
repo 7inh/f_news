@@ -46,13 +46,25 @@
 
     <div class="weather__content-chart">
       <div class="content__chart-tabs">
-        <div class="chart__tabs-item active">Nhiệt độ</div>
-        <div class="chart__tabs-item">Lượng mưa</div>
-        <div class="chart__tabs-item">Gió</div>
+        <div class="chart__tabs-item active" data-tab="temperature">
+          Nhiệt độ
+        </div>
+        <div class="chart__tabs-item" data-tab="precipitation">Lượng mưa</div>
+        <div class="chart__tabs-item" data-tab="wind">Gió</div>
       </div>
 
       <div class="content__chart-view">
-        <img src="/assets/images/chart-view.svg" alt="" />
+        <div class="chart__view-item active" data-tab="temperature">
+          <div id="temperature-chart">
+            <img src="/assets/images/chart-view.svg" alt="" />
+          </div>
+        </div>
+        <div class="chart__view-item" data-tab="precipitation">
+          <div id="precipitation-chart"></div>
+        </div>
+        <div class="chart__view-item" data-tab="wind">
+          <div id="wind-chart"></div>
+        </div>
       </div>
     </div>
 
