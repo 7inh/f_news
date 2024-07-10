@@ -77,22 +77,25 @@ p {
 p:hover {
   color: var(--blue-color);
 }
+
 .list-contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 300px;
+  height: 400px;
   row-gap: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--colors-default-100);
 }
 .contact-item {
   display: flex;
   padding-bottom: 10px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  row-gap: 10px;
   align-self: stretch;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--colors-default-100);
 }
 .contact-item:nth-of-type(4) {
   border: none;
@@ -113,6 +116,9 @@ p:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.article-description:first-of-type {
+  text-transform: uppercase;
 }
 .social {
   width: 32px;
