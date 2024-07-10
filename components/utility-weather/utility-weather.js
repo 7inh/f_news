@@ -18,6 +18,22 @@ tabs.forEach((tab) => {
   });
 });
 
+//------ Chart precipitation
+
+// define
+const DATA_TIME = [
+  '15:00',
+  '18:00',
+  '21:00',
+  '00:00',
+  '03:00',
+  '06:00',
+  '09:00',
+  '12:00',
+];
+
+const DATA_PRECIPITATION = [93, 19, 24, 43, 34, 31, 58, 77];
+
 Highcharts.chart('precipitation-chart', {
   chart: {
     type: 'area',
@@ -27,16 +43,7 @@ Highcharts.chart('precipitation-chart', {
     text: '',
   },
   xAxis: {
-    categories: [
-      '15:00',
-      '18:00',
-      '21:00',
-      '00:00',
-      '03:00',
-      '06:00',
-      '09:00',
-      '12:00',
-    ],
+    categories: DATA_TIME,
     crosshair: true,
     labels: {
       style: {
@@ -84,7 +91,7 @@ Highcharts.chart('precipitation-chart', {
   series: [
     {
       name: 'Lượng mưa',
-      data: [93, 19, 24, 43, 34, 31, 58, 77],
+      data: DATA_PRECIPITATION,
       zones: [
         {
           value: 100,
