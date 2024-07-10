@@ -284,7 +284,6 @@ div#utility-weather {
   height: auto;
   max-width: 484px;
 }
-
 /* Override highChart */
 .highcharts-background {
   fill: transparent;
@@ -292,4 +291,17 @@ div#utility-weather {
 
 .highcharts-credits {
   display: none;
+}
+
+.highcharts-label.highcharts-data-label.highcharts-data-label-color-0 text {
+  fill: var(--colors-default-950-v2) !important;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels text {
+  fill: var(--colors-default-950-v2) !important;
+}
+
+.highcharts-legend-item.highcharts-area-series.highcharts-color-0.highcharts-series-0
+  text {
+  fill: var(--colors-default-950-v2) !important;
 }
