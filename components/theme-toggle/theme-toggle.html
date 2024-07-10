@@ -1,18 +1,31 @@
 <link rel="stylesheet" href="/components/theme-toggle/theme-toggle.css" />
 <script src="./theme-toggle.js"></script>
-<div id="theme-toggle">
-  <section class="btn-toggle-group">
+<div id="theme-toggle" class="flex justify-end items-center">
+  <form
+    class="flex rounded-[999px] p-[4px] mt-[4px] mb-[4px] gap-[8px]"
+    name="myTheme"
+    onchange="toggleTheme()"
+  >
     <input
-      type="checkbox"
-      class="checkbox"
-      id="checkbox"
-      onclick="toggleTheme()"
+      type="radio"
+      id="sun"
+      name="theme"
+      value="dark"
+      checked
+      class="hidden"
     />
-    <label for="checkbox" class="checkbox-label">
-      <img src="../../assets/images/Sun.svg" alt="light" />
-      <img src="../../assets/images/Moon.svg" alt="dark" />
-      <span class="ball"></span>
-    </label>
-  </section>
+    <label for="sun" class="transition-all"
+      ><img
+        src="../../assets/images/Sun.svg"
+        alt="sun"
+        class="w-[24px] h-[24px] p-[4px]"
+    /></label>
+    <input type="radio" id="moon" name="theme" value="light" class="hidden" />
+    <label for="moon" class="transition-all"
+      ><img
+        src="../../assets/images/Moon.svg"
+        alt="moon"
+        class="w-[24px] h-[24px] p-[4px]"
+    /></label>
+  </form>
 </div>
-<!-- <button onclick="toggleTheme()">Toggle Theme</button> -->
