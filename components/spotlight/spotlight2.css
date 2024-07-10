@@ -1,0 +1,42 @@
+.lint-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-color);
+}
+
+.container {
+    width: 1180px;
+}
+
+.font-bold {
+    color: var(--text-color);
+}
+
+#text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncated::after {
+    content: '...';
+}
+
+.hidden-text {
+    display: none;
+}
+
+.text:hover {
+    color: gray;
+}
+
+
+.text2 {
+    color: var(--text-color);
+}
+
+.time {
+    color: var(--text-color);
+}
