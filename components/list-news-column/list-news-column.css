@@ -4,10 +4,13 @@
   --item-margin: 4px;
   --item-news-boder: 4px;
   --item-margin-bottom: 8px;
+  --item-img-w:330px;
+  --item-img-h: 198px;
   --text-color-itemnews: #202022;
   --width-lstnewscol:680px;
   --gap-item-news-col-20: 20px;
   --gap-item-news-col-10: 10px;
+
 }
 
 [data-theme='light'] {
