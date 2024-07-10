@@ -1,16 +1,9 @@
-[data-theme='dark'] #word-run {
-  --text-color: #f5f5f6;
-  --background-color: #202022;
-  --theme: dark;
-}
+
 div#word-run {
   grid-area: word-run;
 }
 .text-color{
   color:var(--text-color)  !important;
-}
-.bg-color{
-  background-color: var(--background-color) !important;
 }
 .marquee-content {
     animation: marquee 18s linear infinite;
