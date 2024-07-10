@@ -26,38 +26,6 @@
   --height-icon-md: 32px;
 }
 
-/*div#footer-social-media {
-  background-color: var(--background-color);
-  min-height: var(--min-height);
-  display: flex;
-  align-items: center;
-  margin: var(--margin-s);
-}
-
-.roboto-regular {
-  font-family: 'Roboto', sans-serif;
-  font-weight: var(--font-weight-text);
-  font-style: normal;
-}
-
-.p_article {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-text);
-  color: var(--color-text-custom);
-  font-family: Roboto;
-  margin-right: var(--margin-l);
-}
-
-.div_group_icon {
-  width: var(--width-icon-md);
-  height: var(--height-icon-md);
-  margin-right: 4px;
-  position: relative;
-}
-
-.div_group_icon a {
-  color: var(--text-color);
-}*/
 @media only screen and (max-width: 600px) {
   .footer-social-media {
     display: flex;
