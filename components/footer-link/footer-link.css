@@ -1,5 +1,5 @@
 :root {
-  --background-color: white;
+  --background-color: var(--colors-default-50);
   --text-color: var(--colors-default-400);
   --theme: light;
 }
