@@ -41,7 +41,7 @@
   margin: var(--spacing-sm);
   padding: 0 calc(var(--padding-sm) * 2);
   border: 1px solid var(--search-input-border-color);
-  opacity: 5%;
+  opacity: 50%;
   border-radius: var(--search-container-radius);
   min-height: var(--search-min-height);
   position: relative;
@@ -157,7 +157,7 @@
   left: 0;
   right: 0;
   background-color: var(--color-contrast);
-  border-radius: calc(var(--search-container-radius) + var(--spacing-sm));
+  border-radius: calc(var(--search-container-radius));
   border: 1px solid var(--color-default);
   display: none;
   overflow: auto;
