@@ -2,6 +2,9 @@
   --padding-12: 12px;
   --padding-8: 8px;
 
+  --text-color-202022: #202022;
+  --text-color-000: #000;
+
   --background-color-fff: #fff;
   --background-color-f2c94c33: rgba(242, 201, 76, 0.2);
   --sds-size-stroke-border: 1;
@@ -10,32 +13,30 @@
 [data-theme='light'] #utility-lottery {
   --background-color-fff: #fff;
   --background-color-f2c94c33: rgba(242, 201, 76, 0.2);
-  --colors-default-950: #202022;
-  --colors-default-50: #f5f5f6;
-  --theme: light;
+  --text-color-202022: #202022;
+  --text-color-000: #f5f5f6;
 }
 
 [data-theme='dark'] #utility-lottery {
   --background-color-fff: #000;
   --background-color-f2c94c33: #000;
-  --colors-default-950: #f5f5f6;
-  --colors-default-50: #000;
-  --theme: dark;
+  --text-color-202022: #f5f5f6;
+  --text-color-000: #000;
 }
 
 div#utility-lottery {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color-fff);
-  color: var(--colors-default-950);
+  color: var(--text-color-202022);
 }  
  
 
 td {
-  color: var(--colors-default-950);
+  color: var(--text-color-202022);
 }
 
 .tbl-header {
-  color: var(--colors-default-950);
+  color: var(--text-color-202022);
 }
 
 .tbl-title {
@@ -56,9 +57,9 @@ td {
 }
 
 .tbl-body tr:nth-child(even):not(.not-color) {
-  background-color: var(--colors-default-50);
+  background-color: var(--text-color-000);
 }
 
 .tbl-body tr.rowspanned {
-  background-color: var(--colors-default-50);
+  background-color: var(--text-color-000);
 }
