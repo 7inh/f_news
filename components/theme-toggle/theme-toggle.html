@@ -1,44 +1,15 @@
 <link rel="stylesheet" href="/components/theme-toggle/theme-toggle.css" />
 <script src="./theme-toggle.js"></script>
-<div id="theme-toggle" class="flex justify-end items-center">
-  <form
-    class="flex rounded-[999px] p-[4px] mt-[4px] mb-[4px] gap-[8px]"
-    name="myTheme"
-    onchange="toggleTheme()"
-  >
-    <input
-      type="radio"
-      id="sun"
-      name="theme"
-      value="dark"
-      checked
-      class="hidden"
-    />
-    <label for="sun" class="transition-all"
-      ><img
-        src="../../assets/images/Sun.svg"
-        alt="sun"
-        class="w-[24px] h-[24px] p-[4px]"
-    /></label>
-    <input type="radio" id="moon" name="theme" value="light" class="hidden" />
-    <label for="moon" class="transition-all"
-      ><img
-        src="../../assets/images/Moon.svg"
-        alt="moon"
-        class="w-[24px] h-[24px] p-[4px]"
-    /></label>
-    <input
-      type="radio"
-      id="random"
-      name="theme"
-      value="random"
-      class="hidden"
-    />
-    <label for="random" class="transition-all"
-      ><img
-        src="../../assets/images/Monitor.svg"
-        alt="random"
-        class="w-[24px] h-[24px] p-[4px]"
-    /></label>
-  </form>
+<div id="theme-toggle" class="flex justify-end items-center h-fit">
+        <form class="flex rounded-[999px] mb-[20px] p-[4px] gap-[8px]" name="myTheme" onchange="toggleTheme()">
+                <input type="radio" id="sun" name="theme" value="dark" checked class="hidden" />
+                <label for="sun" class="transition-all"><img src="../../assets/images/Sun.svg" alt="sun"
+                                class="w-[24px] h-[24px] p-[4px]" /></label>
+                <input type="radio" id="moon" name="theme" value="light" class="hidden" />
+                <label for="moon" class="transition-all"><img src="../../assets/images/Moon.svg" alt="moon"
+                                class="w-[24px] h-[24px] p-[4px]" /></label>
+                <input type="radio" id="random" name="theme" value="random" class="hidden" />
+                <label for="random" class="transition-all"><img src="../../assets/images/Monitor.svg" alt="random"
+                                class="w-[24px] h-[24px] p-[4px]" /></label>
+        </form>
 </div>
