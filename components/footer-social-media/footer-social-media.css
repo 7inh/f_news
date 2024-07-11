@@ -31,7 +31,12 @@ div#footer-social-media {
   font-style: normal;
 }
 
-
+p.article {
+  color: var(--text-color_social_media);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165%;
+}
 
 .div_group_icon {
   width: var(--width-icon-md);
