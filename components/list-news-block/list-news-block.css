@@ -1,0 +1,18 @@
+div#list-news-block{
+    color: var(--text-color);
+}
+#content-img{
+    aspect-ratio: 280/168;
+    min-width: 280px;
+    min-height: 168px;
+}
+
+#content{
+  box-sizing: content-box;
+}
+
+#side-content-img{
+    aspect-ratio: 180/108;
+    min-width: 180px;
+    min-height: 108px;
+}
