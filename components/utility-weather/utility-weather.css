@@ -114,11 +114,14 @@ div#utility-weather {
   padding: var(--padding-l);
   background-color: var(--blue-blue-color);
   border-radius: var(--border-radius-s);
+  flex-grow: 0;
 }
 
 .header__information-image img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header__information-content {
@@ -138,12 +141,14 @@ div#utility-weather {
   font-size: 48px;
   color: var(--colors-default-950-v2);
   font-weight: 400;
+  line-height: 120%;
 }
 
 .header__temperature-units {
   display: flex;
   justify-content: center;
   gap: var(--gap-s);
+  padding-top: var(--padding-l);
 }
 
 .header__temperature-units .units {
@@ -284,6 +289,51 @@ div#utility-weather {
   height: auto;
   max-width: 484px;
 }
+
+/* chart wind styling */
+.chart__view-item.active {
+  width: 100%;
+}
+.wind-chart {
+  width: 100%;
+}
+.wind__chart-list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gap-l);
+}
+
+.wind__chart-list--item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-l);
+  align-items: center;
+}
+
+.wind__chart-list--item .value {
+  font-size: var(--font-size-m);
+  color: var(--colors-default-700-v2);
+}
+
+.wind__chart-list--item .image {
+  width: 28px;
+  height: 28px;
+}
+
+.wind__chart-list--item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wind__chart-list--item .time {
+  font-size: var(--font-size-s);
+  color: var(--colors-default-400-v2);
+}
 /* Override highChart */
 .highcharts-background {
   fill: transparent;
@@ -304,4 +354,26 @@ div#utility-weather {
 .highcharts-legend-item.highcharts-area-series.highcharts-color-0.highcharts-series-0
   text {
   fill: var(--colors-default-950-v2) !important;
+}
+
+.highcharts-label.highcharts-data-label.highcharts-data-label-color-undefined
+  text {
+  fill: var(--colors-default-950-v2) !important;
+}
+
+/* custom class */
+.rotate-30 {
+  transform: rotate(30deg);
+}
+
+.rotate-60 {
+  transform: rotate(60deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-120 {
+  transform: rotate(120deg);
 }
