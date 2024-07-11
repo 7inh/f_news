@@ -7,10 +7,12 @@
   --text-color-submit: #202022;
   --background-color-submit: #f5f5f6;
   --theme: dark;
+  --background-transparent: transparent;
 }
 input{
   border: 1px solid #B3B3B3;
   flex: 3;
+  background-color: var(--background-transparent);
   font-family: var(--sds-typography-body-font-family);
   font-size: var(--sds-typography-body-size-medium);
   font-style: normal;
