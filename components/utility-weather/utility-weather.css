@@ -236,6 +236,17 @@ div#utility-weather {
   gap: var(--gap-l);
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+#weather__content-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 74px;
+  background-color: var(--blue-blue-color);
+  transition: left var(--duration-time);
 }
 
 .weather__content-days--item {
@@ -250,9 +261,28 @@ div#utility-weather {
   cursor: pointer;
 }
 
-.weather__content-days--item:hover,
-.weather__content-days--item.active {
-  background-color: var(--blue-blue-color);
+.weather__content-days--item[data-index='1'].active ~ #weather__content-line {
+  left: 0;
+}
+
+.weather__content-days--item[data-index='2'].active ~ #weather__content-line {
+  left: calc(var(--gap-l) + 74px);
+}
+
+.weather__content-days--item[data-index='3'].active ~ #weather__content-line {
+  left: calc((var(--gap-l) + 74px) * 2);
+}
+
+.weather__content-days--item[data-index='4'].active ~ #weather__content-line {
+  left: calc((var(--gap-l) + 74px) * 3);
+}
+
+.weather__content-days--item[data-index='5'].active ~ #weather__content-line {
+  left: calc((var(--gap-l) + 74px) * 4);
+}
+
+.weather__content-days--item[data-index='6'].active ~ #weather__content-line {
+  left: calc((var(--gap-l) + 74px) * 5);
 }
 
 .weather__content-days--item .day-value {
