@@ -111,3 +111,5 @@ Highcharts.chart('precipitation-chart', {
     },
   ],
 });
+
+// Chart temperature
