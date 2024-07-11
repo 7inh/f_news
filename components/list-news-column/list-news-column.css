@@ -26,7 +26,3 @@
   --background-color-body: var(--colors-default-950);
   --theme: dark;
 }
-
-.item-title-new-lst{
-  font-family: var(--font-family-secondary);
-}
