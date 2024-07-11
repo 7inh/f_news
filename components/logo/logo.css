@@ -1,4 +1,25 @@
-div#logo {
-  grid-area: logo;
-  background-color: rgb(181, 199, 22);
+.logo-time-weather .logo {
+  background-color: var(--colors-neutral-100);
+}
+
+.logo-time-weather .text-wrapper {
+  color: var(--text-color);
+  font-family: var(--font-family-secondary);
+}
+
+.logo-time-weather > div {
+  color: var(--colors-neutral-400);
+}
+
+.logo-time-weather .text-wrapper-2 {
+  margin-top: -1px;
+  color: var(--colors-neutral-400);
+}
+
+.logo-time-weather .text-wrapper-2 select{
+  color: var(--colors-neutral-400);
+}
+
+.logo-time-weather .text-wrapper-2 select::-webkit-scrollbar {
+  width: 2px;
 }

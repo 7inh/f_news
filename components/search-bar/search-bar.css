@@ -142,11 +142,11 @@ input:focus-within {
   font-family: 'Roboto';
   letter-spacing: 0.1px;
 }
-#search-bar-container input:focus {
-  color: var(--color-default);
+#search-input:focus-within {
+  width: 400px;
 }
 
-.search-icon {
+#search-bar-container:has(#search-bar:focus-within) .search-icon {
   display: inline-block;
   width: 24px;
   height: 24px;

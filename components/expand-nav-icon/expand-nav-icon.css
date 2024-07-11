@@ -1,5 +1,5 @@
 div#expand-nav-icon {
-  background-color: var(--blue-color);
+  background-color: var(--background-color-body);
 }
 
 :root {
@@ -7,14 +7,14 @@ div#expand-nav-icon {
   --blue-color: #6d6dd4;
 }
 
-[data-theme='light'] {
-  --text-color: #202022;
+[data-theme=light] {
+  --text-color-nav: #84858c;
   --background-color-body: #f5f5f6;
   --theme: light;
 }
 
-[data-theme='dark'] {
-  --text-color: #f5f5f6;
+[data-theme=dark] {
+  --text-color-nav: white;
   --background-color-body: #202022;
   --theme: dark;
 }
@@ -25,20 +25,21 @@ div#expand-nav-icon {
 .line {
   width: 30px;
   height: 3px;
-  background-color: var(--colors-default-50);
+  background-color: var(--text-color-nav);
   margin: 5px;
 }
 .expand-nav {
   background-color: var(--colors-default-50);
   position: absolute;
-  top: 70px;
-  left: 148px;
+  top: 50px;
+  left: 0px;
   right: 148px;
   z-index: 1;
   display: none;
 }
 .expand-nav-main {
   display: flex;
+  padding: 10px;
   gap: 30px;
   background-color: var(--background-color-body);
 }
