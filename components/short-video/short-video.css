@@ -14,7 +14,7 @@
   background-color: var(--colors-default-100);
   height: 498px;
   cursor: pointer;
-  
+  border-radius: 4px;
 }
 
 #media:hover{
@@ -24,4 +24,25 @@
 #media>div{
   color: var(--text-color);
   background-color: var(--background-color-body);
+  width: 86px;
+  height: 40px;
+  /* padding: 4px; */
+} 
+
+#media #play{
+  color: white;
+  background-color: var(--colors-default-300);
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#play f-icon{
+  margin-left: 1px;
+}
+
+#media span{
+  padding-right: 4px;
+  font-size: 14px;
 }
