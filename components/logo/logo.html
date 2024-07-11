@@ -1,2 +1,43 @@
 <link rel="stylesheet" href="/components/logo/logo.css" />
-<div id="logo">logo</div>
+<link rel="stylesheet" href="/components/logo/logo.variables.css" />
+<script src="logo.js"></script>
+<div id="logo">
+  <div class="flex items-center gap-4 bg-red p-4 rounded-md logo-time-weather">
+    <div class="flex items-center justify-center gap-2 px-4 bg-danger rounded-lg logo tracking-normal h-10">
+      <div class="text-2xl font-semibold text-wrapper article-title- tracking-normal">FNEWS</div>
+    </div>
+    <div id="today" class="text-sm tracking-normal"></div>
+    <div class="flex items-center gap-3 weather tracking-normal">
+      <div class="flex items-center gap-1 location">
+        <div class="relative text-wrapper-2 tracking-normal">
+          <select id="provinceSelected" onchange="checkWeather(this.value)"
+            class="bg-transparent outline-none cursor-pointer text-sm">
+            <option value="Ho Chi Minh" selected>TP. HCM</option>
+            <option value="An Giang">An Giang</option>
+            <option value="Binh Duong">Binh Duong</option>
+            <option value="Quang Ngai">Quang Ngai</option>
+            <option value="Ha Noi">Ha Noi</option>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Da Nang">Da Nang</option>
+            <option value="Hai Phong">Hai Phong</option>
+            <option value="Can Tho">Can Tho</option>
+            <option value="Hue">Hue</option>
+            <option value="Thanh Hoa">Thanh Hoa</option>
+            <option value="Nghe An">Nghe An</option>
+            <option value="Binh Dinh">Binh Dinh</option>
+            <option value="Khanh Hoa">Khanh Hoa</option>
+            <option value="Lam Dong">Lam Dong</option>
+            <option value="Nam Dinh">Nam Dinh</option>
+            <option value="Thai Binh">Thai Binh</option>
+            <option value="Ninh Binh">Ninh Binh</option>
+            <option value="Hai Duong">Hai Duong</option>
+            <option value="Hung Yen">Hung Yen</option>
+            <option value="Thai Nguyen">Thai Nguyen</option>
+          </select>
+        </div>
+      </div>
+      <img class="w-6 h-6 cloud-drizzle" id="weather-icon" />
+      <div id="weatherTemperature" class="text-sm"></div>
+    </div>
+  </div>
+</div>

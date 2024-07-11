@@ -1,0 +1,13 @@
+:root {
+  --font-size-logo: 14px;
+  --colors-neutral-100: rgba(230, 230, 231, 1);
+  --colors-neutral-400: rgba(132, 133, 140, 1);
+  --background-color: white;
+}
+
+[data-theme='dark'] {
+  --background-color: var(--background-color-body);
+  --theme: dark;
+  --colors-neutral-100: rgb(136, 136, 136);
+  --colors-neutral-400: rgb(228, 228, 228);
+}
