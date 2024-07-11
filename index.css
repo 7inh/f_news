@@ -110,7 +110,6 @@ body {
 }
 
 #wrapper-content > * {
-  background-color: var(--background-color-body);
   max-width: 1180px;
   width: 100%;
   min-height: 10px;

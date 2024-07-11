@@ -15,13 +15,11 @@
 [data-theme='light'] {
   --text-color-item-news: var(--colors-default-950);
   --text-title-news-item: var(--colors-default-900);
-  --background-color-body: var(--colors-default-50);
   --theme: light;
 }
 
 [data-theme='dark'] {
   --text-color-item-news: var(--colors-default-50);
   --text-title-news-item: var(--colors-default-100);
-  --background-color-body: var(--colors-default-950);
   --theme: dark;
 }
