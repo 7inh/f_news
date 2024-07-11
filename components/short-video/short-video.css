@@ -47,6 +47,7 @@
 }
 
 #media span {
+  margin-top: 1px;
   padding-right: 7px;
   font-size: 14px;
 }
