@@ -1,16 +1,15 @@
-:root{
+:root {
   --height-item-news: 198px;
   --item-news-h: 60px;
   --item-margin: 4px;
   --item-news-boder: 4px;
   --item-margin-bottom: 8px;
-  --item-img-w:330px;
+  --item-img-w: 330px;
   --item-img-h: 198px;
   --text-color-itemnews: var(--colors-default-950);
-  --width-lstnewscol:680px;
+  --width-lstnewscol: 680px;
   --gap-item-news-col-20: 20px;
   --gap-item-news-col-10: 10px;
-
 }
 
 [data-theme='light'] {
