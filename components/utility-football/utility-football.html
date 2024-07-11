@@ -2,6 +2,7 @@
   rel="stylesheet"
   href="/components/utility-football/utility-football.css"
 />
+<script src="./utility-football.js"></script>
 <div id="utility-football" class="mt-14">
     <div class="utility-football-container grid gap-4">
       <div class="utility-football-infor pl-4">
@@ -16,59 +17,15 @@
           <div class="football-infor-item relative article-title mb-4 pb-3">
             Nước mắt Pepe, tạm biệt Ronaldo và cây quyền trượng trao lại cho Mbappe
           </div>
-        </div>
+        </div>    
       </div>
       <div class="utility-football-score w-full overflow-hidden rounded-lg">
         <div class="football-list-header py-2 px-2">
           <div class="football-list-title text-xs font-medium">Premier League</div>
         </div>
-        <div class="utility-football-list p-4">
-          <div class="utility-football-item flex relative mb-4 pb-3 items-center text-center justify-between">
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MU.png"/>
-              <div class="football-item-name text-xs font-normal">Man Utd</div>
-            </div>
-            <p class="football-item-score article-bold">
-              <span>2</span>
-              <span> - </span>
-              <span>3</span>
-            </p>  
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MC.png"/>
-              <div class="football-item-name text-xs font-normal">Man City</div>
-            </div>
-          </div>
-          <div class="utility-football-item flex relative mb-4 pb-3 items-center text-center justify-between">
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MU.png"/>
-              <div class="football-item-name text-xs font-normal">Man Utd</div>
-            </div>
-            <p class="football-item-score article-bold">
-              <span>2</span>
-              <span> - </span>
-              <span>3</span>
-            </p>
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MC.png"/>
-              <div class="football-item-name text-xs font-normal">Man City</div>
-            </div>
-          </div>
-          <div class="utility-football-item flex relative mb-4 pb-3 items-center text-center justify-between">
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MU.png"/>
-              <div class="football-item-name text-xs font-normal">Man Utd</div>
-            </div>
-            <p class="football-item-score article-bold">
-              <span>2</span>
-              <span> - </span>
-              <span>3</span>
-            </p>
-            <div class="football-item-info">
-              <img class="logo w-full h-full object-cover" src="../../assets/images/MC.png"/>
-              <div class="football-item-name text-xs font-normal">Man City</div>
-            </div>
-          </div>
-          <button class="utility-football-footer article-title  w-full text-center">
+        <div class="utility-football-table p-3">
+          <div id="utility-football-lists" class="utility-football-list"></div>
+          <button class="utility-football-footer article-title  w-full text-center" >
             Xem tất cả
           </button>
         </div>
