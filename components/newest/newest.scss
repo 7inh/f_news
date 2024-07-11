@@ -1,18 +1,15 @@
-:root{
-    --font-family-heading: 'Roboto Slab';
+:root {
+  --font-family-heading: 'Roboto Slab';
 }
-[data-theme="light"] {
-    --text-color-nav: #84858c;
-    --background-color-body: #f5f5f6;
-    --theme: light;
-  }
-  
-  [data-theme="dark"] {
-    --text-color-nav: white;
-    --background-color-body: #202022;
-    --theme: dark;
-  }
-  div#newest {
-    grid-area: newest;
-    
-  }
+[data-theme='light'] {
+  --text-color-nav: #84858c;
+  --theme: light;
+}
+
+[data-theme='dark'] {
+  --text-color-nav: white;
+  --theme: dark;
+}
+div#newest {
+  grid-area: newest;
+}

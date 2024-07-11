@@ -33,6 +33,7 @@ input:focus-within {
   position: relative;
   align-self: center;
   font-family: 'Roboto';
+  width: 300px;
 }
 #search-bar:has(#search-bar-container #search-bar:focus-within) #search-result {
   display: block;
@@ -142,7 +143,10 @@ input:focus-within {
   font-family: 'Roboto';
   letter-spacing: 0.1px;
 }
-#search-input:focus-within {
+#search-bar {
+  transition: all 0.5s ease-in-out;
+}
+#search-bar:focus-within {
   width: 400px;
 }
 

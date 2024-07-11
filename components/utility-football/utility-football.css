@@ -2,7 +2,6 @@
   --border-radius-8:8px;
   --border-1:1px;
   --border-2:2px;
-
   --padding-4:4px;
   --padding-6:6px;
   --padding-8:8px;
@@ -16,11 +15,19 @@
   --gap-4:4px;
   --gap-12:12px;
   --gap-16:16px;
-
+  
   --width-72:72px;
   --min-height-100:100px;
   --height-2:2px;
-
+  
+  --background-btn-color:#e6e6e7;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+[data-theme='dark'] {
+  --background-btn-color:transparent
 }
 
 div#utility-football {
@@ -30,6 +37,10 @@ div#utility-football {
 
 .utility-football-container{
   grid-template-columns: 1fr 2fr;
+} 
+.football-infor-heading, 
+.football-infor-item{
+  color: var(--text-color);
 }
 
 .football-infor-item:not(:last-child)::before{
@@ -49,10 +60,10 @@ div#utility-football {
 }
 .football-list-header .football-list-title{
   color: var(--colors-default-50);
-  font-family: var(--font-family-secondary);
-}
+  font-family: var(--font-family-primary);
+} 
 
-.utility-football-list div.utility-football-item:not(:last-child)::before{
+.utility-football-table div.utility-football-item:not(:last-child)::before{
   position: absolute;
   content: " ";
   left: 0;
@@ -61,22 +72,31 @@ div#utility-football {
   height: var(--height-2);
   background-color: var(--colors-default-100);    
 }
+.utility-football-list{
+  max-height: 350px;
+  overflow: scroll;
+}
 .football-item-info{
   width: var(--width-72);
-}
 
+}
+.football-item-score span {
+  color: var(--text-color);
+}
 .football-item-name{
   color: var(--text-color);
   font-family: var(--font-family-secondary);
 }
 
-.utility-football-footer{
-  background-color:  var(--colors-default-100);
-  border: var(--border-2) solid var(--colors-default-500);
-  border-radius: var(--border-radius-8);
+button.utility-football-footer{
+  color: var(--text-color);
   padding: var(--padding-6) 0 ;
+  border-radius: var(--border-radius-8);
+  background-color:  var(--background-btn-color);
+  border: var(--border-2) solid var(--colors-default-500);
 }
 
 .utility-football-footer:active{
   opacity: 0.4;
+  background-color: transparent;
 }
