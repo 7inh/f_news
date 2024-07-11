@@ -2,16 +2,27 @@
 <link rel="stylesheet" href="/components/logo/logo.variables.css" />
 <script src="logo.js"></script>
 <div id="logo">
-  <div class="flex items-center gap-4 bg-red p-4 rounded-md logo-time-weather">
-    <div class="flex items-center justify-center gap-2 px-4 bg-danger rounded-lg logo tracking-normal h-10">
-      <div class="text-2xl font-semibold text-wrapper article-title- tracking-normal">FNEWS</div>
+  <div
+    class="flex items-center gap-4 bg-red p-4 pl-0 rounded-md logo-time-weather"
+  >
+    <div
+      class="flex items-center justify-center gap-2 px-4 bg-danger rounded-lg logo tracking-normal h-10"
+    >
+      <div
+        class="text-2xl font-semibold text-wrapper article-title- tracking-normal"
+      >
+        FNEWS
+      </div>
     </div>
     <div id="today" class="text-sm tracking-normal"></div>
     <div class="flex items-center gap-3 weather tracking-normal">
       <div class="flex items-center gap-1 location">
         <div class="relative text-wrapper-2 tracking-normal">
-          <select id="provinceSelected" onchange="checkWeather(this.value)"
-            class="bg-transparent outline-none cursor-pointer text-sm">
+          <select
+            id="provinceSelected"
+            onchange="checkWeather(this.value)"
+            class="bg-transparent outline-none cursor-pointer text-sm"
+          >
             <option value="Ho Chi Minh" selected>TP. HCM</option>
             <option value="An Giang">An Giang</option>
             <option value="Binh Duong">Binh Duong</option>
