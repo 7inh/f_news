@@ -11,6 +11,10 @@
   --search-min-height: 36px;
 }
 
+input:focus-within {
+  width: 400px !important;
+}
+
 [data-theme='light'] {
   --color-default: rgba(128, 128, 128, 0.609);
   --color-contrast: #fff;
