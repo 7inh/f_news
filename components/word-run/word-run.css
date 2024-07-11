@@ -1,11 +1,10 @@
-
 [data-theme='light'] #word-run {
---background-color-wordrun:#e6e6e7;
+  --background-color-wordrun: #e6e6e7;
 }
 
 [data-theme='dark'] #word-run {
---background-color-wordrun:#202022;
-} 
+  --background-color-wordrun: #202022;
+}
 div#word-run {
   grid-area: word-run;
   background-color: var(--background-color-wordrun);
@@ -13,6 +12,7 @@ div#word-run {
   width: 100vw;
   min-width: 100%;
   margin-left: calc(50% - 50vw - 10px);
+  margin-top: 40px;
 }
 @media only screen and (max-width: 1198px) {
   div#word-run {

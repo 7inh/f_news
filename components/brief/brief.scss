@@ -22,13 +22,11 @@
 [data-theme='light'] {
   --text-color: var(--colors-default-950);
   --text-info-color: var(--colors-default-700);
-  --background-color-body: var(--colors-default-50);
   --theme: light;
 }
 
 [data-theme='dark'] {
   --text-color: var(--colors-default-50);
-  --background-color-body: var(--colors-default-950);
   --text-info-color: var(--colors-default-300);
   --theme: dark;
 }
