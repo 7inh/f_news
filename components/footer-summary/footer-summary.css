@@ -1,5 +1,28 @@
+:root {
+  --bg-color-primary: #000;
+  --bg-color-secondary: #fff;
+  --bg-color-main: #e6e6e7;
+  --text-color: #202022;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[data-theme='dark'] {
+  --text-color: white;
+}
+
 div#footer-summary {
   grid-area: footer-summary;
-  background-color: rgb(187, 255, 0);
-  min-height: 100px;
+}
+
+div#footer-summary span {
+  background: var(--bg-color-main);
+}
+
+div#footer-summary p {
+  color: var(--text-color);
 }

@@ -1,0 +1,21 @@
+:root {
+  --bg-color-primary: #f5f5f6;
+}
+
+[data-theme='dark'] {
+  --bg-color-primary: white;
+}
+
+#theme-toggle>form {
+  background-color: var(--bg-color-primary);
+}
+
+input[type='radio']:checked+label {
+  transition: background-color 0.5s;
+  border-radius: 50%;
+  background-color: #f2c94c;
+}
+
+#footer-content .footer-content-section {
+  margin-top: 24px;
+}
