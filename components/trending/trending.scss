@@ -1,0 +1,93 @@
+$color_1: var(--text-color);
+$color_2: var(--colors-default-700);
+$font-family_1: var(--font-family-secondary);
+$font-family_2: var(--font-family-primary);
+$background-color_1: #09f4ae;
+$background-color_2: var(--background-color-body);
+
+div#trending {
+  grid-area: trending;
+  background-color: #09f4ae;
+  min-height: 400px;
+}
+
+div#trending {
+  --stroke-border: 1px;
+  --space-400: 16px;
+  --space-300: 12px;
+  --space-200: 8px;
+  --border-radius: 4px;
+  opacity: var(--stroke-border);
+  background-color: $background-color_2;
+  color: $color_1;
+  margin-top: 40px;
+}
+section.section-trending {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+  & > div.title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-200);
+    > f-icon.icon-trending {
+      width: 24px;
+      height: 24px;
+    }
+    > h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+  > div.article-group {
+    display: flex;
+    padding-bottom: var(--space-400);
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    &:nth-of-type(2) {
+      border-bottom: var(--stroke-border) solid var(--colors-default-100);
+    }
+  }
+  article.brief {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-300);
+    flex: 1 0 0;
+    > img.article-pic {
+      height: 168px;
+      align-self: stretch;
+      border-radius: var(--border-radius);
+      opacity: var(--stroke-border);
+      background: var(--colors-default-100);
+    }
+    > div.article-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      align-self: stretch;
+    }
+  }
+  div.article-text {
+    > h4 {
+      font-size: 16px;
+      font-family: $font-family_1;
+      line-height: 140%;
+      margin: 0;
+    }
+    div.description {
+      display: flex;
+      align-items: center;
+      gap: var(--space-200);
+      > p {
+        font-size: 14px;
+        font-family: $font-family_2;
+        font-weight: 400;
+        color: $color_2;
+        margin: 0;
+      }
+    }
+  }
+}
