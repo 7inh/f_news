@@ -4,6 +4,7 @@
 
 .logo-time-weather .text-wrapper {
   color: var(--text-color);
+  font-family: var(--font-family-secondary);
 }
 
 .logo-time-weather > div {
