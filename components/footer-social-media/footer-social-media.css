@@ -1,4 +1,48 @@
+:root {
+  --background-color_social_media: white;
+  --text-color_social_media: black;
+  --theme: light;
+  --min-height: 100px;
+  --margin-s: 4px;
+  --font-weight-text: 400;
+  --font-size-md: 18px;
+  --margin-l: 16px;
+  --width-icon-md: 32px;
+  --height-icon-md: 32px;
+}
+
+[data-theme='dark'] {
+  --background-color_social_media: black;
+  --text-color_social_media: white;
+  --theme: dark;
+}
+
 div#footer-social-media {
-  background-color: rgb(22, 144, 116);
-  min-height: 100px;
+  background-color: var(--background-color_social_media);
+  min-height: var(--min-height);
+  display: flex;
+  align-items: center;
+  margin: var(--margin-s);
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-text);
+  font-style: normal;
+}
+
+
+
+.div_group_icon {
+  width: var(--width-icon-md);
+  height: var(--height-icon-md);
+  position: relative;
+}
+
+.div_group_icon a {
+  color: var(--background-color_social_media);
+}
+
+.f_icon{
+  color: var(--text-color_social_media);
 }

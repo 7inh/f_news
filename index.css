@@ -135,7 +135,9 @@ body {
 
 section#hero {
   display: grid;
+  column-gap: 20px;
   grid-template-columns: 1fr minmax(250px, 300px);
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     'spotlight brief'
     'newest newest'
@@ -155,6 +157,7 @@ section#content > * {
 
 .footer-content-section {
   display: grid;
+  grid-template-columns: 1fr auto;
   grid-template-areas:
     'footer-summary theme-toggle'
     'footer-summary footer-link';
