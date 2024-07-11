@@ -1,27 +1,33 @@
-#card .leading-5{
+.short-video-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+#card .leading-5 {
   color: var(--text-color);
 }
-#title{
+#title {
   color: var(--text-color);
 }
 
-#title f-icon{
+#title f-icon {
   width: 24px;
   height: 24px;
 }
 
-#media{
+#media {
   background-color: var(--colors-default-100);
-  height: 498px;
+  height: 442px;
   cursor: pointer;
-  
 }
 
-#media:hover{
+#media:hover {
   opacity: 0.5;
 }
 
-#media>div{
+#media > div {
   color: var(--text-color);
   background-color: var(--background-color-body);
+}
+div.w-full.bg-slate-50pb-8.pb-8 {
+  background: rgba(217, 217, 219, 0.151);
 }

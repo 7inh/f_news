@@ -148,6 +148,8 @@ section#hero {
 section#content {
   min-height: 300px;
   display: flex;
+  margin-top: 40px;
+  gap: 20px;
 }
 
 section#content > * {
@@ -155,6 +157,23 @@ section#content > * {
   flex-grow: 1;
 }
 
+section#content #content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  border-left: 2px solid var(--colors-default-100);
+  padding-left: 16px;
+}
+
+footer {
+  margin-top: 40px;
+}
+#footer-content {
+  padding-top: 24px;
+  border-top: 2px solid var(--Neutral-400, #84858c);
+  max-width: 1180px;
+  margin: 0 auto;
+}
 .footer-content-section {
   display: grid;
   grid-template-columns: 1fr auto;
