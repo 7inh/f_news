@@ -1,6 +1,5 @@
 div#spotlight {
   grid-area: spotlight;
-  background-color: var(--background-color);
   color: var(--text-color);
   padding: 20px 0;
 }
