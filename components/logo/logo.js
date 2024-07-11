@@ -21,21 +21,30 @@ async function checkWeather(city) {
         return;
     } else {
         var data = await response?.json();
-        if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-1.svg";
-        } else if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-7.svg";
-        } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-34.svg";
-        } else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-17.svg";
-        } else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-19.svg";
-        } else if (data.weather[0].main == "Snow") {
-            weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-30.svg";
+        switch (data.weather[0].main) {
+            case "Clear":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-1.svg";
+                break;
+            case "Clouds":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-7.svg";
+                break;
+            case "Drizzle":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-34.svg";
+                break;
+            case "Mist":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-17.svg";
+                break;
+            case "Rain":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-19.svg";
+                break;
+            case "Snow":
+                weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-30.svg";
+                break;
+            default:
+                weatherIcon.src = "";
+                break;
         }
-
-        weatherTemper.innerHTML = Math.round(data.main.temp) + "°C"
+        weatherTemper.innerHTML = Math.round(data.main.temp) + "°C";
     }
 }
 
