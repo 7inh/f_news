@@ -30,6 +30,10 @@ div#utility-football {
 
 .utility-football-container{
   grid-template-columns: 1fr 2fr;
+} 
+.football-infor-heading, 
+.football-infor-item{
+  color: var(--text-color);
 }
 
 .football-infor-item:not(:last-child)::before{
@@ -49,8 +53,8 @@ div#utility-football {
 }
 .football-list-header .football-list-title{
   color: var(--colors-default-50);
-  font-family: var(--font-family-secondary);
-}
+  font-family: var(--font-family-primary);
+} 
 
 .utility-football-list div.utility-football-item:not(:last-child)::before{
   position: absolute;
@@ -63,8 +67,11 @@ div#utility-football {
 }
 .football-item-info{
   width: var(--width-72);
-}
 
+}
+.football-item-score span {
+  color: var(--text-color);
+}
 .football-item-name{
   color: var(--text-color);
   font-family: var(--font-family-secondary);
