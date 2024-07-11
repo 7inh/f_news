@@ -17,9 +17,10 @@
 
 div#footer-summary {
   grid-area: footer-summary;
+  font-family: var(--font-family-secondary);
 }
 
-div#footer-summary span {
+div#footer-summary h1 {
   background: var(--bg-color-main);
 }
 
