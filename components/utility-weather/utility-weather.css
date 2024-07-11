@@ -174,21 +174,40 @@ div#utility-weather {
 }
 
 .content__chart-tabs {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: var(--gap-xl);
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  position: relative;
 }
 
+.chart__tabs-item[data-index='1'].active ~ #chart__tab-line {
+  left: 0;
+}
+
+.chart__tabs-item[data-index='2'].active ~ #chart__tab-line {
+  left: 100px;
+}
+
+.chart__tabs-item[data-index='3'].active ~ #chart__tab-line {
+  left: 200px;
+}
+
+#chart__tab-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: var(--yellow);
+  transition: left var(--duration-time);
+}
 .content__chart-tabs .chart__tabs-item {
+  text-align: center;
   padding: var(--padding-l) 0;
-  border-bottom: 2px solid transparent;
   font-size: var(--font-size-m);
   font-weight: 400;
   color: var(--colors-default-400-v2);
-  transition: color var(--duration-time) ease-in,
-    border-color var(--duration-time) ease-in;
   cursor: pointer;
+  transition: color var(--duration-time);
 }
 
 .content__chart-view {

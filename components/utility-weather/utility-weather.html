@@ -42,11 +42,19 @@
 
     <div class="weather__content-chart">
       <div class="content__chart-tabs">
-        <div class="chart__tabs-item active" data-tab="temperature">
+        <div
+          class="chart__tabs-item active"
+          data-tab="temperature"
+          data-index="1"
+        >
           Nhiệt độ
         </div>
-        <div class="chart__tabs-item" data-tab="precipitation">Lượng mưa</div>
-        <div class="chart__tabs-item" data-tab="wind">Gió</div>
+        <div class="chart__tabs-item" data-index="2" data-tab="precipitation">
+          Lượng mưa
+        </div>
+        <div class="chart__tabs-item" data-index="3" data-tab="wind">Gió</div>
+
+        <div id="chart__tab-line"></div>
       </div>
 
       <div class="content__chart-view">
