@@ -128,6 +128,7 @@ input:focus-within {
   border-radius: var(--search-container-radius);
   min-height: var(--search-min-height);
   position: relative;
+  width: 100%;
   z-index: 1000;
 }
 #search-bar-container input {
@@ -137,10 +138,14 @@ input:focus-within {
   margin: 0 var(--spacing-sm);
   box-sizing: border-box;
   flex-grow: 1;
+  width: 100%;
 }
 #search-bar-container input::placeholder {
   font-family: 'Roboto';
   letter-spacing: 0.1px;
+}
+#search-bar {
+  transition: all 2s ease-out;
 }
 #search-input:focus-within {
   width: 400px;
