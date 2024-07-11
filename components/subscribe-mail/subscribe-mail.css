@@ -1,16 +1,17 @@
 [data-theme='light'] {
   --text-color-submit:  #f5f5f6;
   --background-color-submit: #202022;
+  --border-submit: 1px solid #202022;
   --theme: light;
 }
 [data-theme='dark'] {
-  --text-color-submit: #202022;
-  --background-color-submit: #f5f5f6;
+  --text-color-submit: #f5f5f6;
+  --border-submit: 1px solid #B3B3B3;
   --theme: dark;
   --background-transparent: transparent;
 }
 input{
-  border: 1px solid #B3B3B3;
+  border: var(--border-submit);
   flex: 3;
   background-color: var(--background-transparent);
   font-family: var(--sds-typography-body-font-family);
@@ -28,4 +29,5 @@ input{
   font-style: normal;
   font-weight: var(--sds-typography-body-font-weight-regular);
   line-height: 100%;
+  border: var(--border-submit);
 }
