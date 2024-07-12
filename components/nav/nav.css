@@ -1,12 +1,10 @@
-[data-theme=light] {
+[data-theme='light'] {
   --text-color-nav: #84858c;
-  --background-color-body: #f5f5f6;
   --theme: light;
 }
 
-[data-theme=dark] {
+[data-theme='dark'] {
   --text-color-nav: white;
-  --background-color-body: #202022;
   --theme: dark;
 }
 

@@ -26,11 +26,7 @@
         </div>
 
         <div class="header__information-image">
-          <img
-            src="/assets/images/weather_image.svg"
-            alt=""
-            class="w-[40px] h-[40px] object-cover"
-          />
+          <img src="/assets/images/weather_image.svg" alt="" class="" />
         </div>
       </div>
       <div class="content__header-temperature">
@@ -46,18 +42,105 @@
 
     <div class="weather__content-chart">
       <div class="content__chart-tabs">
-        <div class="chart__tabs-item active">Nhiệt độ</div>
-        <div class="chart__tabs-item">Lượng mưa</div>
-        <div class="chart__tabs-item">Gió</div>
+        <div
+          class="chart__tabs-item active"
+          data-tab="temperature"
+          data-index="1"
+        >
+          Nhiệt độ
+        </div>
+        <div class="chart__tabs-item" data-index="2" data-tab="precipitation">
+          Lượng mưa
+        </div>
+        <div class="chart__tabs-item" data-index="3" data-tab="wind">Gió</div>
+
+        <div id="chart__tab-line"></div>
       </div>
 
       <div class="content__chart-view">
-        <img src="/assets/images/chart-view.svg" alt="" />
+        <div class="chart__view-item active" data-tab="temperature">
+          <div id="temperature-chart"></div>
+        </div>
+        <div class="chart__view-item" data-tab="precipitation">
+          <div id="precipitation-chart"></div>
+        </div>
+        <div class="chart__view-item" data-tab="wind">
+          <div id="wind-chart">
+            <ul class="wind__chart-list">
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class="rotate-60"
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class="rotate-120"
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class="rotate-60"
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class="rotate-120"
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+              <li class="wind__chart-list--item">
+                <div class="value"><span>10</span> km/h</div>
+                <div class="image">
+                  <img
+                    src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg"
+                    alt=""
+                    class="rotate-60"
+                  />
+                </div>
+                <div class="time">10:00</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="weather__content-days">
-      <div class="weather__content-days--item active">
+      <div class="weather__content-days--item active" data-index="1">
         <div class="day-value">Hôm nay</div>
 
         <div class="image-value">
@@ -69,7 +152,7 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
-      <div class="weather__content-days--item">
+      <div class="weather__content-days--item" data-index="2">
         <div class="day-value">T2</div>
 
         <div class="image-value">
@@ -81,7 +164,7 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
-      <div class="weather__content-days--item">
+      <div class="weather__content-days--item" data-index="3">
         <div class="day-value">T3</div>
 
         <div class="image-value">
@@ -93,7 +176,7 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
-      <div class="weather__content-days--item">
+      <div class="weather__content-days--item" data-index="4">
         <div class="day-value">T4</div>
 
         <div class="image-value">
@@ -105,7 +188,7 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
-      <div class="weather__content-days--item">
+      <div class="weather__content-days--item" data-index="5">
         <div class="day-value">T5</div>
 
         <div class="image-value">
@@ -117,7 +200,7 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
-      <div class="weather__content-days--item">
+      <div class="weather__content-days--item" data-index="6">
         <div class="day-value">T6</div>
 
         <div class="image-value">
@@ -129,6 +212,8 @@
           <div class="temperature temperature--min">55°</div>
         </div>
       </div>
+
+      <div id="weather__content-line"></div>
     </div>
   </div>
 </div>

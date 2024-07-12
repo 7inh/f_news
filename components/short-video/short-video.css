@@ -1,27 +1,53 @@
-#card .leading-5{
+#card .leading-5 {
   color: var(--text-color);
 }
-#title{
+#title {
   color: var(--text-color);
 }
 
-#title f-icon{
+#title f-icon {
   width: 24px;
   height: 24px;
 }
 
-#media{
+#media {
   background-color: var(--colors-default-100);
   height: 498px;
   cursor: pointer;
-  
+  border-radius: 4px;
 }
 
-#media:hover{
+#media:hover {
   opacity: 0.5;
 }
 
-#media>div{
+#media > div {
   color: var(--text-color);
   background-color: var(--background-color-body);
+  width: 88px;
+  height: 40px;
+}
+#container-play {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--colors-default-300);
+}
+
+#media #play {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play f-icon {
+  margin-left: 1px;
+}
+
+#media span {
+  margin-top: 1px;
+  padding-right: 7px;
+  font-size: 14px;
 }
