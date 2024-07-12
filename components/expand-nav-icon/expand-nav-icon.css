@@ -7,13 +7,13 @@ div#expand-nav-icon {
   --blue-color: #6d6dd4;
 }
 
-[data-theme=light] {
+[data-theme='light'] {
   --text-color-nav: #84858c;
   --background-color-body: #f5f5f6;
   --theme: light;
 }
 
-[data-theme=dark] {
+[data-theme='dark'] {
   --text-color-nav: white;
   --background-color-body: #202022;
   --theme: dark;
@@ -144,4 +144,20 @@ p:hover {
   z-index: 1;
   opacity: 0;
   cursor: pointer;
+}
+
+#expand-nav-toggle:has(input#expand-nav-toggle-checkbox:checked)
+  .line:first-of-type {
+  transform: rotate(135deg) translate(5px, 1px);
+  transition: all 0.5s;
+}
+#expand-nav-toggle:has(input#expand-nav-toggle-checkbox:checked)
+  .line:last-of-type {
+  transform: rotate(-135deg) translate(5px, 1px);
+  transition: all 0.5s;
+}
+
+#expand-nav-toggle:has(input#expand-nav-toggle-checkbox:checked)
+  .line:nth-of-type(2) {
+  display: none;
 }
