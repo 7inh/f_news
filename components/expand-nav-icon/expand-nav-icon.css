@@ -29,17 +29,20 @@ div#expand-nav-icon {
   margin: 5px;
 }
 .expand-nav {
-  background-color: var(--colors-default-50);
+  background-color: var(--background-color-body);
   position: absolute;
   top: 50px;
-  left: 0px;
-  right: 148px;
+  right: 0;
+  left: 0;
   z-index: 1;
   display: none;
+  height: 100vh;
+  margin-left: -10vw;
+  margin-right: -10vw;
 }
 .expand-nav-main {
   display: flex;
-  padding: 10px;
+  padding: 20px;
   gap: 30px;
   background-color: var(--background-color-body);
 }
