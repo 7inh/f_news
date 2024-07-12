@@ -16,7 +16,8 @@
 
 #media {
   background-color: var(--colors-default-100);
-  height: 442px;
+  height: 498px;
+  width: 280px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -47,6 +48,7 @@
 
 #play f-icon {
   margin-left: 1px;
+  color: var(--background-color-body);
 }
 
 #media span {
