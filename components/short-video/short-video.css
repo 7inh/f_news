@@ -1,6 +1,3 @@
-#card .leading-5 {
-  color: var(--text-color);
-}
 #title {
   color: var(--text-color);
 }
@@ -10,9 +7,19 @@
   height: 24px;
 }
 
+#card p{
+  color: var(--text-color);
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; 
+}
+
 #media {
   background-color: var(--colors-default-100);
   height: 498px;
+  width: 280px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -43,7 +50,7 @@
 }
 
 #play f-icon {
-  margin-left: 1px;
+  margin-left: 3px;
 }
 
 #media span {
@@ -51,3 +58,5 @@
   padding-right: 7px;
   font-size: 14px;
 }
+
+
