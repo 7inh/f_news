@@ -41,9 +41,11 @@ section.section-trending > div.article-group {
   gap: 20px;
   align-self: stretch;
 }
-section.section-trending > div.article-group:nth-of-type(2) {
-  border-bottom: var(--stroke-border) solid var(--colors-default-100);
+
+#trending .article-group:not(:last-child) {
+  border-bottom: 1px solid var(--colors-default-100);
 }
+
 section.section-trending article.brief {
   display: flex;
   flex-direction: column;

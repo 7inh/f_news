@@ -2,80 +2,77 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-    :root {
-        --font-family-heading: 'Roboto Slab';
-    }
+  :root {
+    --font-family-heading: 'Roboto Slab';
+  }
 
-    [data-theme=light] {
-        --text-color-newest-timeline: #84858c;
-        --text-color-newest-text-content: #202022;
-        --background-color-body: #202022;
-        --theme: light;
-    }
+  [data-theme='light'] {
+    --text-color-newest-timeline: #84858c;
+    --text-color-newest-text-content: #202022;
+    --theme: light;
+  }
 
-    [data-theme=dark] {
-        --text-color-newest-timeline: #b2b3b8;
-        --text-color-newest-text-content: white;
-        --background-color-body: white;
-        --theme: dark;
-    }
-    /* article-title */
+  [data-theme='dark'] {
+    --text-color-newest-timeline: #b2b3b8;
+    --text-color-newest-text-content: white;
+    --theme: dark;
+  }
+
+  /* article-title */
 </style>
-<div id="newest" style="font-family: Roboto Slab;">
-    <div class="container ">
-        <div class="newest-header mb-5 flex items-center gap-1">
-            <div class="newsest-icon text-[--text-color-newest-text-content]  w-[24px] h-[24px]">
-                <f-icon class="w-6 h-6" src="../../assets/logo-trending.svg"></f-icon>
-            </div>
-            <h2 class="text-[24px] font-[Roboto Slab] font-bold text-[--text-color-newest-text-content]">Tin mới
-                nhất</h2>
-        </div>
-        <div class="newest-content grid grid-cols-4 gap-x-5">
-            <div class="newest-item flex flex-col gap-y-[16px]">
-                <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
-                <span
-                    class="text-[--text-color-newest-text-content]  article-title ">Đức
-                    - Tây Ban Nha: Tái hiện trận chung kết EURO 2008</span>
-                <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
-                    <span class="">2h trước</span>
-                    <span>Thể thao</span>
-                </div>
-            </div>
-
-            <div class="newest-item flex flex-col gap-y-[16px]">
-                <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
-                <span
-                    class="text-[--text-color-newest-text-content]  article-title">Xác
-                    thực sinh trắc học chuyển tiền: ‘Bắt buộc phải thực hiện, không thể làm khác được’</span>
-                <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
-                    <span class="">3h trước</span>
-                    <span>Pháp luật</span>
-                </div>
-            </div>
-
-            <div class="newest-item flex flex-col gap-y-[16px]">
-                <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
-                <span
-                    class="text-[--text-color-newest-text-content]  article-title">Israel
-                    ra quyết định thu hồi đất ở Bờ Tây lớn nhất trong 30 năm, trả hơn trăm triệu USD cho
-                    Palestine</span>
-                <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
-                    <span class="">4h trước</span>
-                    <span>Thế giới</span>
-                </div>
-            </div>
-
-            <div class="newest-item flex flex-col gap-y-[16px]">
-                <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
-                <span
-                    class="text-[--text-color-newest-text-content]  article-title">Đức
-                    - Tây Ban Nha: Tái hiện trận chung kết EURO 2008</span>
-                <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
-                    <span class="">2h trước</span>
-                    <span>Thể thao</span>
-                </div>
-            </div>
-        </div>
+<div id="newest" style="font-family: Roboto Slab">
+  <div class="container">
+    <div class="newest-header mb-5 flex items-center gap-1">
+      <div class="newsest-icon text-[--text-color-newest-text-content] w-[24px] h-[24px]">
+        <f-icon class="w-6 h-6" src="../../assets/logo-trending.svg"></f-icon>
+      </div>
+      <h2 class="text-[24px] font-[Roboto Slab] font-bold text-[--text-color-newest-text-content]">
+        Tin mới nhất
+      </h2>
     </div>
+    <div class="newest-content grid grid-cols-4 gap-x-5">
+      <div class="newest-item flex flex-col gap-y-[16px]">
+        <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
+        <span class="text-[--text-color-newest-text-content] article-title">Đức - Tây Ban Nha: Tái hiện trận chung kết
+          EURO 2008</span>
+        <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
+          <span class="">2h trước</span>
+          <span>Thể thao</span>
+        </div>
+      </div>
+
+      <div class="newest-item flex flex-col gap-y-[16px]">
+        <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
+        <span class="text-[--text-color-newest-text-content] article-title">Xác thực sinh trắc học chuyển tiền: ‘Bắt
+          buộc phải thực hiện, không
+          thể làm khác được’</span>
+        <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
+          <span class="">3h trước</span>
+          <span>Pháp luật</span>
+        </div>
+      </div>
+
+      <div class="newest-item flex flex-col gap-y-[16px]">
+        <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
+        <span class="text-[--text-color-newest-text-content] article-title">Israel ra quyết định thu hồi đất ở Bờ Tây
+          lớn nhất trong 30 năm, trả
+          hơn trăm triệu USD cho Palestine</span>
+        <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
+          <span class="">4h trước</span>
+          <span>Thế giới</span>
+        </div>
+      </div>
+
+      <div class="newest-item flex flex-col gap-y-[16px]">
+        <div class="content-img w-full bg-[#E6E6E7] h-[168px]"></div>
+        <span class="text-[--text-color-newest-text-content] article-title">Đức - Tây Ban Nha: Tái hiện trận chung kết
+          EURO 2008</span>
+        <div class="timeLine flex gap-3 items-center text-[14px] text-[--text-color-newest-timeline] leading-[150%]">
+          <span class="">2h trước</span>
+          <span>Thể thao</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="../../example-custom-icon.html"></script>

@@ -26,9 +26,11 @@
         <div id="logo"></div>
         <div id="search-bar"></div>
         <div id="profile-icon"></div>
-        
       </header>
-      <div id="sticky-header" class="sticky top-0 z-[8]">
+      <div
+        id="sticky-header"
+        class="sticky top-0 z-[8] flex items-center border-b-2 bg-[--colors-default-50]"
+      >
         <div id="nav"></div>
         <div id="expand-nav-icon"></div>
       </div>
@@ -53,29 +55,31 @@
             <div id="utility-football"></div>
           </div>
         </section>
-        <section>
-          <div id="short-video"></div>
-        </section>
       </main>
-      <footer>
+      <br />
+      <br />
+    </div>
+
+    <section>
+      <div id="short-video"></div>
+    </section>
+    <footer>
+      <div id="footer-content">
+        <div class="footer-content-section">
+          <div id="footer-summary"></div>
+          <div id="theme-toggle"></div>
+          <div id="footer-link"></div>
+        </div>
         <hr />
-        <div id="footer-content">
-          <div class="footer-content-section">
-            <div id="footer-summary"></div>
-            <div id="theme-toggle"></div>
-            <div id="footer-link"></div>
-          </div>
-          <hr />
-          <div class="footer-content-section-2">
-            <div id="footer-contact"></div>
-            <div id="subscribe-mail"></div>
-            <div id="footer-social-media"></div>
-          </div>
+        <div class="footer-content-section-2">
+          <div id="footer-contact"></div>
+          <div id="subscribe-mail"></div>
+          <div id="footer-social-media"></div>
         </div>
         <hr />
         <div id="copyright"></div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <script>
       class FIcon extends HTMLElement {
         constructor() {

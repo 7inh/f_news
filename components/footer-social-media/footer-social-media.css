@@ -31,7 +31,9 @@ div#footer-social-media {
   font-style: normal;
 }
 
-
+p.article {
+  color: var(--text-color_social_media);
+}
 
 .div_group_icon {
   width: var(--width-icon-md);

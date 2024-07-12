@@ -1,0 +1,27 @@
+:root {
+  --font-size-primary: 18px;
+  --font-size-20: 20px;
+  --font-size-26: 26px;
+  --font-size-32: 32px;
+}
+#word-cloud {
+  color: var(--colors-default-400);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-primary);
+  white-space: nowrap;
+  grid-area: word-cloud;
+}
+#kinhdoanh,
+#congnghe,
+#nghethuat,
+#quandiem,
+#giaitri {
+  font-size: var(--font-size-20);
+}
+#suckhoe,
+#dulich {
+  font-size: var(--font-size-26);
+}
+#doisong {
+  font-size: var(--font-size-32);
+}

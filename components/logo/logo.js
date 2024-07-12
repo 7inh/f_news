@@ -14,12 +14,9 @@ const options = {
     year: 'numeric'
 };
 
-async function checkWeather(city) {
-    const response = await fetch(apiUrl + city + appId);
-
-    if (response.status == "404") {
-        return;
-    } else {
+async function getWeatherApi(city, retryTimes) {
+    try {
+        const response = await fetch(apiUrl + city + appId);
         var data = await response?.json();
         switch (data.weather[0].main) {
             case "Clear":
@@ -45,23 +42,21 @@ async function checkWeather(city) {
                 break;
         }
         weatherTemper.innerHTML = Math.round(data.main.temp) + "°C";
+    } catch (err) {
+        retryTimes--;
+        return retryGetWeather(retryTimes);
     }
+}
+function retryGetWeather(times) {
+    if (times === 0) return console.log("Không thể lấy thông tin thời tiết. Vui lòng thử lại sau.");
+    return getWeatherApi(weather.value, times);
 }
 
 function getNowDate() {
     today.innerHTML = date.toLocaleDateString('vi-VN', options);
 }
 
-const getDateInterval = setInterval(() => {
-    if (today.innerText) {
-        return clearInterval(getDateInterval);
-    }
-    getNowDate();
-}, 100);
-
-const getWeatherInterval = setInterval(() => {
-    if (weatherTemper.innerText || weatherIcon.src) {
-        return clearInterval(getWeatherInterval);
-    }
-    checkWeather(weather.value);
-}, 100);
+getNowDate();
+setTimeout(() => {
+    getWeatherApi(weather.value, 4);
+}, 1000)
