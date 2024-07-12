@@ -1,16 +1,35 @@
 :root {
   --bg-color-primary: #f5f5f6;
+  --bg-color-dark: black;
+  --color-text-toggle: #000;
 }
 
 [data-theme='dark'] {
-  --bg-color-primary: white;
+  --bg-color-primary: rgba(255, 255, 255, 0.281);
+  --bg-color-dark: white;
+  --color-text-toggle: #ffffff;
 }
 
-#theme-toggle>form {
+#theme-toggle > form {
   background-color: var(--bg-color-primary);
 }
 
-input[type='radio']:checked+label {
+input[type='radio'] + label {
+  cursor: pointer;
+}
+
+#theme-toggle label {
+  color: var(--color-text-toggle);
+}
+
+#theme-toggle f-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding: 4px;
+}
+
+input[type='radio']:checked + label {
   transition: background-color 0.5s;
   border-radius: 50%;
   background-color: #f2c94c;
