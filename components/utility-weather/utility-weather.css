@@ -195,7 +195,7 @@ div#utility-weather {
   bottom: 0;
   left: 0;
   width: 100px;
-  height: 2px;
+  height: 1px;
   background-color: var(--yellow);
   transition: left var(--duration-time);
 }
