@@ -116,7 +116,7 @@ p:hover {
   align-items: center;
   gap: 10px;
 }
-.article-description:first-of-type {
+#expand-nav-icon .article-description:first-of-type {
   text-transform: uppercase;
 }
 .social {
