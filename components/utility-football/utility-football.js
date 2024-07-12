@@ -23,11 +23,11 @@ function GetDaTa() {
                 </div>
                 <p class="football-item-score article-bold">
                   <span>${
-                    match.matchResults.map((item) => item.pointsTeam1)[0]
+                    match.matchResults.map((item) => item.pointsTeam1)[1]
                   }</span>
                   <span> - </span>
                   <span>${
-                    match.matchResults.map((item) => item.pointsTeam2)[0]
+                    match.matchResults.map((item) => item.pointsTeam2)[1]
                   }</span>
                 </p>
                 <div class="football-item-info">
