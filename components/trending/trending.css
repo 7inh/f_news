@@ -41,7 +41,8 @@ section.section-trending > div.article-group {
   gap: 20px;
   align-self: stretch;
 }
-section.section-trending > div.article-group:nth-of-type(2) {
+section.section-trending > div.article-group:nth-of-type(2),
+section.section-trending > div.article-group:last-child {
   border-bottom: var(--stroke-border) solid var(--colors-default-100);
 }
 section.section-trending article.brief {

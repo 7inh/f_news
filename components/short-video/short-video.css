@@ -1,3 +1,7 @@
+.short-video-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
 #card .leading-5 {
   color: var(--text-color);
 }
@@ -12,7 +16,7 @@
 
 #media {
   background-color: var(--colors-default-100);
-  height: 498px;
+  height: 442px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -36,7 +40,6 @@
 
 #media #play {
   color: white;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,4 +53,7 @@
   margin-top: 1px;
   padding-right: 7px;
   font-size: 14px;
+}
+div.w-full.bg-slate-50pb-8.pb-8 {
+  background: rgba(217, 217, 219, 0.151);
 }
