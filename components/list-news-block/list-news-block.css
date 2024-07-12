@@ -7,6 +7,10 @@ div#list-news-block{
     min-height: 168px;
 }
 
+#content-main{
+    max-width: 300px;
+}
+
 #content{
   box-sizing: content-box;
 }

@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/components/list-news-block/list-news-block.css" />
-<!-- ko su dung path vua ../ vua /  trong 1 file de import-->
 <div id="list-news-block" class="my-9">
     <div class="mb-5 flex items-center gap-1">
         <div class="w-[24px] h-[24px]">
@@ -9,8 +8,8 @@
             Trong tuần qua
         </h2>
     </div>
-    <div id="content" class="grid grid-cols-2 mt-4">
-        <div class="col-1 border-r-2">
+    <div id="content" class="flex mt-4">
+        <div id="content-main" class="col-1 border-r-2">
             <div id="content-img" class="bg-[#E6E6E7] rounded mr-5"></div>
             <div id="content-text" class="flex-none mt-3 font-semibold text-base mr-5 cursor-pointer">
                 Israel ra quyết định thu hồi đất ở Bờ Tây lớn nhất trong 30 năm, trả hơn trăm triệu USD cho Palestine
@@ -23,10 +22,10 @@
                 <div>4h trước <span class="ml-1.5">Thế giới</span></div>
             </div>
         </div>
-        <div class="col-2 pl-2.5">
+        <div id="side-content" class="col-2 pl-4">
             <div class="flex pb-2.5 border-b-2">
                 <div>
-                    <div class="font-semibold text-base cursor-pointer">
+                    <div class="font-semibold text-base cursor-pointer mr-6">
                         Đức - Tây Ban Nha: Tái hiện trận chung kết EURO 2008
                     </div>
                     <div class="mt-2 time text-sm">
@@ -37,7 +36,7 @@
             </div>
             <div class="flex pb-2.5 mt-2.5 border-b-2">
                 <div>
-                    <div class="font-semibold text-base cursor-pointer">
+                    <div class="font-semibold text-base cursor-pointer mr-6">
                         Trận địa S-300 Ukraine nổ tung sau đòn tập kích của Nga
                     </div>
                     <div class="mt-2 time text-sm">
@@ -48,7 +47,7 @@
             </div>
             <div class="flex pb-2.5 mt-2.5">
                 <div>
-                    <div class="font-semibold text-base cursor-pointer">
+                    <div class="font-semibold text-base cursor-pointer mr-6">
                         Iran có tân Tổng thống
                     </div>
                     <div class="mt-2 time text-sm">
